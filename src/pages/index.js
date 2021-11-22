@@ -1,7 +1,11 @@
+import { Layout } from "../layout/Layout";
+
 export default function Home() {
   return (
-    <div>
-      <h1>Hello</h1>
-    </div>
+    <Layout>
+      <div>
+        <h1>Hello</h1>
+      </div>
+    </Layout>
   );
 }
