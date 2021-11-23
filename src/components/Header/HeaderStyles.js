@@ -7,3 +7,7 @@ export const Div1 = styled.div``;
 export const Div2 = styled.div``;
 
 export const NavLink = styled.a``;
+
+export const SocialIcons = styled.a`
+  padding: 8px;
+`;
