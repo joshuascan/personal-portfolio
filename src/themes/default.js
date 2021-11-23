@@ -5,8 +5,9 @@ export default {
     main: "Space Grotesk, sans serif",
   },
   colors: {
-    primary: "blue",
-    secondary: "red",
+    primary: "#2e5894",
+    // primary: "#223a7d",
+    secondary: "#333333",
   },
   breakpoints: {
     sm: "screen and (max-width: 640px)",
