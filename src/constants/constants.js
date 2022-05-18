@@ -3,7 +3,7 @@ export const projects = [
     title: "Metronome",
     description:
       "A metronome app built using React and styled components. Has the ability to change both tempo and time signature.",
-    image: null,
+    image: "/images/metronome.png",
     tags: ["React", "Styled Components"],
     visit: "https://scanlan-metronome-app.netlify.app/",
     source: "https://github.com/joshuascan/metronome",
@@ -13,7 +13,7 @@ export const projects = [
     title: "Metronome",
     description:
       "A metronome app built using React and styled components. Has the ability to change both tempo and time signature.",
-    image: null,
+    image: "/images/metronome.png",
     tags: ["React", "Styled Components"],
     visit: "https://scanlan-metronome-app.netlify.app/",
     source: "https://github.com/joshuascan/metronome",
@@ -23,7 +23,7 @@ export const projects = [
     title: "Metronome",
     description:
       "A metronome app built using React and styled components. Has the ability to change both tempo and time signature.",
-    image: null,
+    image: "/images/metronome.png",
     tags: ["React", "Styled Components"],
     visit: "https://scanlan-metronome-app.netlify.app/",
     source: "https://github.com/joshuascan/metronome",
@@ -33,7 +33,7 @@ export const projects = [
     title: "Metronome",
     description:
       "A metronome app built using React and styled components. Has the ability to change both tempo and time signature.",
-    image: null,
+    image: "/images/metronome.png",
     tags: ["React", "Styled Components"],
     visit: "https://scanlan-metronome-app.netlify.app/",
     source: "https://github.com/joshuascan/metronome",
