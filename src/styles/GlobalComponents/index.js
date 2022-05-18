@@ -16,3 +16,15 @@ export const SectionText = styled.p`
   font-weight: 300;
   font-size: 2.4rem;
 `;
+
+export const SectionDivider = styled.div`
+  width: 300px;
+  height: 10px;
+  border-radius: 10px;
+  margin: 30px 20px;
+  background: linear-gradient(
+    340deg,
+    ${(props) => props.theme.colors.primary} 50%,
+    ${(props) => props.theme.colors.secondary} 100%
+  );
+`;
