@@ -16,13 +16,15 @@ export const SectionTitle = styled.h2`
 export const SectionText = styled.p`
   font-weight: 300;
   font-size: 2.4rem;
+  line-height: 4rem;
+  padding-bottom: 2.4rem;
 `;
 
 export const SectionDivider = styled.div`
   width: 300px;
   height: 10px;
   border-radius: 10px;
-  margin: 2rem 2rem;
+  margin: 2rem 0;
   background: linear-gradient(
     340deg,
     ${(props) => props.theme.colors.primary} 50%,

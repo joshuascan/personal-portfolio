@@ -1,14 +1,14 @@
 import { Layout } from "../layout/Layout";
 import Hero from "../components/Hero/Hero";
 import Projects from "../components/Projects/Projects";
-import { SectionDivider } from "../styles/GlobalComponents";
+import AboutMe from "../components/AboutMe/AboutMe";
 
 export default function Home() {
   return (
     <Layout>
       <Hero />
-      <SectionDivider />
       <Projects />
+      <AboutMe />
     </Layout>
   );
 }
