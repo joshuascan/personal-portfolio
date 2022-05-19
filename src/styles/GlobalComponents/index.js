@@ -10,6 +10,7 @@ export const Section = styled.section`
 export const SectionTitle = styled.h2`
   font-weight: 800;
   font-size: ${(props) => (props.main ? "6.5rem" : "5.6rem")};
+  margin-bottom: 2.5rem;
 `;
 
 export const SectionText = styled.p`
@@ -21,7 +22,7 @@ export const SectionDivider = styled.div`
   width: 300px;
   height: 10px;
   border-radius: 10px;
-  margin: 30px 20px;
+  margin: 2rem 2rem;
   background: linear-gradient(
     340deg,
     ${(props) => props.theme.colors.primary} 50%,

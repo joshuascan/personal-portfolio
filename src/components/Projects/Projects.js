@@ -32,17 +32,21 @@ const Projects = () => {
                 <Hr />
               </TitleContent>
               <Description>{description}</Description>
-              <div>
-                <TitleContent>Technologies</TitleContent>
-                <TagList>
-                  {tags.map((tag, i) => (
-                    <Tag key={i}>{tag}</Tag>
-                  ))}
-                </TagList>
-              </div>
+              <TitleContent>
+                <Header>Technologies</Header>
+              </TitleContent>
+              <TagList>
+                {tags.map((tag, i) => (
+                  <Tag key={i}>{tag}</Tag>
+                ))}
+              </TagList>
               <LinkList>
-                <ExternalLink href={visit}>Deployed</ExternalLink>
-                <ExternalLink href={source}>Source</ExternalLink>
+                <ExternalLink href={visit} target="_blank">
+                  Deployed
+                </ExternalLink>
+                <ExternalLink href={source} target="_blank">
+                  Source
+                </ExternalLink>
               </LinkList>
             </Card>
           )

@@ -6,17 +6,19 @@ export const GridContainer = styled.section`
   padding: 3rem;
   place-items: center;
   column-gap: 2rem;
-  row-gap: 3rem;
+  row-gap: 10rem;
 `;
 
 export const Card = styled.div`
   text-align: center;
   width: 400px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px rgba(20, 20, 20, 0.5);
 `;
 
 export const Img = styled.img`
-  width: 100%;
-  height: 100%;
+  width: 95%;
+  height: 95%;
   object-fit: cover;
   overflow: hidden;
 `;
@@ -45,7 +47,8 @@ export const Hr = styled.hr`
 
 export const Description = styled.p`
   width: 100%;
-  padding: 0 50px;
+  padding: 0 5rem;
+  margin-bottom: 1.5rem;
   color: ${(props) => props.theme.colors.secondary};
   font-size: 2rem;
   line-height: 2.4rem;
