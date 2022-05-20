@@ -1,11 +1,14 @@
+import Image from "next/image";
 import { Section } from "../../styles/GlobalComponents";
 import {
   LeftSection,
   Name,
   RightSection,
   Rectangle,
+  ImageContainer,
   HeroText,
 } from "./HeroStyles";
+import headshot from "../../../public/images/josh_cartoony.jpg";
 
 const Hero = () => {
   return (
@@ -17,7 +20,10 @@ const Hero = () => {
         </HeroText>
       </LeftSection>
       <RightSection>
-        <Rectangle />
+        {/* <Rectangle /> */}
+        <ImageContainer>
+          <Image src={headshot} alt="headshot" />
+        </ImageContainer>
       </RightSection>
     </Section>
   );

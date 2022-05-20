@@ -18,6 +18,7 @@ export const Div2 = styled.div`
 export const NavLink = styled.a`
   font-size: 2rem;
   padding: 1.5rem;
+  color: ${(props) => props.theme.colors.primary};
   transition: 0.5s ease;
   &:hover {
     opacity: 0.65;

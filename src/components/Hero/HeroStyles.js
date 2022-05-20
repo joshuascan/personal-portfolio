@@ -22,3 +22,13 @@ export const Rectangle = styled.div`
   width: 300px;
   background-color: ${(props) => props.theme.colors.primary};
 `;
+
+export const Img = styled.img`
+  width: 50%;
+  height: 50%;
+`;
+
+export const ImageContainer = styled.div`
+  width: 300px;
+  box-shadow: 10px 10px ${(props) => props.theme.colors.primary};
+`;
