@@ -12,8 +12,8 @@ export const GridContainer = styled.section`
 export const Card = styled.div`
   text-align: center;
   width: 400px;
-  border-radius: 10px;
-  box-shadow: 3px 3px 20px rgba(20, 20, 20, 0.5);
+  border-radius: 4px;
+  box-shadow: 3px 3px 10px rgba(20, 20, 20, 0.5);
 `;
 
 export const Img = styled.img`

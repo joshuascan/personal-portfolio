@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { SocialIcons } from "../Header/HeaderStyles";
 import {
@@ -12,27 +13,35 @@ import {
 
 const Footer = () => {
   return (
-    <FooterWrapper>
+    <FooterWrapper id="contact">
       <FooterContainer>
         <LinkList>
           <LinkColumn>
             <LinkTitle>Call</LinkTitle>
-            <LinkItem href="tel:805-570-0498">805-570-0498</LinkItem>
+            <Link href="tel:805-570-0498" passHref>
+              <LinkItem href="tel:805-570-0498">805-570-0498</LinkItem>
+            </Link>
           </LinkColumn>
           <LinkColumn>
             <LinkTitle>Email</LinkTitle>
-            <LinkItem href="mailto:joshuascan@gmail.com">
-              joshuascan@gmail.com
-            </LinkItem>
+            <Link href="mailto:joshuascan@gmail.com" passHref>
+              <LinkItem target="_blank" rel="noreferrer noopener">
+                joshuascan@gmail.com
+              </LinkItem>
+            </Link>
           </LinkColumn>
         </LinkList>
         <SocialIconsContainer>
-          <SocialIcons href="https://github.com/joshuascan">
-            <AiFillGithub size="3rem" />
-          </SocialIcons>
-          <SocialIcons href="https://linkedin.com/in/jscanlan">
-            <AiFillLinkedin size="3rem" />
-          </SocialIcons>
+          <Link href="https://github.com/joshuascan" passHref>
+            <SocialIcons target="_blank" rel="noreferrer noopener">
+              <AiFillGithub size="3rem" />
+            </SocialIcons>
+          </Link>
+          <Link href="https://linkedin.com/in/jscanlan" passHref>
+            <SocialIcons target="_blank" rel="noreferrer noopener">
+              <AiFillLinkedin size="3rem" />
+            </SocialIcons>
+          </Link>
         </SocialIconsContainer>
       </FooterContainer>
     </FooterWrapper>

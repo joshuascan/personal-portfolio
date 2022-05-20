@@ -22,8 +22,10 @@ const Header = () => (
         </Link>
       </li>
       <li>
-        <Link href="#resume" passHref>
-          <NavLink>Resume</NavLink>
+        <Link href="/images/resume.pdf" passHref>
+          <NavLink target="_blank" rel="noreferrer noopener">
+            Resume
+          </NavLink>
         </Link>
       </li>
       <li>
@@ -33,12 +35,16 @@ const Header = () => (
       </li>
     </Div1>
     <Div2>
-      <SocialIcons href="https://github.com/joshuascan">
-        <AiFillGithub size="3rem" />
-      </SocialIcons>
-      <SocialIcons href="https://linkedin.com/in/jscanlan">
-        <AiFillLinkedin size="3rem" />
-      </SocialIcons>
+      <Link href="https://github.com/joshuascan" passHref>
+        <SocialIcons target="_blank" rel="noreferrer noopener">
+          <AiFillGithub size="3rem" />
+        </SocialIcons>
+      </Link>
+      <Link href="https://linkedin.com/in/jscanlan" passHref>
+        <SocialIcons target="_blank" rel="noreferrer noopener">
+          <AiFillLinkedin size="3rem" />
+        </SocialIcons>
+      </Link>
     </Div2>
   </Container>
 );

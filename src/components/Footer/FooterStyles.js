@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const FooterWrapper = styled.section`
   width: calc(100vw - 96px);
   max-width: 1040px;
-  padding: 2rem 48px 40px;
   margin: 1rem auto;
   box-sizing: content-box;
 `;
@@ -36,7 +35,7 @@ export const LinkTitle = styled.h4`
   line-height: 2.4rem;
   text-transform: uppercase;
   color: ${(props) => props.theme.colors.secondary};
-  opacity: 0.9;
+  opacity: 0.75;
   margin-bottom: 16px;
 `;
 
