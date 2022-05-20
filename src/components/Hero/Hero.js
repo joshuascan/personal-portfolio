@@ -4,7 +4,6 @@ import {
   LeftSection,
   Name,
   RightSection,
-  Rectangle,
   ImageContainer,
   HeroText,
 } from "./HeroStyles";
@@ -15,12 +14,11 @@ const Hero = () => {
     <Section row center>
       <LeftSection>
         <HeroText>
-          Hi, I'm <br />
+          Hi, I&apos;m <br />
           <Name>Josh Scanlan</Name>
         </HeroText>
       </LeftSection>
       <RightSection>
-        {/* <Rectangle /> */}
         <ImageContainer>
           <Image src={headshot} alt="headshot" />
         </ImageContainer>
