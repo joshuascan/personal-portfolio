@@ -5,6 +5,8 @@ export const Section = styled.section`
   flex-direction: ${(props) => (props.row ? "row" : "column")};
   padding: ${(props) => (props.nopadding ? "0" : "3.2rem 4.8rem")};
   justify-content: ${(props) => (props.center ? "center" : "")};
+  margin: 0 auto;
+  max-width: 1040px;
 `;
 
 export const SectionTitle = styled.h2`
