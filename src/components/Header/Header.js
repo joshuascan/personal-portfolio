@@ -7,23 +7,28 @@ const Header = () => (
   <Container>
     <Div1>
       <li>
-        <Link href="#projects" passHref>
-          <NavLink>Projects</NavLink>
-        </Link>
-      </li>
-      <li>
         <Link href="#about" passHref>
           <NavLink>About Me</NavLink>
         </Link>
       </li>
       <li>
-        <Link href="#contact" passHref>
-          <NavLink>Contact</NavLink>
+        <Link href="#technologies" passHref>
+          <NavLink>Technologies</NavLink>
+        </Link>
+      </li>
+      <li>
+        <Link href="#projects" passHref>
+          <NavLink>Projects</NavLink>
         </Link>
       </li>
       <li>
         <Link href="#resume" passHref>
           <NavLink>Resume</NavLink>
+        </Link>
+      </li>
+      <li>
+        <Link href="#contact" passHref>
+          <NavLink>Contact</NavLink>
         </Link>
       </li>
     </Div1>
