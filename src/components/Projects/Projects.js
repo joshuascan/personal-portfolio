@@ -14,8 +14,7 @@ import {
 const Projects = () => {
   return (
     <Section id="projects">
-      <SectionTitle>Projects</SectionTitle>
-      {projects.map(({ title, description, image, tags, visit, source, id }) =>
+      {projects.map(({ title, description, image, visit, source, id }) =>
         id % 2 === 0 ? (
           <ProjectContainer key={id}>
             <ImageContainer>{/* <Img src={image} /> */}</ImageContainer>

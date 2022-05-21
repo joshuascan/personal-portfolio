@@ -26,8 +26,8 @@ const Header = () => {
           </Link>
         </li>
         <li>
-          <Link href="#technologies" passHref>
-            <NavLink pathName={router.asPath}>Technologies</NavLink>
+          <Link href="#contact" passHref>
+            <NavLink pathName={router.asPath}>Contact</NavLink>
           </Link>
         </li>
         <li>
@@ -35,11 +35,6 @@ const Header = () => {
             <NavLink target="_blank" rel="noreferrer noopener">
               Resume
             </NavLink>
-          </Link>
-        </li>
-        <li>
-          <Link href="#contact" passHref>
-            <NavLink pathName={router.asPath}>Contact</NavLink>
           </Link>
         </li>
       </NavContainer>

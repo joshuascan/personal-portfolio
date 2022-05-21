@@ -5,6 +5,7 @@ export const Section = styled.section`
   flex-direction: ${(props) => (props.row ? "row" : "column")};
   padding: ${(props) => (props.nopadding ? "0" : "3.2rem 4.8rem")};
   justify-content: ${(props) => (props.center ? "center" : "")};
+  align-items: ${(props) => (props.align ? "center" : "")};
   margin: 0 auto;
   max-width: 1340px;
 `;

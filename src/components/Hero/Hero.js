@@ -13,7 +13,7 @@ import {
 
 const Hero = () => {
   return (
-    <HeroWrapper>
+    <HeroWrapper id="about">
       <Section row center>
         <LeftSection>
           <HeroHeader>

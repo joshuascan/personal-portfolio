@@ -7,8 +7,8 @@ export const HeaderWrapper = styled.div`
   position: fixed;
   left: 0;
   right: 0;
-  margin: auto;
-  width: 1200px;
+  margin: 0 auto;
+  width: 1400px;
   z-index: 100;
   background: ${(props) => props.theme.colors.background};
 `;
