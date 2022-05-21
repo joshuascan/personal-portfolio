@@ -32,7 +32,7 @@ export const NavLink = styled.a`
   text-transform: uppercase;
   transition: 0.3s ease;
   &:hover {
-    opacity: 0.65;
+    opacity: ${(props) => (props.href === props.pathName ? 1 : 0.65)};
     cursor: pointer;
   }
 `;
