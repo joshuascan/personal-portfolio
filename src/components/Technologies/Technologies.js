@@ -10,8 +10,8 @@ const Technologies = () => {
           <DiReact size="3rem" />
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
-            React, Redux, Next.js, Ethers, MaterialUI, SCSS, and Styled
-            Components
+            React, Redux, Next.js, Ethers, MaterialUI, SCSS, and
+            <br /> Styled Components
           </ListParagraph>
         </ListItem>
         <ListItem>

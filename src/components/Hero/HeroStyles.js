@@ -2,16 +2,24 @@ import styled from "styled-components";
 
 export const HeroWrapper = styled.div`
   padding-top: 10rem;
+  height: 875px;
+`;
+
+export const HeroContent = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 5rem;
 `;
 
 export const LeftSection = styled.div`
   text-align: right;
-  margin-right: 8rem;
   width: 600px;
 `;
 
 export const RightSection = styled.div`
-  margin: 0 2rem;
+  margin-right: 15rem;
+  margin-left: 12rem;
 `;
 
 export const HeroHeader = styled.h1`
@@ -35,9 +43,8 @@ export const HeroText = styled.p`
 `;
 
 export const ImageContainer = styled.div`
-  width: 300px;
-  height: 450px;
-  position: relative;
+  width: 450px;
+  height: 675px;
 `;
 
 export const Img = styled.img`
@@ -45,8 +52,8 @@ export const Img = styled.img`
 `;
 
 export const Rectangle = styled.div`
-  width: 300px;
-  height: 450px;
+  width: 450px;
+  height: 675px;
   border: 3px solid rgba(255, 255, 255, 0.75);
   position: relative;
   left: 15px;

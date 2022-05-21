@@ -1,6 +1,7 @@
 import { Section } from "../../styles/GlobalComponents";
 import {
   HeroWrapper,
+  HeroContent,
   LeftSection,
   Name,
   RightSection,
@@ -14,7 +15,7 @@ import {
 const Hero = () => {
   return (
     <HeroWrapper id="about">
-      <Section row center>
+      <HeroContent>
         <LeftSection>
           <HeroHeader>
             Hi, I&apos;m <br />
@@ -31,11 +32,11 @@ const Hero = () => {
         </LeftSection>
         <RightSection>
           <ImageContainer>
-            <Img src="/images/profile_pic.jpeg" alt="headshot" />
+            <Img src="/images/profile_pic_large.jpeg" alt="headshot" />
             <Rectangle />
           </ImageContainer>
         </RightSection>
-      </Section>
+      </HeroContent>
     </HeroWrapper>
   );
 };
