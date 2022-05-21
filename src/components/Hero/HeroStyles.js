@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const HeroWrapper = styled.div`
+  padding-top: 10rem;
+`;
+
 export const LeftSection = styled.div`
   text-align: right;
   margin-right: 2rem;
