@@ -6,7 +6,7 @@ export const Section = styled.section`
   padding: ${(props) => (props.nopadding ? "0" : "3.2rem 4.8rem")};
   justify-content: ${(props) => (props.center ? "center" : "")};
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 1340px;
 `;
 
 export const SectionTitle = styled.h2`

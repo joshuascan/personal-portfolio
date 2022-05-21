@@ -1,32 +1,33 @@
 import styled from "styled-components";
 
-export const GridContainer = styled.section`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  padding: 3rem;
-  place-items: center;
-  column-gap: 2rem;
-  row-gap: 10rem;
+export const ProjectContainer = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5rem auto;
 `;
 
-export const Card = styled.div`
-  text-align: center;
-  width: 400px;
-  border-radius: 4px;
-  box-shadow: 3px 3px 10px rgba(20, 20, 20, 0.5);
+export const ImageContainer = styled.div`
+  width: 550px;
+  height: 375px;
+  border-radius: 25px;
+  background-color: rgb(26, 26, 26);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Img = styled.img`
-  width: 95%;
-  height: 95%;
+  width: 90%;
+  height: 90%;
   object-fit: cover;
   overflow: hidden;
 `;
 
-export const TitleContent = styled.div`
-  text-align: center;
-  z-index: 20;
-  width: 100%;
+export const InfoContainer = styled.div`
+  width: 50%;
+  text-align: ${(props) => (props.right ? "right" : "")};
 `;
 
 export const Header = styled.h3`
@@ -34,52 +35,42 @@ export const Header = styled.h3`
   letter-spacing: 2px;
   color: ${(props) => props.theme.colors.primary};
   padding: 0.5rem 0;
-  font-size: ${(props) => (props.title ? "3rem" : "2rem")};
-`;
-
-export const Hr = styled.hr`
-  width: 50px;
-  height: 3px;
-  margin: 20px auto;
-  border: 0;
-  background: ${(props) => props.theme.colors.primary};
+  font-size: 8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 2rem;
 `;
 
 export const Description = styled.p`
-  width: 100%;
-  padding: 0 5rem;
-  margin-bottom: 1.5rem;
   color: ${(props) => props.theme.colors.secondary};
   font-size: 2rem;
+  font-weight: lighter;
   line-height: 2.4rem;
-  text-align: justify;
-`;
-
-export const TagList = styled.ul`
-  display: flex;
-  justify-content: space-around;
-  padding: 2rem;
-`;
-
-export const Tag = styled.li`
-  color: ${(props) => props.theme.colors.secondary};
-  font-size: 1.5rem;
+  padding-bottom: 1rem;
 `;
 
 export const LinkList = styled.ul`
   list-style-type: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: ${(props) => (props.right ? "flex-end" : "flex-start")};
   margin: 2.5rem 0;
 `;
 
 export const ExternalLink = styled.a`
-  font-size: 1.6rem;
-  padding: 1rem 1.5rem;
-  border-radius: 15px;
-  color: white;
-  background: ${(props) => props.theme.colors.primary};
-  transition: 0.5s ease;
+  font-size: 1.9rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin: ${(props) => (props.right ? "0 0 0 3rem" : "0 3rem 0 0")};
+  width: 150px;
+  height: 54px;
+  line-height: 27px;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  color: ${(props) => props.theme.colors.primary};
+  background: black;
+  border: 3px solid ${(props) => props.theme.colors.primary};
+  transition: 0.3s ease;
   &:hover {
     opacity: 0.65;
     cursor: pointer;

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Section } from "../../styles/GlobalComponents";
 import {
   HeroWrapper,
@@ -11,12 +10,11 @@ import {
   Img,
   Rectangle,
 } from "./HeroStyles";
-import headshot from "../../../public/images/profile_pic.jpeg";
 
 const Hero = () => {
   return (
     <HeroWrapper>
-      <Section row>
+      <Section row center>
         <LeftSection>
           <HeroHeader>
             Hi, I&apos;m <br />

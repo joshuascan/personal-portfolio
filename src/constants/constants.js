@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "Metronome",
     description:
-      "A metronome app built using React and styled components. Has the ability to change both tempo and time signature.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rutrum justo nisi, luctus posuere dui dictum et. Quisque vulputate nec odio sit amet dignissim. Aenean fermentum feugiat lectus, in pulvinar neque sollicitudin nec.",
     image: "/images/metronome.png",
     tags: ["React", "Styled Components"],
     visit: "https://scanlan-metronome-app.netlify.app/",
@@ -12,7 +12,7 @@ export const projects = [
   {
     title: "Metronome",
     description:
-      "A metronome app built using React and styled components. Has the ability to change both tempo and time signature.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rutrum justo nisi, luctus posuere dui dictum et. Quisque vulputate nec odio sit amet dignissim. Aenean fermentum feugiat lectus, in pulvinar neque sollicitudin nec.",
     image: "/images/metronome.png",
     tags: ["React", "Styled Components"],
     visit: "https://scanlan-metronome-app.netlify.app/",
@@ -22,7 +22,7 @@ export const projects = [
   {
     title: "Metronome",
     description:
-      "A metronome app built using React and styled components. Has the ability to change both tempo and time signature.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rutrum justo nisi, luctus posuere dui dictum et. Quisque vulputate nec odio sit amet dignissim. Aenean fermentum feugiat lectus, in pulvinar neque sollicitudin nec.",
     image: "/images/metronome.png",
     tags: ["React", "Styled Components"],
     visit: "https://scanlan-metronome-app.netlify.app/",
@@ -32,7 +32,7 @@ export const projects = [
   {
     title: "Metronome",
     description:
-      "A metronome app built using React and styled components. Has the ability to change both tempo and time signature.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rutrum justo nisi, luctus posuere dui dictum et. Quisque vulputate nec odio sit amet dignissim. Aenean fermentum feugiat lectus, in pulvinar neque sollicitudin nec.",
     image: "/images/metronome.png",
     tags: ["React", "Styled Components"],
     visit: "https://scanlan-metronome-app.netlify.app/",

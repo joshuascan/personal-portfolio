@@ -1,15 +1,12 @@
 import { Section, SectionTitle } from "../../styles/GlobalComponents";
 import { projects } from "../../constants/constants";
 import {
-  GridContainer,
-  Card,
-  Hr,
+  ProjectContainer,
+  ImageContainer,
   Img,
-  TitleContent,
+  InfoContainer,
   Header,
   Description,
-  TagList,
-  Tag,
   LinkList,
   ExternalLink,
 } from "./ProjectsStyles";
@@ -18,24 +15,13 @@ const Projects = () => {
   return (
     <Section id="projects">
       <SectionTitle>Projects</SectionTitle>
-      <GridContainer>
-        {projects.map(
-          ({ title, description, image, tags, visit, source, id }) => (
-            <Card key={id}>
-              <Img src={image} />
-              <TitleContent>
-                <Header title>{title}</Header>
-                <Hr />
-              </TitleContent>
+      {projects.map(({ title, description, image, tags, visit, source, id }) =>
+        id % 2 === 0 ? (
+          <ProjectContainer key={id}>
+            <ImageContainer>{/* <Img src={image} /> */}</ImageContainer>
+            <InfoContainer>
+              <Header>{title}</Header>
               <Description>{description}</Description>
-              <TitleContent>
-                <Header>Technologies</Header>
-              </TitleContent>
-              <TagList>
-                {tags.map((tag, i) => (
-                  <Tag key={i}>{tag}</Tag>
-                ))}
-              </TagList>
               <LinkList>
                 <ExternalLink href={visit} target="_blank">
                   Deployed
@@ -44,10 +30,26 @@ const Projects = () => {
                   Source
                 </ExternalLink>
               </LinkList>
-            </Card>
-          )
-        )}
-      </GridContainer>
+            </InfoContainer>
+          </ProjectContainer>
+        ) : (
+          <ProjectContainer key={id}>
+            <InfoContainer right>
+              <Header>{title}</Header>
+              <Description>{description}</Description>
+              <LinkList right>
+                <ExternalLink right href={visit} target="_blank">
+                  Deployed
+                </ExternalLink>
+                <ExternalLink right href={source} target="_blank">
+                  Source
+                </ExternalLink>
+              </LinkList>
+            </InfoContainer>
+            <ImageContainer>{/* <Img src={image} /> */}</ImageContainer>
+          </ProjectContainer>
+        )
+      )}
     </Section>
   );
 };
