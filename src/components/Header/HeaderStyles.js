@@ -1,24 +1,30 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const HeaderWrapper = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-bottom: 5rem;
 `;
 
-export const Div1 = styled.div`
+export const NavContainer = styled.div`
   display: flex;
 `;
 
-export const Div2 = styled.div`
+export const SocialContainer = styled.div`
   display: flex;
 `;
 
 export const NavLink = styled.a`
-  font-size: 2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 0.17rem;
   padding: 1.5rem;
-  color: ${(props) => props.theme.colors.primary};
+  color: ${(props) =>
+    props.href === props.pathName
+      ? props.theme.colors.primary
+      : props.theme.colors.secondary};
+  text-transform: uppercase;
   transition: 0.5s ease;
   &:hover {
     opacity: 0.65;
