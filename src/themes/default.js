@@ -1,13 +1,12 @@
-/* eslint-disable import/no-anonymous-default-export */
-export default {
+const theme = {
   fonts: {
-    title: "Space Grotesk, sans serif",
-    main: "Space Grotesk, sans serif",
+    title: "Helvetica, sans serif",
+    main: "Helvetica, sans serif",
   },
   colors: {
-    primary: "#2e5894",
-    // primary: "#223a7d",
-    secondary: "#333333",
+    primary: "#52caf5",
+    secondary: "#ffffff",
+    background: "#000000",
   },
   breakpoints: {
     sm: "screen and (max-width: 640px)",
@@ -16,3 +15,5 @@ export default {
     xl: "screen and (max-width: 1280px)",
   },
 };
+
+export default theme;

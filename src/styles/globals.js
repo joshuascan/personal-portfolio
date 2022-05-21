@@ -12,7 +12,7 @@ ${normalize};
   html {
     font-size: 62.5%;
     scroll-behavior: smooth;
-
+    background-color: ${(props) => props.theme.colors.background};
   }
   body {
     font-family: ${(props) => props.theme.fonts.main};
