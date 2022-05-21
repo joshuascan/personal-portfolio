@@ -24,7 +24,6 @@ export const SocialContainer = styled.div`
 export const NavLink = styled.a`
   font-size: 1.6rem;
   font-weight: bold;
-  letter-spacing: 0.17rem;
   padding: 1.5rem;
   color: ${(props) =>
     props.href === props.pathName

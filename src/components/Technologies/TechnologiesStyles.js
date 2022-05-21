@@ -22,6 +22,7 @@ export const ListContainer = styled.div`
 export const ListTitle = styled.h3`
   font-weight: 700;
   font-size: 2.8rem;
+  text-transform: uppercase;
   line-height: 3.2rem;
   letter-spacing: 0.02rem;
   color: ${(props) => props.theme.colors.secondary};

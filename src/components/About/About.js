@@ -1,15 +1,13 @@
 import {
   Section,
-  SectionDivider,
   SectionTitle,
   SectionText,
 } from "../../styles/GlobalComponents";
 
-const AboutMe = () => {
+const About = () => {
   return (
     <Section id="about">
-      <SectionDivider />
-      <SectionTitle>About Me</SectionTitle>
+      <SectionTitle>About</SectionTitle>
       <SectionText>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rutrum
         justo nisi, luctus posuere dui dictum et. Quisque vulputate nec odio sit
@@ -22,4 +20,4 @@ const AboutMe = () => {
   );
 };
 
-export default AboutMe;
+export default About;

@@ -1,7 +1,6 @@
 import { DiReact, DiDatabase } from "react-icons/di";
 import {
   Section,
-  SectionDivider,
   SectionTitle,
   SectionText,
 } from "../../styles/GlobalComponents";
@@ -16,7 +15,6 @@ import {
 const Technologies = () => {
   return (
     <Section id="technologies">
-      <SectionDivider />
       <SectionTitle>Technologies</SectionTitle>
       <SectionText>
         I&apos;ve worked with a range of technologies in the web development

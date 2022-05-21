@@ -8,7 +8,7 @@ export const FooterWrapper = styled.section`
 `;
 
 export const FooterContainer = styled.div`
-  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
   max-width: 1040px;
   display: flex;
   justify-content: space-between;

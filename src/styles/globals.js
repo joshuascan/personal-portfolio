@@ -9,25 +9,30 @@ ${normalize};
     margin: 0;
     padding: 0;
   }
+
   html {
     font-size: 62.5%;
     scroll-behavior: smooth;
     background-color: ${(props) => props.theme.colors.background};
   }
+
   body {
     font-family: ${(props) => props.theme.fonts.main};
     font-size: 1.6rem;
+    letter-spacing: 0.17rem;
     color: ${(props) => props.theme.colors.primary};
     cursor: default;
+  }
 
+  p {
+    color: ${(props) => props.theme.colors.secondary}
   }
-  h1,h2,h3,h4,h5,h6,button {
-    font-family: ${(props) => props.theme.fonts.title};
-  }
+
   a {
     text-decoration: none;
   }
-  li{
+
+  li {
     list-style: none;
   }
 `;
