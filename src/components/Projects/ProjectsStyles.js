@@ -9,8 +9,8 @@ export const ProjectContainer = styled.div`
 `;
 
 export const ImageContainer = styled.div`
-  width: 550px;
-  height: 375px;
+  width: 590px;
+  height: 415px;
   border-radius: 25px;
   background-color: rgb(26, 26, 26);
   display: flex;
@@ -26,7 +26,7 @@ export const Img = styled.img`
 `;
 
 export const InfoContainer = styled.div`
-  width: 50%;
+  width: 590px;
   text-align: ${(props) => (props.right ? "right" : "")};
 `;
 
