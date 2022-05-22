@@ -33,7 +33,7 @@ const ContactForm = () => {
   };
 
   return (
-    <Section>
+    <Section id="contact">
       <Header>Say Hello</Header>
       <Form onSubmit={handleSubmit}>
         <SenderContainer>

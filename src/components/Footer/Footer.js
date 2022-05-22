@@ -13,7 +13,7 @@ import {
 
 const Footer = () => {
   return (
-    <FooterWrapper id="contact">
+    <FooterWrapper>
       <FooterContainer>
         <LinkList>
           <LinkColumn>
