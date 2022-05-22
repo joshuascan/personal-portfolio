@@ -67,7 +67,7 @@ export const ExternalLink = styled.a`
   padding: 1rem 1rem;
   border-radius: 10px;
   color: ${(props) => props.theme.colors.primary};
-  background: black;
+  background: ${(props) => props.theme.colors.background};
   border: 3px solid ${(props) => props.theme.colors.primary};
   transition: 0.3s ease;
   &:hover {

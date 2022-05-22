@@ -38,37 +38,45 @@ const ContactForm = () => {
       <Form onSubmit={handleSubmit}>
         <SenderContainer>
           <Div1>
-            <Label htmlFor="name">Name</Label>
+            <label htmlFor="name" />
             <Input
               small
               name="name"
+              id="name"
               type="text"
+              placeholder="Name"
               value={message.name}
               onChange={handleChange}
             />
           </Div1>
           <Div2>
-            <Label htmlFor="email">Email</Label>
+            <label htmlFor="email" />
             <Input
               small
               name="email"
+              id="email"
               type="email"
+              placeholder="Email"
               value={message.email}
               onChange={handleChange}
             />
           </Div2>
         </SenderContainer>
-        <Label htmlFor="subject">Subject</Label>
+        <label htmlFor="subject" />
         <Input
           name="subject"
+          id="subject"
           type="text"
+          placeholder="Subject"
           value={message.subject}
           onChange={handleChange}
         />
-        <Label htmlFor="body">Message</Label>
+        <label htmlFor="body" />
         <TextArea
           name="body"
+          id="body"
           type="text"
+          placeholder="Message..."
           rows="8"
           value={message.body}
           onChange={handleChange}
