@@ -35,6 +35,21 @@ ${normalize};
   li {
     list-style: none;
   }
+
+  input, textarea {
+    border: none;
+    caret-color: ${(props) => props.theme.colors.secondary};
+    background: rgb(26, 26, 26);
+    color: ${(props) => props.theme.colors.secondary};
+  }
+
+  input:focus, textarea:focus, select:focus {
+    outline: none;
+  }
+
+  button {
+    border: none;
+  }
 `;
 
 export default GlobalStyles;

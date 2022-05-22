@@ -1,4 +1,4 @@
-import { Section, SectionTitle } from "../../styles/GlobalComponents";
+import { Section } from "../../styles/GlobalComponents";
 import { projects } from "../../constants/constants";
 import {
   ProjectContainer,

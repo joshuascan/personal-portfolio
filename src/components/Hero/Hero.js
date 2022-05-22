@@ -1,4 +1,3 @@
-import { Section } from "../../styles/GlobalComponents";
 import {
   HeroWrapper,
   HeroContent,

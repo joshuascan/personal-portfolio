@@ -30,8 +30,7 @@ export const InfoContainer = styled.div`
   text-align: ${(props) => (props.right ? "right" : "")};
 `;
 
-export const Header = styled.h3`
-  font-weight: 500;
+export const Header = styled.h2`
   letter-spacing: 2px;
   color: ${(props) => props.theme.colors.primary};
   padding: 0.5rem 0;
