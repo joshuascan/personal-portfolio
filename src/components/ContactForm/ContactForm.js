@@ -6,8 +6,8 @@ import {
   Div1,
   Div2,
   SenderContainer,
-  Label,
   Input,
+  FormNotification,
   TextArea,
   SubmitButton,
 } from "./ContactFormStyles";
@@ -16,19 +16,79 @@ const initialFormValues = {
   name: "",
   email: "",
   subject: "",
-  body: "",
+  content: "",
 };
 
 const ContactForm = () => {
   const [message, setMessage] = useState(initialFormValues);
+  const [errors, setErrors] = useState({});
+  const [buttonText, setButtonText] = useState("Send");
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+  const [showFailureMessage, setShowFailureMessage] = useState(false);
 
   const handleChange = (e) => {
     setMessage({ ...message, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleValidation = () => {
+    let tempErrors = {};
+    let isValid = true;
+
+    if (message.name.length <= 0) {
+      tempErrors["name"] = true;
+      isValid = false;
+    }
+    if (message.email.length <= 0) {
+      tempErrors["email"] = true;
+      isValid = false;
+    }
+    if (message.subject.length <= 0) {
+      tempErrors["subject"] = true;
+      isValid = false;
+    }
+    if (message.content.length <= 0) {
+      tempErrors["content"] = true;
+      isValid = false;
+    }
+
+    setErrors({ ...tempErrors });
+    console.log("errors", errors);
+    return isValid;
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(message);
+
+    let isValidForm = handleValidation();
+
+    if (isValidForm) {
+      setButtonText("Sending");
+      const res = await fetch("/api/sendgrid", {
+        body: JSON.stringify(message),
+        headers: {
+          "Content-Type": "application/json",
+        },
+        method: "POST",
+      });
+
+      const { error } = await res.json();
+      if (error) {
+        console.log(error);
+        setShowSuccessMessage(false);
+        setShowFailureMessage(true);
+        setTimeout(() => {
+          setShowFailureMessage(false);
+        }, 5000);
+        setButtonText("send");
+        return;
+      }
+      setShowSuccessMessage(true);
+      setTimeout(() => {
+        setShowSuccessMessage(false);
+      }, 5000);
+      setShowFailureMessage(false);
+      setButtonText("Send");
+    }
     setMessage(initialFormValues);
   };
 
@@ -48,6 +108,9 @@ const ContactForm = () => {
               value={message.name}
               onChange={handleChange}
             />
+            {errors?.name && (
+              <FormNotification error>Name cannot be empty</FormNotification>
+            )}
           </Div1>
           <Div2>
             <label htmlFor="email" />
@@ -60,6 +123,11 @@ const ContactForm = () => {
               value={message.email}
               onChange={handleChange}
             />
+            {errors?.email && (
+              <FormNotification error>
+                Email address cannot be empty
+              </FormNotification>
+            )}
           </Div2>
         </SenderContainer>
         <label htmlFor="subject" />
@@ -71,17 +139,35 @@ const ContactForm = () => {
           value={message.subject}
           onChange={handleChange}
         />
-        <label htmlFor="body" />
+        {errors?.subject && (
+          <FormNotification error>Subject cannot be empty</FormNotification>
+        )}
+        <label htmlFor="content" />
         <TextArea
-          name="body"
-          id="body"
+          name="content"
+          id="content"
           type="text"
           placeholder="Message..."
           rows="8"
-          value={message.body}
+          value={message.content}
           onChange={handleChange}
         />
-        <SubmitButton type="submit">Send</SubmitButton>
+        {errors?.content && (
+          <FormNotification error>
+            Message body cannot be empty
+          </FormNotification>
+        )}
+        <SubmitButton type="submit">{buttonText}</SubmitButton>
+        {showSuccessMessage && (
+          <FormNotification center send>
+            Your message has been delivered!
+          </FormNotification>
+        )}
+        {showFailureMessage && (
+          <FormNotification error center send>
+            Oops! Something went wrong, please try again.
+          </FormNotification>
+        )}
       </Form>
     </Section>
   );

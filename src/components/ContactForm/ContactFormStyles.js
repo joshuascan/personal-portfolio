@@ -54,7 +54,7 @@ export const Input = styled.input`
 export const TextArea = styled.textarea`
   width: 700px;
   padding: 1rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
   border-radius: 15px;
   letter-spacing: 0.17rem;
   resize: vertical;
@@ -65,11 +65,23 @@ export const TextArea = styled.textarea`
   }
 `;
 
+export const FormNotification = styled.p`
+  position: relative;
+  font-size: ${(props) => (props.send ? "2rem" : "1.6rem")};
+  font-weight: ${(props) => (props.send ? "normal" : "lighter")};
+  font-style: italic;
+  /* font-style: ${(props) => (props.send ? "normal" : "italic")}; */
+  text-align: ${(props) => (props.center ? "center" : "left")};
+  color: ${(props) =>
+    props.error ? "red" : `${(props) => props.theme.colors.secondary}`};
+  bottom: 1rem;
+  left: 1rem;
+`;
+
 export const SubmitButton = styled.button`
   font-size: 1.9rem;
   font-weight: bold;
-  margin: 0 auto;
-  margin-bottom: 3rem;
+  margin: 1rem auto 3rem auto;
   text-align: center;
   text-transform: uppercase;
   width: 150px;
