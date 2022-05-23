@@ -64,7 +64,12 @@ const ContactForm = () => {
     if (isValidForm) {
       setButtonText("Sending");
       const res = await fetch("/api/sendgrid", {
-        body: JSON.stringify(message),
+        body: JSON.stringify({
+          name: message.name,
+          email: message.email,
+          subject: message.subject,
+          content: message.content,
+        }),
         headers: {
           "Content-Type": "application/json",
         },
