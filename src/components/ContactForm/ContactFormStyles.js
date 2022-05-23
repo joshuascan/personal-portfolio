@@ -70,7 +70,6 @@ export const FormNotification = styled.p`
   font-size: ${(props) => (props.send ? "2rem" : "1.6rem")};
   font-weight: ${(props) => (props.send ? "normal" : "lighter")};
   font-style: italic;
-  /* font-style: ${(props) => (props.send ? "normal" : "italic")}; */
   text-align: ${(props) => (props.center ? "center" : "left")};
   color: ${(props) =>
     props.error ? "red" : `${(props) => props.theme.colors.secondary}`};
