@@ -6,8 +6,8 @@ import {
   Div1,
   Div2,
   SenderContainer,
-  Label,
   Input,
+  FormNotification,
   TextArea,
   SubmitButton,
 } from "./ContactFormStyles";
@@ -76,14 +76,20 @@ const ContactForm = () => {
         console.log(error);
         setShowSuccessMessage(false);
         setShowFailureMessage(true);
+        setTimeout(() => {
+          setShowFailureMessage(false);
+        }, 5000);
         setButtonText("send");
         return;
       }
       setShowSuccessMessage(true);
+      setTimeout(() => {
+        setShowSuccessMessage(false);
+      }, 5000);
       setShowFailureMessage(false);
       setButtonText("Send");
     }
-    // setMessage(initialFormValues);
+    setMessage(initialFormValues);
   };
 
   return (
@@ -102,7 +108,9 @@ const ContactForm = () => {
               value={message.name}
               onChange={handleChange}
             />
-            {errors?.name && <p>Name cannot be empty</p>}
+            {errors?.name && (
+              <FormNotification error>Name cannot be empty</FormNotification>
+            )}
           </Div1>
           <Div2>
             <label htmlFor="email" />
@@ -115,7 +123,11 @@ const ContactForm = () => {
               value={message.email}
               onChange={handleChange}
             />
-            {errors?.email && <p>Email address cannot be empty</p>}
+            {errors?.email && (
+              <FormNotification error>
+                Email address cannot be empty
+              </FormNotification>
+            )}
           </Div2>
         </SenderContainer>
         <label htmlFor="subject" />
@@ -127,7 +139,9 @@ const ContactForm = () => {
           value={message.subject}
           onChange={handleChange}
         />
-        {errors?.subject && <p>Subject cannot be empty</p>}
+        {errors?.subject && (
+          <FormNotification error>Subject cannot be empty</FormNotification>
+        )}
         <label htmlFor="content" />
         <TextArea
           name="content"
@@ -138,11 +152,21 @@ const ContactForm = () => {
           value={message.content}
           onChange={handleChange}
         />
-        {errors?.content && <p>Message body cannot be empty</p>}
+        {errors?.content && (
+          <FormNotification error>
+            Message body cannot be empty
+          </FormNotification>
+        )}
         <SubmitButton type="submit">{buttonText}</SubmitButton>
-        {showSuccessMessage && <p>Your message has been delivered.</p>}
+        {showSuccessMessage && (
+          <FormNotification center send>
+            Your message has been delivered!
+          </FormNotification>
+        )}
         {showFailureMessage && (
-          <p>Oops! Something went wrong, please try again.</p>
+          <FormNotification error center send>
+            Oops! Something went wrong, please try again.
+          </FormNotification>
         )}
       </Form>
     </Section>
