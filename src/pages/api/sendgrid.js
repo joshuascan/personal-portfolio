@@ -7,7 +7,7 @@ const sendEmail = async (req, res) => {
     await sendgrid.send({
       to: "joshuascan@gmail.com",
       from: "joshscanlanportfolio@gmail.com",
-      subject: `[New Message from ${req.body.name}]: ${req.body.subject}`,
+      subject: `[New Message from ${req.body.name}] : ${req.body.subject}`,
       html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
       <html lang="en">
       <head>
