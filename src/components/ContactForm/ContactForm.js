@@ -16,7 +16,7 @@ const initialFormValues = {
   name: "",
   email: "",
   subject: "",
-  body: "",
+  content: "",
 };
 
 const ContactForm = () => {
@@ -26,10 +26,23 @@ const ContactForm = () => {
     setMessage({ ...message, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(message);
-    setMessage(initialFormValues);
+
+    const res = await fetch("/api/sendgrid", {
+      body: JSON.stringify(message),
+      headers: {
+        "Content-Type": "application/json",
+      },
+      method: "POST",
+    });
+
+    const { error } = await res.json();
+    if (error) {
+      console.log(error);
+      return;
+    }
+    // setMessage(initialFormValues);
   };
 
   return (
@@ -71,14 +84,14 @@ const ContactForm = () => {
           value={message.subject}
           onChange={handleChange}
         />
-        <label htmlFor="body" />
+        <label htmlFor="content" />
         <TextArea
-          name="body"
-          id="body"
+          name="content"
+          id="content"
           type="text"
           placeholder="Message..."
           rows="8"
-          value={message.body}
+          value={message.content}
           onChange={handleChange}
         />
         <SubmitButton type="submit">Send</SubmitButton>
