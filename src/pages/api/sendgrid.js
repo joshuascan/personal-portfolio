@@ -12,16 +12,12 @@ const sendEmail = async (req, res) => {
       <html lang="en">
       <head>
         <meta charset="utf-8">
-      
         <title>The HTML5 Herald</title>
         <meta name="description" content="The HTML5 Herald">
         <meta name="author" content="SitePoint">
         <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
-      
         <link rel="stylesheet" href="css/styles.css?v=1.0">
-      
       </head>
-      
       <body>
         <div class="container" style="margin-left: 20px;margin-right: 20px;">
           <h3>You've got a new message from ${req.body.name}. Their email address is: ✉️${req.body.email} </h3>
