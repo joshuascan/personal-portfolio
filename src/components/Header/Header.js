@@ -51,22 +51,30 @@ const Header = () => {
       </NavContainer>
       <SocialContainer>
         <Link href="https://github.com/joshuascan" passHref>
-          <SocialIcons target="_blank" rel="noreferrer noopener">
+          <SocialIcons title="GitHub" target="_blank" rel="noreferrer noopener">
             <FiGithub size="2rem" />
           </SocialIcons>
         </Link>
         <Link href="https://linkedin.com/in/jscanlan" passHref>
-          <SocialIcons target="_blank" rel="noreferrer noopener">
+          <SocialIcons
+            title="LinkedIn"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             <FiLinkedin size="2rem" />
           </SocialIcons>
         </Link>
         <Link href="mailto:joshuascan@gmail.com" passHref>
-          <SocialIcons target="_blank" rel="noreferrer noopener">
+          <SocialIcons title="Email" target="_blank" rel="noreferrer noopener">
             <FiMail size="2rem" />
           </SocialIcons>
         </Link>
         <Link href="https://opensea.io/josh-scanlan" passHref>
-          <SocialIcons target="_blank" rel="noreferrer noopener">
+          <SocialIcons
+            title="OpenSea"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             <Img src="/images/opensea-logo.png" />
           </SocialIcons>
         </Link>
