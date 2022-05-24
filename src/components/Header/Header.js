@@ -14,11 +14,17 @@ import {
 const Header = () => {
   const router = useRouter();
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+    router.push("/");
+  };
+
   return (
     <HeaderWrapper id="">
-      <Link href="/#" passHref>
-        <HomeArrow pathName={router.asPath}>^</HomeArrow>
-      </Link>
+      <HomeArrow onClick={scrollToTop}>^</HomeArrow>
       <NavContainer>
         <li>
           <Link href="#about" passHref>

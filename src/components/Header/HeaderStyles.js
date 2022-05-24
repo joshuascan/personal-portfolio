@@ -13,7 +13,7 @@ export const HeaderWrapper = styled.div`
   background: ${(props) => props.theme.colors.background};
 `;
 
-export const HomeArrow = styled.a`
+export const HomeArrow = styled.p`
   position: fixed;
   left: 0;
   bottom: 0;
@@ -25,6 +25,7 @@ export const HomeArrow = styled.a`
   transition: 0.3s ease;
   &:hover {
     opacity: 1;
+    cursor: pointer;
   }
 `;
 
