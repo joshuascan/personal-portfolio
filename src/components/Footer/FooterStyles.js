@@ -10,8 +10,18 @@ export const FooterWrapper = styled.section`
 export const FooterContainer = styled.div`
   border-top: 1px solid rgba(255, 255, 255, 0.25);
   max-width: 1040px;
+  height: 75px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const FooterText = styled.p`
+  font-family: ${(props) => props.theme.fonts.lightObl};
+  font-size: 1.8rem;
+  color: ${(props) => props.theme.colors.secondary};
+  opacity: 0.5;
+  margin: 1.6rem;
 `;
 
 export const LinkList = styled.ul`

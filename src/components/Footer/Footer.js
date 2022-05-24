@@ -9,13 +9,14 @@ import {
   LinkList,
   LinkTitle,
   SocialIconsContainer,
+  FooterText,
 } from "./FooterStyles";
 
 const Footer = () => {
   return (
     <FooterWrapper>
       <FooterContainer>
-        <LinkList>
+        {/* <LinkList>
           <LinkColumn>
             <LinkTitle>Call</LinkTitle>
             <Link href="tel:805-570-0498" passHref>
@@ -24,13 +25,16 @@ const Footer = () => {
           </LinkColumn>
           <LinkColumn>
             <LinkTitle>Email</LinkTitle>
-            <Link href="mailto:joshuascan@gmail.com" passHref>
+            <Link href={mailTo()} passHref>
               <LinkItem target="_blank" rel="noreferrer noopener">
-                joshuascan@gmail.com
+                joshua<span hidden>adsf78yfha738fh</span>scan@gmail.com
               </LinkItem>
             </Link>
           </LinkColumn>
-        </LinkList>
+        </LinkList> */}
+        <FooterText>
+          Designed by Andrea Wilson / Built by Josh Scanlan
+        </FooterText>
       </FooterContainer>
     </FooterWrapper>
   );

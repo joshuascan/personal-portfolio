@@ -64,11 +64,11 @@ const Header = () => {
             <FiLinkedin size="2rem" />
           </SocialIcons>
         </Link>
-        <Link href="mailto:joshuascan@gmail.com" passHref>
+        {/* <Link href="mailto:joshuascan@gmail.com" passHref>
           <SocialIcons title="Email" target="_blank" rel="noreferrer noopener">
             <FiMail size="2rem" />
           </SocialIcons>
-        </Link>
+        </Link> */}
         <Link href="https://opensea.io/josh-scanlan" passHref>
           <SocialIcons
             title="OpenSea"
