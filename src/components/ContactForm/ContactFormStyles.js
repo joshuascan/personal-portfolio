@@ -8,7 +8,7 @@ export const Header = styled.h3`
   font-size: 8rem;
   text-transform: uppercase;
   font-family: ${(props) => props.theme.fonts.black};
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 `;
 
 export const Form = styled.form`

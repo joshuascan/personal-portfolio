@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 export const ProjectContainer = styled.div`
-  width: 100%;
+  width: 97%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 5rem auto;
+  /* padding: 1rem; */
 `;
 
 export const ImageContainer = styled.div`

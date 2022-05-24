@@ -19,7 +19,7 @@ export const LeftSection = styled.div`
 
 export const RightSection = styled.div`
   margin-right: 15rem;
-  margin-left: 12rem;
+  margin-left: 14rem;
 `;
 
 export const HeroHeader = styled.h1`
