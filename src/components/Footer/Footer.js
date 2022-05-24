@@ -31,18 +31,6 @@ const Footer = () => {
             </Link>
           </LinkColumn>
         </LinkList>
-        <SocialIconsContainer>
-          <Link href="https://github.com/joshuascan" passHref>
-            <SocialIcons target="_blank" rel="noreferrer noopener">
-              <AiFillGithub size="3rem" />
-            </SocialIcons>
-          </Link>
-          <Link href="https://linkedin.com/in/jscanlan" passHref>
-            <SocialIcons target="_blank" rel="noreferrer noopener">
-              <AiFillLinkedin size="3rem" />
-            </SocialIcons>
-          </Link>
-        </SocialIconsContainer>
       </FooterContainer>
     </FooterWrapper>
   );

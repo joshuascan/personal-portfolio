@@ -61,10 +61,15 @@ export const SocialContainer = styled.div`
 `;
 
 export const SocialIcons = styled.a`
-  margin-bottom: 1.8rem;
+  margin-bottom: 2rem;
   color: ${(props) => props.theme.colors.secondary};
   transition: 0.3s ease;
   &:hover {
     opacity: 0.65;
   }
+`;
+
+export const Img = styled.img`
+  width: 2rem;
+  height: 2rem;
 `;

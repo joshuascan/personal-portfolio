@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import {
   HeaderWrapper,
   HomeArrow,
@@ -8,6 +8,7 @@ import {
   SocialContainer,
   NavLink,
   SocialIcons,
+  Img,
 } from "./HeaderStyles";
 
 const Header = () => {
@@ -45,12 +46,22 @@ const Header = () => {
       <SocialContainer>
         <Link href="https://github.com/joshuascan" passHref>
           <SocialIcons target="_blank" rel="noreferrer noopener">
-            <AiFillGithub size="3rem" />
+            <FiGithub size="2rem" />
           </SocialIcons>
         </Link>
         <Link href="https://linkedin.com/in/jscanlan" passHref>
           <SocialIcons target="_blank" rel="noreferrer noopener">
-            <AiFillLinkedin size="3rem" />
+            <FiLinkedin size="2rem" />
+          </SocialIcons>
+        </Link>
+        <Link href="mailto:joshuascan@gmail.com" passHref>
+          <SocialIcons target="_blank" rel="noreferrer noopener">
+            <FiMail size="2rem" />
+          </SocialIcons>
+        </Link>
+        <Link href="https://opensea.io/josh-scanlan" passHref>
+          <SocialIcons target="_blank" rel="noreferrer noopener">
+            <Img src="/images/opensea-logo.png" />
           </SocialIcons>
         </Link>
       </SocialContainer>

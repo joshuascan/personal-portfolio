@@ -17,7 +17,7 @@ export const FooterContainer = styled.div`
 export const LinkList = styled.ul`
   display: grid;
   grid-template-columns: repeat(3, minmax(85px, 220px));
-  gap: 40px;
+  gap: 80px;
   padding: 40px 0 28px;
 `;
 
@@ -26,11 +26,11 @@ export const LinkColumn = styled.div`
   flex-direction: column;
   max-width: 220px;
   width: 100%;
+  margin-left: 2rem;
 `;
 
 export const LinkTitle = styled.h4`
-  font-style: normal;
-  font-weight: 600;
+  font-family: ${(props) => props.theme.fonts.bold};
   font-size: 1.2rem;
   line-height: 2.4rem;
   text-transform: uppercase;
@@ -40,6 +40,7 @@ export const LinkTitle = styled.h4`
 `;
 
 export const LinkItem = styled.a`
+  font-family: ${(props) => props.theme.fonts.light};
   font-size: 1.8rem;
   color: ${(props) => props.theme.colors.secondary};
   opacity: 0.5;
