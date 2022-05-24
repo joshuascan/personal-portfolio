@@ -94,7 +94,7 @@ export const SubmitButton = styled.button`
   border: 3px solid ${(props) => props.theme.colors.primary};
   transition: 0.3s ease;
   &:hover {
-    opacity: 0.85;
+    opacity: 0.65;
     cursor: pointer;
   }
 `;

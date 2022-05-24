@@ -7,7 +7,7 @@ const Technologies = () => {
     <Section align>
       <List>
         <ListItem>
-          <DiReact size="3rem" />
+          <DiReact size="4rem" />
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
             React, Redux, Next.js, Ethers, MaterialUI, SCSS, and
@@ -15,7 +15,7 @@ const Technologies = () => {
           </ListParagraph>
         </ListItem>
         <ListItem>
-          <DiDatabase size="3rem" />
+          <DiDatabase size="4rem" />
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
             Node, Express, Knex, Solidity, Hardhat, and PostgreSQL

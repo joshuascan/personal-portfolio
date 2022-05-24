@@ -23,9 +23,13 @@ export const RightSection = styled.div`
 `;
 
 export const HeroHeader = styled.h1`
-  font-size: 3rem;
+  font-size: 3.1rem;
   font-family: ${(props) => props.theme.fonts.bold};
   color: ${(props) => props.theme.colors.secondary};
+`;
+
+export const FirstLine = styled.div`
+  margin-bottom: 1.5rem;
 `;
 
 export const Bolder = styled.span`
@@ -42,7 +46,7 @@ export const HeroText = styled.p`
   font-size: 1.5rem;
   font-family: ${(props) => props.theme.fonts.lightObl};
   color: ${(props) => props.theme.colors.secondary};
-  line-height: 1.4;
+  line-height: 1.5;
 `;
 
 export const ImageContainer = styled.div`

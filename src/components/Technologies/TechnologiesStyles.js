@@ -22,7 +22,7 @@ export const ListTitle = styled.h3`
   line-height: 3.2rem;
   letter-spacing: 0.02rem;
   color: ${(props) => props.theme.colors.secondary};
-  margin: 0.8rem 0;
+  margin: 1.5rem 0 0.8rem 0;
 `;
 
 export const ListParagraph = styled.p`

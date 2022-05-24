@@ -44,7 +44,7 @@ export const Description = styled.p`
   color: ${(props) => props.theme.colors.secondary};
   font-size: 2rem;
   font-family: ${(props) => props.theme.fonts.light};
-  line-height: 2.4rem;
+  line-height: 1.3;
   padding-bottom: 1rem;
 `;
 
@@ -62,8 +62,8 @@ export const ExternalLink = styled.a`
   text-transform: uppercase;
   margin: ${(props) => (props.right ? "0 0 0 3rem" : "0 3rem 0 0")};
   width: 150px;
-  height: 54px;
-  line-height: 54px;
+  height: 58px;
+  line-height: 58px;
   border-radius: 10px;
   color: ${(props) => props.theme.colors.primary};
   background: ${(props) => props.theme.colors.background};

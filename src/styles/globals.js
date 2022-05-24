@@ -50,7 +50,7 @@ ${normalize};
 
   body {
     font-size: 1.6rem;
-    letter-spacing: 0.17rem;
+    letter-spacing: 0.2rem;
     color: ${(props) => props.theme.colors.primary};
     cursor: default;
   }
