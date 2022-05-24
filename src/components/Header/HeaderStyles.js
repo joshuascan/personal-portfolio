@@ -19,7 +19,7 @@ export const HomeArrow = styled.a`
   bottom: 0;
   margin-left: 4rem;
   font-size: 10rem;
-  font-weight: bold;
+  font-family: ${(props) => props.theme.fonts.bold};
   color: ${(props) => props.theme.colors.secondary};
   opacity: 0.2;
   transition: 0.3s ease;
@@ -36,7 +36,7 @@ export const NavContainer = styled.div`
 
 export const NavLink = styled.a`
   font-size: 1.6rem;
-  font-weight: bold;
+  font-family: ${(props) => props.theme.fonts.bold};
   padding: 1.5rem;
   color: ${(props) =>
     props.href === props.pathName

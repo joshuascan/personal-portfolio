@@ -4,6 +4,38 @@ import { normalize } from "styled-normalize";
 const GlobalStyles = createGlobalStyle`
 ${normalize};
 
+@font-face {
+  font-family: 'HelveticaLTStd-Blk';
+  src: url('/fonts/HelveticaLTStd-Blk.ttf') format('truetype');
+  font-style: normal;
+  font-weight: bolder;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HelveticaLTStd-Bold';
+  src: url('/fonts/HelveticaLTStd-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HelveticaLTStd-Light';
+  src: url('/fonts/HelveticaLTStd-Light.ttf') format('truetype');
+  font-style: normal;
+  font-weight: lighter;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HelveticaLTStd-LightObl';
+  src: url('/fonts/HelveticaLTStd-LightObl.ttf') format('truetype');
+  font-style: oblique;
+  font-weight: lighter;
+  font-display: swap;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -17,7 +49,6 @@ ${normalize};
   }
 
   body {
-    font-family: ${(props) => props.theme.fonts.main};
     font-size: 1.6rem;
     letter-spacing: 0.17rem;
     color: ${(props) => props.theme.colors.primary};
