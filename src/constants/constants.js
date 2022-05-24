@@ -9,30 +9,41 @@ export const projects = [
     id: 0,
   },
   {
-    title: "Project #2",
+    title: "Ethereum To-do List",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rutrum justo nisi, luctus posuere dui dictum et. Quisque vulputate nec odio sit amet dignissim. Aenean fermentum feugiat lectus, in pulvinar neque sollicitudin nec.",
+      "A to-do list utilizing the Ethereum blockchain. Built with Next.js, Ethers, Solidity, and Tailwind.",
     image: "/images/metronome.png",
     visit: "https://scanlan-metronome-app.netlify.app/",
-    source: "https://github.com/joshuascan/metronome",
+    source: "https://github.com/joshuascan/eth-todolist-frontend",
+    contract: "https://github.com/joshuascan/eth-todolist-contract",
     id: 1,
   },
   {
-    title: "Project #3",
+    title: "Portfolio Site",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rutrum justo nisi, luctus posuere dui dictum et. Quisque vulputate nec odio sit amet dignissim. Aenean fermentum feugiat lectus, in pulvinar neque sollicitudin nec.",
+      "Personal portfolio built with Next.js and styled components. Utilizies the SendGrid API for the contact form.",
     image: "/images/metronome.png",
-    visit: "https://scanlan-metronome-app.netlify.app/",
     source: "https://github.com/joshuascan/metronome",
     id: 2,
   },
   {
-    title: "Project #4",
+    title: "Polygon Domain Service",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rutrum justo nisi, luctus posuere dui dictum et. Quisque vulputate nec odio sit amet dignissim. Aenean fermentum feugiat lectus, in pulvinar neque sollicitudin nec.",
+      "Domain service built on the Polygon network. Built using React, Solidity, and Ethers.",
+    image: "/images/metronome.png",
+    visit: "https://chrundle-dns.vercel.app/",
+    source: "https://github.com/joshuascan/domain-name-service-frontend",
+    contract: "https://github.com/joshuascan/domain-contract",
+    id: 3,
+  },
+  {
+    title: "Watering Scheduler",
+    description:
+      "An app that tracks plant watering schedules. Frontend was built using React and MaterialUI, and the backend was built using Node, Express, and Knex with a PostgreSQL database.",
     image: "/images/metronome.png",
     visit: "https://scanlan-metronome-app.netlify.app/",
-    source: "https://github.com/joshuascan/metronome",
-    id: 3,
+    source: "https://github.com/joshuascan/plants-need-water-too",
+    backend: "https://github.com/ft-watermyplants-1/back-end",
+    id: 4,
   },
 ];

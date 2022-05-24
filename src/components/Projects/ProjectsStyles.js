@@ -32,14 +32,14 @@ export const InfoContainer = styled.div`
 `;
 
 export const Header = styled.h2`
-  letter-spacing: 2px;
   color: ${(props) => props.theme.colors.primary};
   padding: 0.5rem 0;
   font-size: 6.5rem;
   text-transform: uppercase;
   font-family: ${(props) => props.theme.fonts.black};
-  margin-bottom: 2rem;
+  margin-top: 2rem;
   letter-spacing: 0.4rem;
+  line-height: 1;
 `;
 
 export const Description = styled.p`
@@ -48,6 +48,7 @@ export const Description = styled.p`
   font-family: ${(props) => props.theme.fonts.light};
   line-height: 1.3;
   padding-bottom: 1rem;
+  margin-top: 1rem;
 `;
 
 export const LinkList = styled.ul`
