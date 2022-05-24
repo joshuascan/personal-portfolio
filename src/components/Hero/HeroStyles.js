@@ -26,10 +26,11 @@ export const HeroHeader = styled.h1`
   font-size: 3.1rem;
   font-family: ${(props) => props.theme.fonts.bold};
   color: ${(props) => props.theme.colors.secondary};
+  line-height: 1;
 `;
 
 export const FirstLine = styled.div`
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 `;
 
 export const Bolder = styled.span`
@@ -40,6 +41,8 @@ export const Name = styled.span`
   font-size: 10rem;
   color: ${(props) => props.theme.colors.primary};
   text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 0.6rem;
 `;
 
 export const HeroText = styled.p`
@@ -47,6 +50,7 @@ export const HeroText = styled.p`
   font-family: ${(props) => props.theme.fonts.lightObl};
   color: ${(props) => props.theme.colors.secondary};
   line-height: 1.5;
+  margin-top: 3rem;
 `;
 
 export const ImageContainer = styled.div`

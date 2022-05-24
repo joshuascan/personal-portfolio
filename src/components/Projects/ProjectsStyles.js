@@ -34,10 +34,11 @@ export const Header = styled.h2`
   letter-spacing: 2px;
   color: ${(props) => props.theme.colors.primary};
   padding: 0.5rem 0;
-  font-size: 8rem;
+  font-size: 6.5rem;
   text-transform: uppercase;
   font-family: ${(props) => props.theme.fonts.black};
   margin-bottom: 2rem;
+  letter-spacing: 0.4rem;
 `;
 
 export const Description = styled.p`
@@ -56,14 +57,14 @@ export const LinkList = styled.ul`
 `;
 
 export const ExternalLink = styled.a`
-  font-size: 1.9rem;
+  font-size: 1.6rem;
   font-family: ${(props) => props.theme.fonts.black};
   text-align: center;
   text-transform: uppercase;
   margin: ${(props) => (props.right ? "0 0 0 3rem" : "0 3rem 0 0")};
-  width: 150px;
-  height: 58px;
-  line-height: 58px;
+  width: 140px;
+  height: 55px;
+  line-height: 55px;
   border-radius: 10px;
   color: ${(props) => props.theme.colors.primary};
   background: ${(props) => props.theme.colors.background};

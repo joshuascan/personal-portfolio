@@ -82,14 +82,15 @@ export const FormNotification = styled.p`
 `;
 
 export const SubmitButton = styled.button`
-  font-size: 1.9rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
   font-family: ${(props) => props.theme.fonts.black};
   margin: 2rem auto 3rem auto;
   text-align: center;
   text-transform: uppercase;
-  width: 150px;
-  height: 54px;
-  line-height: 54px;
+  width: 140px;
+  height: 55px;
+  line-height: 55px;
   border-radius: 10px;
   color: ${(props) => props.theme.colors.primary};
   background: ${(props) => props.theme.colors.background};
