@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import {
   HeaderWrapper,
+  HomeArrow,
   NavContainer,
   SocialContainer,
   NavLink,
@@ -13,7 +14,10 @@ const Header = () => {
   const router = useRouter();
 
   return (
-    <HeaderWrapper>
+    <HeaderWrapper id="">
+      <Link href="/#" passHref>
+        <HomeArrow pathName={router.asPath}>^</HomeArrow>
+      </Link>
       <NavContainer>
         <li>
           <Link href="#about" passHref>
