@@ -21,7 +21,7 @@ export const ImageContainer = styled.div`
 export const Img = styled.img`
   width: 90%;
   height: 90%;
-  object-fit: cover;
+  object-fit: contain;
   overflow: hidden;
 `;
 

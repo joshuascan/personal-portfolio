@@ -17,7 +17,9 @@ const Projects = () => {
       {projects.map(({ title, description, image, visit, source, id }) =>
         id % 2 === 0 ? (
           <ProjectContainer key={id}>
-            <ImageContainer>{/* <Img src={image} /> */}</ImageContainer>
+            <ImageContainer>
+              <Img src={image} />
+            </ImageContainer>
             <InfoContainer>
               <Header>{title}</Header>
               <Description>{description}</Description>
@@ -45,7 +47,9 @@ const Projects = () => {
                 </ExternalLink>
               </LinkList>
             </InfoContainer>
-            <ImageContainer>{/* <Img src={image} /> */}</ImageContainer>
+            <ImageContainer>
+              <Img src={image} />
+            </ImageContainer>
           </ProjectContainer>
         )
       )}
