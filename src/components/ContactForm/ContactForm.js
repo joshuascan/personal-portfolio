@@ -23,7 +23,7 @@ const ContactForm = () => {
   const [message, setMessage] = useState(initialFormValues);
   const [errors, setErrors] = useState({});
   const [buttonText, setButtonText] = useState("Send");
-  const [showSuccessMessage, setShowSuccessMessage] = useState(true);
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const [showFailureMessage, setShowFailureMessage] = useState(false);
 
   const handleChange = (e) => {

@@ -60,13 +60,6 @@ class MyDocument extends Document {
             type="font/ttf"
             crossOrigin=""
           />
-          <link
-            rel="preload"
-            href="/fonts/HelveticaLTStd-Roman.ttf"
-            as="font"
-            type="font/ttf"
-            crossOrigin=""
-          />
         </Head>
         <body>
           <Main />

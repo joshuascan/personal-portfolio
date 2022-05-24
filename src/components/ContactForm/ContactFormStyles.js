@@ -71,11 +71,7 @@ export const TextArea = styled.textarea`
 export const FormNotification = styled.p`
   position: relative;
   font-size: ${(props) => (props.send ? "2rem" : "1.6rem")};
-  font-family: ${(props) =>
-    props.send
-      ? `${(props) => props.theme.fonts.bold}`
-      : `${(props) => props.theme.fonts.lightObl}`};
-  font-style: italic;
+  font-family: ${(props) => props.theme.fonts.lightObl};
   text-align: ${(props) => (props.center ? "center" : "left")};
   color: ${(props) =>
     props.error ? "red" : `${(props) => props.theme.colors.secondary}`};
@@ -91,7 +87,7 @@ export const SubmitButton = styled.button`
   text-transform: uppercase;
   width: 150px;
   height: 54px;
-  line-height: 27px;
+  line-height: 54px;
   border-radius: 10px;
   color: ${(props) => props.theme.colors.primary};
   background: ${(props) => props.theme.colors.background};

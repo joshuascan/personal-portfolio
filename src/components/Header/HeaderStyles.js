@@ -32,6 +32,7 @@ export const NavContainer = styled.div`
   display: flex;
   margin-top: 3rem;
   margin-right: 45rem;
+  padding-bottom: 1rem;
 `;
 
 export const NavLink = styled.a`
