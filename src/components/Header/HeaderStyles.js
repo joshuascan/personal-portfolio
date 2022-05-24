@@ -13,12 +13,25 @@ export const HeaderWrapper = styled.div`
   background: ${(props) => props.theme.colors.background};
 `;
 
-export const NavContainer = styled.div`
-  display: flex;
+export const HomeArrow = styled.a`
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin-left: 4rem;
+  font-size: 10rem;
+  font-weight: bold;
+  color: ${(props) => props.theme.colors.secondary};
+  opacity: 0.2;
+  transition: 0.3s ease;
+  &:hover {
+    opacity: 1;
+  }
 `;
 
-export const SocialContainer = styled.div`
+export const NavContainer = styled.div`
   display: flex;
+  margin-top: 3rem;
+  margin-right: 45rem;
 `;
 
 export const NavLink = styled.a`
@@ -37,8 +50,17 @@ export const NavLink = styled.a`
   }
 `;
 
+export const SocialContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  margin: 3rem;
+  right: 0;
+  top: 0;
+`;
+
 export const SocialIcons = styled.a`
-  margin: 1.8rem;
+  margin-bottom: 1.8rem;
   color: ${(props) => props.theme.colors.secondary};
   transition: 0.3s ease;
   &:hover {
