@@ -41,7 +41,8 @@ export const Label = styled.label`
 export const Input = styled.input`
   width: ${(props) => (props.small ? "344px" : "700px")};
   font-family: ${(props) => props.theme.fonts.light};
-  padding: 1rem;
+  padding: 1.5rem;
+  padding-top: 2rem;
   height: 50px;
   margin-bottom: 1.5rem;
   border-radius: 12px;
@@ -55,8 +56,9 @@ export const Input = styled.input`
 
 export const TextArea = styled.textarea`
   width: 700px;
+  min-height: 225px;
   font-family: ${(props) => props.theme.fonts.light};
-  padding: 1rem;
+  padding: 2rem 1.5rem;
   margin-bottom: 1.5rem;
   border-radius: 15px;
   letter-spacing: 0.17rem;
@@ -82,7 +84,7 @@ export const FormNotification = styled.p`
 export const SubmitButton = styled.button`
   font-size: 1.9rem;
   font-family: ${(props) => props.theme.fonts.black};
-  margin: 1rem auto 3rem auto;
+  margin: 2rem auto 3rem auto;
   text-align: center;
   text-transform: uppercase;
   width: 150px;

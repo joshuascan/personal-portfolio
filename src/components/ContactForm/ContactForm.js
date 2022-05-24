@@ -88,8 +88,8 @@ const ContactForm = () => {
       }, 5000);
       setShowFailureMessage(false);
       setButtonText("Send");
+      setMessage(initialFormValues);
     }
-    setMessage(initialFormValues);
   };
 
   return (
