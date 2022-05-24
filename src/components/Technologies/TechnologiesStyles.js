@@ -16,8 +16,8 @@ export const ListItem = styled.li`
 `;
 
 export const ListTitle = styled.h3`
-  font-weight: 700;
-  font-size: 2.8rem;
+  font-family: ${(props) => props.theme.fonts.black};
+  font-size: 2.5rem;
   text-transform: uppercase;
   line-height: 3.2rem;
   letter-spacing: 0.02rem;
@@ -29,7 +29,6 @@ export const ListParagraph = styled.p`
   font-size: 1.8rem;
   line-height: 3rem;
   text-align: center;
-  font-weight: lighter;
-  font-style: italic;
+  font-family: ${(props) => props.theme.fonts.lightObl};
   color: ${(props) => props.theme.colors.secondary};
 `;

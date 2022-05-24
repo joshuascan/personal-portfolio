@@ -1,7 +1,9 @@
 const theme = {
   fonts: {
-    title: "Helvetica, sans serif",
-    main: "Helvetica, sans serif",
+    black: "HelveticaLTStd-Blk, sans serif",
+    bold: "HelveticaLTStd-Bold, sans serif",
+    light: "HelveticaLTStd-Light, sans serif",
+    lightObl: "HelveticaLTStd-LightObl, sans serif",
   },
   colors: {
     primary: "#52caf5",

@@ -7,7 +7,7 @@ export const Header = styled.h3`
   padding: 0.5rem 0;
   font-size: 8rem;
   text-transform: uppercase;
-  font-weight: bold;
+  font-family: ${(props) => props.theme.fonts.black};
   margin-bottom: 2rem;
 `;
 
@@ -39,8 +39,10 @@ export const Label = styled.label`
 `;
 
 export const Input = styled.input`
-  width: ${(props) => (props.small ? "347px" : "700px")};
+  width: ${(props) => (props.small ? "344px" : "700px")};
+  font-family: ${(props) => props.theme.fonts.light};
   padding: 1rem;
+  height: 50px;
   margin-bottom: 1.5rem;
   border-radius: 12px;
   letter-spacing: 0.17rem;
@@ -53,6 +55,7 @@ export const Input = styled.input`
 
 export const TextArea = styled.textarea`
   width: 700px;
+  font-family: ${(props) => props.theme.fonts.light};
   padding: 1rem;
   margin-bottom: 1.5rem;
   border-radius: 15px;
@@ -68,8 +71,7 @@ export const TextArea = styled.textarea`
 export const FormNotification = styled.p`
   position: relative;
   font-size: ${(props) => (props.send ? "2rem" : "1.6rem")};
-  font-weight: ${(props) => (props.send ? "normal" : "lighter")};
-  font-style: italic;
+  font-family: ${(props) => props.theme.fonts.lightObl};
   text-align: ${(props) => (props.center ? "center" : "left")};
   color: ${(props) =>
     props.error ? "red" : `${(props) => props.theme.colors.secondary}`};
@@ -79,13 +81,13 @@ export const FormNotification = styled.p`
 
 export const SubmitButton = styled.button`
   font-size: 1.9rem;
-  font-weight: bold;
+  font-family: ${(props) => props.theme.fonts.black};
   margin: 1rem auto 3rem auto;
   text-align: center;
   text-transform: uppercase;
   width: 150px;
   height: 54px;
-  line-height: 27px;
+  line-height: 54px;
   border-radius: 10px;
   color: ${(props) => props.theme.colors.primary};
   background: ${(props) => props.theme.colors.background};

@@ -6,6 +6,7 @@ import {
   RightSection,
   ImageContainer,
   HeroHeader,
+  Bolder,
   HeroText,
   Img,
   Rectangle,
@@ -17,8 +18,10 @@ const Hero = () => {
       <HeroContent>
         <LeftSection>
           <HeroHeader>
-            Hi, I&apos;m <br />
-            <Name>Josh Scanlan,</Name>
+            <Bolder>
+              Hi, I&apos;m <br />
+              <Name>Josh Scanlan</Name>
+            </Bolder>
             <br />
             Web Developer
           </HeroHeader>

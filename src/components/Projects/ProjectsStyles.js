@@ -36,14 +36,14 @@ export const Header = styled.h2`
   padding: 0.5rem 0;
   font-size: 8rem;
   text-transform: uppercase;
-  font-weight: bold;
+  font-family: ${(props) => props.theme.fonts.black};
   margin-bottom: 2rem;
 `;
 
 export const Description = styled.p`
   color: ${(props) => props.theme.colors.secondary};
   font-size: 2rem;
-  font-weight: lighter;
+  font-family: ${(props) => props.theme.fonts.light};
   line-height: 2.4rem;
   padding-bottom: 1rem;
 `;
@@ -57,14 +57,13 @@ export const LinkList = styled.ul`
 
 export const ExternalLink = styled.a`
   font-size: 1.9rem;
-  font-weight: bold;
+  font-family: ${(props) => props.theme.fonts.black};
   text-align: center;
   text-transform: uppercase;
   margin: ${(props) => (props.right ? "0 0 0 3rem" : "0 3rem 0 0")};
   width: 150px;
   height: 54px;
-  line-height: 27px;
-  padding: 1rem 1rem;
+  line-height: 54px;
   border-radius: 10px;
   color: ${(props) => props.theme.colors.primary};
   background: ${(props) => props.theme.colors.background};
