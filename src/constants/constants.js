@@ -13,7 +13,7 @@ export const projects = [
     description:
       "A to-do list utilizing the Ethereum blockchain. Built with Next.js, Ethers, Solidity, and Tailwind.",
     image: "/images/metronome.png",
-    visit: "https://scanlan-metronome-app.netlify.app/",
+    visit: "",
     source: "https://github.com/joshuascan/eth-todolist-frontend",
     contract: "https://github.com/joshuascan/eth-todolist-contract",
     id: 1,
@@ -31,7 +31,7 @@ export const projects = [
     description:
       "Domain service built on the Polygon network. Built using React, Solidity, and Ethers.",
     image: "/images/metronome.png",
-    visit: "https://chrundle-dns.vercel.app/",
+    visit: "",
     source: "https://github.com/joshuascan/domain-name-service-frontend",
     contract: "https://github.com/joshuascan/domain-contract",
     id: 3,
@@ -41,7 +41,7 @@ export const projects = [
     description:
       "An app that tracks plant watering schedules. Frontend was built using React and MaterialUI, and the backend was built using Node, Express, and Knex with a PostgreSQL database.",
     image: "/images/metronome.png",
-    visit: "https://scanlan-metronome-app.netlify.app/",
+    visit: "",
     source: "https://github.com/joshuascan/plants-need-water-too",
     backend: "https://github.com/ft-watermyplants-1/back-end",
     id: 4,
