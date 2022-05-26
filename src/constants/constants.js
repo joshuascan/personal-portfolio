@@ -13,7 +13,7 @@ export const projects = [
     description:
       "A to-do list utilizing the Ethereum blockchain. Built with Next.js, Ethers, Solidity, and Tailwind.",
     image: "/images/metronome.png",
-    visit: "",
+    visit: "https://todolist-dapp-eight.vercel.app/",
     source: "https://github.com/joshuascan/eth-todolist-frontend",
     contract: "https://github.com/joshuascan/eth-todolist-contract",
     id: 1,
@@ -21,7 +21,7 @@ export const projects = [
   {
     title: "Portfolio Site",
     description:
-      "Personal portfolio built with Next.js and styled components. Utilizies the SendGrid API for the contact form.",
+      "Personal portfolio built with Next.js and styled components. Utilizes the SendGrid API for the contact form.",
     image: "/images/metronome.png",
     source: "https://github.com/joshuascan/metronome",
     id: 2,
