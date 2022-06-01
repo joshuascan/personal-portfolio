@@ -1,11 +1,15 @@
 import styled from "styled-components";
 
+export const ProjectsWrapper = styled.div`
+  margin: 5rem 0;
+`;
+
 export const ProjectContainer = styled.div`
   width: 97%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 5rem auto;
+  margin: 10rem auto;
   /* padding: 1rem; */
 `;
 
