@@ -15,16 +15,15 @@ export const HeaderWrapper = styled.div`
 
 export const HomeArrow = styled.p`
   position: fixed;
-  left: 0;
+  left: 4rem;
   bottom: 0;
-  margin-left: 4rem;
   font-size: 9.6rem;
   font-family: ${(props) => props.theme.fonts.bold};
   color: ${(props) => props.theme.colors.secondary};
   opacity: 0.2;
-  transition: 0.3s ease;
   &:hover {
     opacity: 1;
+    transition: opacity 0.3s ease-out;
     cursor: pointer;
   }
 `;
