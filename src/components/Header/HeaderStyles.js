@@ -22,8 +22,7 @@ export const HomeArrow = styled.p`
   color: ${(props) => props.theme.colors.secondary};
   opacity: 0.2;
   &:hover {
-    opacity: 1;
-    transition: opacity 0.3s ease-out;
+    opacity: 0.65;
     cursor: pointer;
   }
 `;
