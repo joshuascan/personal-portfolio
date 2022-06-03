@@ -9,7 +9,7 @@ ${normalize};
   src: url('/fonts/HelveticaLTStd-Blk.ttf') format('truetype');
   font-style: normal;
   font-weight: bolder;
-  font-display: swap;
+  font-display: fallback;
 }
 
 @font-face {
@@ -17,7 +17,7 @@ ${normalize};
   src: url('/fonts/HelveticaLTStd-Bold.ttf') format('truetype');
   font-style: normal;
   font-weight: bold;
-  font-display: swap;
+  font-display: fallback;
 }
 
 @font-face {
@@ -25,7 +25,7 @@ ${normalize};
   src: url('/fonts/HelveticaLTStd-Light.ttf') format('truetype');
   font-style: normal;
   font-weight: lighter;
-  font-display: swap;
+  font-display: fallback;
 }
 
 @font-face {
@@ -33,7 +33,7 @@ ${normalize};
   src: url('/fonts/HelveticaLTStd-LightObl.ttf') format('truetype');
   font-style: oblique;
   font-weight: lighter;
-  font-display: swap;
+  font-display: fallback;
 }
 
 * {
