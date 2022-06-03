@@ -21,6 +21,9 @@ export const HomeArrow = styled.p`
   font-family: ${(props) => props.theme.fonts.bold};
   color: ${(props) => props.theme.colors.secondary};
   opacity: 0.2;
+  transition: opacity 0.3s ease;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
   &:hover {
     opacity: 0.65;
     cursor: pointer;
