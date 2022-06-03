@@ -25,7 +25,7 @@ export const HomeArrow = styled.p`
   transform: translateZ(0);
   -webkit-transform: translateZ(0);
   &:hover {
-    opacity: 0.65;
+    opacity: 1;
     cursor: pointer;
   }
 `;
