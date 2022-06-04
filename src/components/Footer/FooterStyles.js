@@ -17,7 +17,9 @@ export const FooterContainer = styled.div`
 `;
 
 export const FooterText = styled.p`
-  font-family: ${(props) => props.theme.fonts.lightObl};
+  font-family: ${(props) => props.theme.fonts.lightObl}, sans-serif;
+  font-style: oblique;
+  font-weight: lighter;
   font-size: 1.8rem;
   color: ${(props) => props.theme.colors.secondary};
   opacity: 0.5;

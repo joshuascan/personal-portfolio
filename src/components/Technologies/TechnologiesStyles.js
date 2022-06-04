@@ -29,6 +29,8 @@ export const ListParagraph = styled.p`
   font-size: 1.8rem;
   line-height: 3rem;
   text-align: center;
-  font-family: ${(props) => props.theme.fonts.lightObl};
+  font-family: ${(props) => props.theme.fonts.lightObl}, sans-serif;
+  font-style: oblique;
+  font-weight: lighter;
   color: ${(props) => props.theme.colors.secondary};
 `;

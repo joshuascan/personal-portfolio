@@ -47,7 +47,9 @@ export const Name = styled.span`
 
 export const HeroText = styled.p`
   font-size: 1.5rem;
-  font-family: ${(props) => props.theme.fonts.lightObl};
+  font-family: ${(props) => props.theme.fonts.lightObl}, sans-serif;
+  font-style: oblique;
+  font-weight: lighter;
   color: ${(props) => props.theme.colors.secondary};
   line-height: 1.5;
   margin-top: 3rem;
