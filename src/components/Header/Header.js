@@ -23,22 +23,22 @@ const Header = () => {
   };
 
   return (
-    <HeaderWrapper id="">
+    <HeaderWrapper>
       <HomeArrow onClick={scrollToTop}>^</HomeArrow>
       <NavContainer>
         <li>
           <Link href="#about" passHref>
-            <NavLink pathName={router.asPath}>About</NavLink>
+            <NavLink pathname={router.asPath}>About</NavLink>
           </Link>
         </li>
         <li>
           <Link href="#projects" passHref>
-            <NavLink pathName={router.asPath}>Projects</NavLink>
+            <NavLink pathname={router.asPath}>Projects</NavLink>
           </Link>
         </li>
         <li>
           <Link href="#contact" passHref>
-            <NavLink pathName={router.asPath}>Contact</NavLink>
+            <NavLink pathname={router.asPath}>Contact</NavLink>
           </Link>
         </li>
         <li>
