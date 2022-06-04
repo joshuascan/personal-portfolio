@@ -42,13 +42,13 @@ export const NavLink = styled.a`
   font-family: ${(props) => props.theme.fonts.bold};
   padding: 1.5rem;
   color: ${(props) =>
-    props.href === props.pathName
+    props.href === props.pathname
       ? props.theme.colors.primary
       : props.theme.colors.secondary};
   text-transform: uppercase;
   transition: 0.3s ease;
   &:hover {
-    opacity: ${(props) => (props.href === props.pathName ? 1 : 0.65)};
+    opacity: ${(props) => (props.href === props.pathname ? 1 : 0.65)};
     cursor: pointer;
   }
 `;
