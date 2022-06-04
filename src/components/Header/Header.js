@@ -23,7 +23,7 @@ const Header = () => {
   };
 
   return (
-    <HeaderWrapper id="">
+    <HeaderWrapper>
       <HomeArrow onClick={scrollToTop}>^</HomeArrow>
       <NavContainer>
         <li>
