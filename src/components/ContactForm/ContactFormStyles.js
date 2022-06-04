@@ -39,6 +39,8 @@ export const Label = styled.label`
 `;
 
 export const Input = styled.input`
+  caret-color: ${(props) => props.theme.colors.secondary};
+  color: ${(props) => props.theme.colors.secondary};
   width: ${(props) => (props.small ? "344px" : "700px")};
   font-family: ${(props) => props.theme.fonts.light};
   padding: 1.5rem;
@@ -55,6 +57,8 @@ export const Input = styled.input`
 `;
 
 export const TextArea = styled.textarea`
+  caret-color: ${(props) => props.theme.colors.secondary};
+  color: ${(props) => props.theme.colors.secondary};
   width: 700px;
   min-height: 225px;
   font-family: ${(props) => props.theme.fonts.light};
