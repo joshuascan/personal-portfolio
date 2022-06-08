@@ -11,7 +11,7 @@ export const projects = [
   {
     title: "Ethereum To-do List",
     description:
-      "A to-do list utilizing the Ethereum blockchain. Built with Next.js, Ethers, Solidity, and Tailwind.",
+      "A to-do list on the Ethereum blockchain. Built with Next.js, Ethers, Solidity, and Tailwind CSS.",
     image: "/images/metronome.png",
     visit: "https://todolist-dapp-eight.vercel.app/",
     source: "https://github.com/joshuascan/eth-todolist-frontend",
@@ -29,9 +29,9 @@ export const projects = [
   {
     title: "Polygon Domain Service",
     description:
-      "Domain service built on the Polygon network. Built using React, Solidity, and Ethers.",
+      "Domain name service on the Polygon network. Built using React, Solidity, Ethers, and Tailwind CSS.",
     image: "/images/metronome.png",
-    visit: "",
+    visit: "https://dum-name-service.vercel.app/",
     source: "https://github.com/joshuascan/domain-name-service-frontend",
     contract: "https://github.com/joshuascan/domain-contract",
     id: 3,
