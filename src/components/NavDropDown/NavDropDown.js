@@ -51,7 +51,7 @@ const NavDropDown = () => {
               target="_blank"
               rel="noreferrer noopener"
             >
-              <FiGithub size="2rem" />
+              <FiGithub size="3rem" />
             </SocialIcon>
           </Link>
           <Link href="https://linkedin.com/in/jscanlan" passHref>
@@ -60,7 +60,7 @@ const NavDropDown = () => {
               target="_blank"
               rel="noreferrer noopener"
             >
-              <FiLinkedin size="2rem" />
+              <FiLinkedin size="3rem" />
             </SocialIcon>
           </Link>
           <Link href="https://opensea.io/josh-scanlan" passHref>

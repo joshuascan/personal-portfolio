@@ -18,11 +18,14 @@ export const Menu = styled.button`
   background-color: ${(props) => props.theme.colors.background};
   color: ${(props) => props.theme.colors.secondary};
   cursor: pointer;
-  right: 0;
+  margin-top: 1rem;
+  margin-right: 1rem;
 `;
 
 export const NavWrapper = styled.div`
-  display: ${(props) => (props.visible ? "block" : "none")};
+  height: ${(props) => (props.visible ? "30vh" : "0px")};
+  transition: height 0.4s ease-in-out;
+  overflow: hidden;
 `;
 
 export const LinkContainer = styled.div`
@@ -32,9 +35,9 @@ export const LinkContainer = styled.div`
 `;
 
 export const NavLink = styled.a`
-  font-size: 1.7rem;
+  font-size: 2.8rem;
   font-family: ${(props) => props.theme.fonts.bold};
-  margin: 0.5rem;
+  margin: 1rem;
   color: ${(props) =>
     props.href === props.pathname
       ? props.theme.colors.primary
@@ -48,11 +51,11 @@ export const SocialContainer = styled.div`
 `;
 
 export const SocialIcon = styled.a`
-  margin: 0.5rem;
+  margin: 1.5rem 2.5rem;
   color: ${(props) => props.theme.colors.secondary};
   cursor: pointer;
 `;
 
 export const Img = styled.img`
-  width: 2rem;
+  width: 3rem;
 `;
