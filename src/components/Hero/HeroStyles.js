@@ -100,5 +100,8 @@ export const Rectangle = styled.div`
   bottom: 15px;
 
   @media ${({ theme }) => theme.breakpoints.sm} {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 `;
