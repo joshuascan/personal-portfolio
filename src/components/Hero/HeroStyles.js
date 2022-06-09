@@ -16,12 +16,11 @@ export const LeftSection = styled.div`
   text-align: right;
   max-width: 600px;
   margin-left: 3rem;
-  border: 1px solid red;
 `;
 
 export const RightSection = styled.div`
   margin-right: 15rem;
-  margin-left: 14rem;
+  margin-left: 12rem;
 `;
 
 export const HeroHeader = styled.h1`
