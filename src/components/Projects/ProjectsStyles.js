@@ -11,12 +11,17 @@ export const ProjectsWrapper = styled.div`
 export const ProjectContainer = styled.div`
   width: 97%;
   display: flex;
+  flex-direction: ${({ id }) => (id % 2 === 0 ? "" : "row-reverse")};
   align-items: center;
   justify-content: space-around;
   margin: 10rem auto;
 
   @media ${({ theme }) => theme.breakpoints.xl} {
     justify-content: space-around;
+  }
+
+  @media ${({ theme }) => theme.breakpoints.lg} {
+    flex-direction: column;
   }
 `;
 
@@ -44,7 +49,7 @@ export const Img = styled.img`
 
 export const InfoContainer = styled.div`
   width: 590px;
-  text-align: ${(props) => (props.right ? "right" : "")};
+  text-align: ${({ id }) => (id % 2 === 0 ? "" : "right")};
 
   @media ${({ theme }) => theme.breakpoints.xl} {
     width: 480px;
@@ -78,7 +83,7 @@ export const Description = styled.p`
 export const LinkList = styled.ul`
   list-style-type: none;
   display: flex;
-  justify-content: ${(props) => (props.right ? "flex-end" : "flex-start")};
+  justify-content: ${({ id }) => (id % 2 === 0 ? "flex-start" : "flex-end")};
   margin: 2.5rem 0;
 `;
 
@@ -87,7 +92,7 @@ export const ExternalLink = styled.a`
   font-family: ${({ theme }) => theme.fonts.black};
   text-align: center;
   text-transform: uppercase;
-  margin: ${(props) => (props.right ? "0 0 0 3rem" : "0 3rem 0 0")};
+  margin: ${({ id }) => (id % 2 === 0 ? "0 3rem 0 0" : "0 0 0 3rem")};
   width: 140px;
   height: 55px;
   line-height: 55px;

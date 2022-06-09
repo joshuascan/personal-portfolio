@@ -30,72 +30,41 @@ const Projects = () => {
             contract,
             backend,
             id,
-          }) =>
-            id % 2 === 0 ? (
-              <ProjectContainer key={id}>
+          }) => {
+            return (
+              <ProjectContainer key={id} id={id}>
                 <ImageContainer>{/* <Img src={image} /> */}</ImageContainer>
-                <InfoContainer>
+                <InfoContainer id={id}>
                   <Header>{title}</Header>
                   <Description>{description}</Description>
-                  <LinkList>
+                  <LinkList id={id}>
                     {title === "Portfolio Site" ? (
-                      <ExternalLink onClick={handleClick}>
+                      <ExternalLink onClick={handleClick} id={id}>
                         Deployed
                       </ExternalLink>
                     ) : (
-                      <ExternalLink href={visit} target="_blank">
+                      <ExternalLink href={visit} target="_blank" id={id}>
                         Deployed
                       </ExternalLink>
                     )}
-                    <ExternalLink href={source} target="_blank">
+                    <ExternalLink href={source} target="_blank" id={id}>
                       Source
                     </ExternalLink>
                     {contract !== undefined ? (
-                      <ExternalLink href={contract} target="_blank">
+                      <ExternalLink href={contract} target="_blank" id={id}>
                         Contract
                       </ExternalLink>
                     ) : null}
                     {backend !== undefined ? (
-                      <ExternalLink href={backend} target="_blank">
+                      <ExternalLink href={backend} target="_blank" id={id}>
                         Backend
                       </ExternalLink>
                     ) : null}
                   </LinkList>
                 </InfoContainer>
               </ProjectContainer>
-            ) : (
-              <ProjectContainer key={id}>
-                <InfoContainer right>
-                  <Header>{title}</Header>
-                  <Description>{description}</Description>
-                  <LinkList right>
-                    {title === "Portfolio Site" ? (
-                      <ExternalLink right onClick={handleClick}>
-                        Deployed
-                      </ExternalLink>
-                    ) : (
-                      <ExternalLink right href={visit} target="_blank">
-                        Deployed
-                      </ExternalLink>
-                    )}
-                    <ExternalLink right href={source} target="_blank">
-                      Source
-                    </ExternalLink>
-                    {contract !== undefined ? (
-                      <ExternalLink right href={contract} target="_blank">
-                        Contract
-                      </ExternalLink>
-                    ) : null}
-                    {backend !== undefined ? (
-                      <ExternalLink right href={backend} target="_blank">
-                        Backend
-                      </ExternalLink>
-                    ) : null}
-                  </LinkList>
-                </InfoContainer>
-                <ImageContainer>{/* <Img src={image} /> */}</ImageContainer>
-              </ProjectContainer>
-            )
+            );
+          }
         )}
       </ProjectsWrapper>
     </Section>
