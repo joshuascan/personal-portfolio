@@ -21,53 +21,15 @@ export const FooterText = styled.p`
   font-style: oblique;
   font-weight: lighter;
   font-size: 1.8rem;
+  text-align: center;
   color: ${({ theme }) => theme.colors.secondary};
   opacity: 0.5;
   margin: 1.6rem;
 `;
 
-export const LinkList = styled.ul`
-  display: grid;
-  grid-template-columns: repeat(3, minmax(85px, 220px));
-  gap: 80px;
-  padding: 40px 0 28px;
-`;
-
-export const LinkColumn = styled.div`
-  display: flex;
-  flex-direction: column;
-  max-width: 220px;
-  width: 100%;
-  margin-left: 2rem;
-`;
-
-export const LinkTitle = styled.h4`
-  font-family: ${({ theme }) => theme.fonts.bold};
-  font-size: 1.2rem;
-  line-height: 2.4rem;
-  text-transform: uppercase;
-  color: ${({ theme }) => theme.colors.secondary};
-  opacity: 0.75;
-  margin-bottom: 16px;
-`;
-
-export const LinkItem = styled.a`
-  font-family: ${({ theme }) => theme.fonts.light};
-  font-size: 1.8rem;
-  color: ${({ theme }) => theme.colors.secondary};
-  opacity: 0.5;
-  margin-bottom: 1.6rem;
-  transition: 0.3s ease;
-  position: relative;
-  left: 0;
-
-  &:hover {
-    opacity: 0.65;
-    left: 6px;
+export const NewLine = styled.span`
+  @media ${({ theme }) => theme.breakpoints.md} {
+    display: block;
+    margin-top: 0.5rem;
   }
-`;
-
-export const SocialIconsContainer = styled.div`
-  display: flex;
-  align-items: center;
 `;
