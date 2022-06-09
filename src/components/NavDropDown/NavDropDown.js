@@ -1,43 +1,42 @@
+import { useState } from "react";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import { FiGithub, FiLinkedin, FiMenu } from "react-icons/fi";
 import {
-  HeaderWrapper,
-  HomeArrow,
+  DropDownContainer,
+  MenuContainer,
+  Menu,
   NavWrapper,
   LinkContainer,
-  SocialContainer,
   NavLink,
+  SocialContainer,
   SocialIcon,
   Img,
-} from "./HeaderStyles";
-import NavDropDown from "../NavDropDown/NavDropDown";
+} from "./NavDropDownStyles";
 
-const Header = () => {
-  const router = useRouter();
+const NavDropDown = () => {
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-    router.push("/");
+  const toggleNav = () => {
+    setIsNavExpanded(!isNavExpanded);
   };
 
   return (
-    <HeaderWrapper>
-      <HomeArrow onClick={scrollToTop}>^</HomeArrow>
-      <NavDropDown />
-      <NavWrapper>
+    <DropDownContainer>
+      <MenuContainer>
+        <Menu onClick={toggleNav}>
+          <FiMenu size={"40px"} />
+        </Menu>
+      </MenuContainer>
+      <NavWrapper visible={isNavExpanded}>
         <LinkContainer>
           <Link href="#about" passHref>
-            <NavLink pathname={router.asPath}>About</NavLink>
+            <NavLink>About</NavLink>
           </Link>
           <Link href="#projects" passHref>
-            <NavLink pathname={router.asPath}>Projects</NavLink>
+            <NavLink>Projects</NavLink>
           </Link>
           <Link href="#contact" passHref>
-            <NavLink pathname={router.asPath}>Contact</NavLink>
+            <NavLink>Contact</NavLink>
           </Link>
           <Link href="/images/resume.pdf" passHref>
             <NavLink target="_blank" rel="noreferrer noopener">
@@ -52,7 +51,7 @@ const Header = () => {
               target="_blank"
               rel="noreferrer noopener"
             >
-              <FiGithub size="2rem" />
+              <FiGithub size="3rem" />
             </SocialIcon>
           </Link>
           <Link href="https://linkedin.com/in/jscanlan" passHref>
@@ -61,14 +60,9 @@ const Header = () => {
               target="_blank"
               rel="noreferrer noopener"
             >
-              <FiLinkedin size="2rem" />
+              <FiLinkedin size="3rem" />
             </SocialIcon>
           </Link>
-          {/* <Link href="mailto:joshuascan@gmail.com" passHref>
-          <SocialIcon title="Email" target="_blank" rel="noreferrer noopener">
-            <FiMail size="2rem" />
-          </SocialIcon>
-        </Link> */}
           <Link href="https://opensea.io/josh-scanlan" passHref>
             <SocialIcon
               title="OpenSea"
@@ -80,8 +74,8 @@ const Header = () => {
           </Link>
         </SocialContainer>
       </NavWrapper>
-    </HeaderWrapper>
+    </DropDownContainer>
   );
 };
 
-export default Header;
+export default NavDropDown;

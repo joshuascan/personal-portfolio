@@ -23,15 +23,3 @@ export const SectionText = styled.p`
   line-height: 1.4;
   padding-bottom: 2.4rem;
 `;
-
-export const SectionDivider = styled.div`
-  width: 300px;
-  height: 10px;
-  border-radius: 10px;
-  margin: 2rem 0;
-  background: linear-gradient(
-    340deg,
-    ${(props) => props.theme.colors.primary} 50%,
-    ${(props) => props.theme.colors.secondary} 100%
-  );
-`;
