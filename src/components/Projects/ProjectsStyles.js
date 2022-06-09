@@ -4,7 +4,11 @@ export const ProjectsWrapper = styled.div`
   margin: 5rem 0;
 
   @media ${({ theme }) => theme.breakpoints.xl} {
-    margin: 2rem 0;
+    margin: 10rem 0;
+  }
+
+  @media ${({ theme }) => theme.breakpoints.lg} {
+    margin: 6rem 0 4rem 0;
   }
 `;
 
@@ -22,6 +26,7 @@ export const ProjectContainer = styled.div`
 
   @media ${({ theme }) => theme.breakpoints.lg} {
     flex-direction: column;
+    margin: 7rem auto;
   }
 `;
 
@@ -37,6 +42,12 @@ export const ImageContainer = styled.div`
   @media ${({ theme }) => theme.breakpoints.xl} {
     width: 480px;
     height: 338px;
+  }
+
+  @media ${({ theme }) => theme.breakpoints.lg} {
+    width: 590px;
+    height: 415px;
+    margin-bottom: 2rem;
   }
 `;
 
@@ -54,6 +65,11 @@ export const InfoContainer = styled.div`
   @media ${({ theme }) => theme.breakpoints.xl} {
     width: 480px;
   }
+
+  @media ${({ theme }) => theme.breakpoints.lg} {
+    text-align: center;
+    width: 590px;
+  }
 `;
 
 export const Header = styled.h2`
@@ -69,6 +85,10 @@ export const Header = styled.h2`
   @media ${({ theme }) => theme.breakpoints.xl} {
     font-size: 6rem;
   }
+
+  @media ${({ theme }) => theme.breakpoints.lg} {
+    font-size: 6.5rem;
+  }
 `;
 
 export const Description = styled.p`
@@ -78,6 +98,11 @@ export const Description = styled.p`
   line-height: 1.3;
   padding-bottom: 1rem;
   margin-top: 1rem;
+
+  @media ${({ theme }) => theme.breakpoints.lg} {
+    margin-top: 0;
+    padding-bottom: 0;
+  }
 `;
 
 export const LinkList = styled.ul`
@@ -85,6 +110,11 @@ export const LinkList = styled.ul`
   display: flex;
   justify-content: ${({ id }) => (id % 2 === 0 ? "flex-start" : "flex-end")};
   margin: 2.5rem 0;
+
+  @media ${({ theme }) => theme.breakpoints.lg} {
+    justify-content: center;
+    margin: 2rem 0 4rem 0;
+  }
 `;
 
 export const ExternalLink = styled.a`
@@ -104,5 +134,9 @@ export const ExternalLink = styled.a`
   &:hover {
     opacity: 0.65;
     cursor: pointer;
+  }
+
+  @media ${({ theme }) => theme.breakpoints.lg} {
+    margin: 0 1.5rem;
   }
 `;

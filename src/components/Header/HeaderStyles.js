@@ -27,6 +27,11 @@ export const HomeArrow = styled.p`
     cursor: pointer;
   }
 
+  @media ${({ theme }) => theme.breakpoints.lg} {
+    font-size: 8rem;
+    left: 2rem;
+  }
+
   @media ${({ theme }) => theme.breakpoints.md} {
     display: none;
   }

@@ -8,6 +8,10 @@ export const Section = styled.section`
   align-items: ${(props) => (props.align ? "center" : "")};
   margin: 0 auto;
   max-width: 1340px;
+
+  @media ${({ theme }) => theme.breakpoints.lg} {
+    padding: ${(props) => (props.nopadding ? "0" : "2rem 3.5rem")};
+  }
 `;
 
 export const SectionTitle = styled.h2`
