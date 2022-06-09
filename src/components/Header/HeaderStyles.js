@@ -45,8 +45,7 @@ export const LinkContainer = styled.div`
   margin-right: 45rem;
   padding-bottom: 1rem;
 
-  @media ${({ theme }) => theme.breakpoints.lg} {
-    margin-top: 1rem;
+  @media ${({ theme }) => theme.breakpoints.xl} {
     margin-right: 30rem;
   }
 `;
@@ -73,9 +72,13 @@ export const SocialContainer = styled.div`
   position: fixed;
   background-color: ${({ theme }) => theme.colors.background};
   padding: 1rem 3rem 1rem 1rem;
-  border-radius: 12px;
+  border-radius: 0 0 0 12px;
   right: 0;
   top: 0;
+
+  @media ${({ theme }) => theme.breakpoints.xl} {
+    padding-right: 1rem;
+  }
 `;
 
 export const SocialIcon = styled.a`
