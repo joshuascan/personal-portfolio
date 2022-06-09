@@ -2,8 +2,7 @@ import styled from "styled-components";
 
 export const HeaderWrapper = styled.div`
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: center;
   position: fixed;
   left: 0;
   right: 0;
@@ -34,6 +33,12 @@ export const HomeArrow = styled.p`
 `;
 
 export const NavWrapper = styled.div`
+  @media ${({ theme }) => theme.breakpoints.xl} {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
   @media ${({ theme }) => theme.breakpoints.md} {
     display: none;
   }
@@ -41,12 +46,12 @@ export const NavWrapper = styled.div`
 
 export const LinkContainer = styled.div`
   display: flex;
+  align-items: center;
   margin-top: 2rem;
   margin-right: 45rem;
   padding-bottom: 1rem;
-
   @media ${({ theme }) => theme.breakpoints.xl} {
-    margin-right: 30rem;
+    margin-right: 0;
   }
 `;
 
@@ -75,10 +80,6 @@ export const SocialContainer = styled.div`
   border-radius: 0 0 0 12px;
   right: 0;
   top: 0;
-
-  @media ${({ theme }) => theme.breakpoints.xl} {
-    padding-right: 1rem;
-  }
 `;
 
 export const SocialIcon = styled.a`

@@ -21,7 +21,10 @@ const Hero = () => {
           <HeroHeader>
             <Bolder>
               <FirstLine>Hi, I&apos;m</FirstLine>
-              <Name>Josh Scanlan</Name>
+              <Name>
+                Josh
+                <br /> Scanlan
+              </Name>
             </Bolder>
             <br />
             Web Developer

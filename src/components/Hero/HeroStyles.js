@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HeroWrapper = styled.div`
   padding-top: 10rem;
-  height: 875px;
+  padding-bottom: 5rem;
 `;
 
 export const HeroContent = styled.div`
@@ -10,17 +10,31 @@ export const HeroContent = styled.div`
   flex-direction: row;
   align-items: center;
   margin-top: 5rem;
+
+  @media ${({ theme }) => theme.breakpoints.xl} {
+    flex-direction: column-reverse;
+  }
 `;
 
 export const LeftSection = styled.div`
   text-align: right;
-  max-width: 600px;
   margin-left: 3rem;
+
+  @media ${({ theme }) => theme.breakpoints.xl} {
+    width: 75%;
+    margin-left: 0;
+    margin-top: 3rem;
+    text-align: center;
+  }
 `;
 
 export const RightSection = styled.div`
   margin-right: 15rem;
   margin-left: 12rem;
+
+  @media ${({ theme }) => theme.breakpoints.xl} {
+    margin: 0;
+  }
 `;
 
 export const HeroHeader = styled.h1`
@@ -44,6 +58,11 @@ export const Name = styled.span`
   text-transform: uppercase;
   line-height: 1;
   letter-spacing: 0.6rem;
+
+  @media ${({ theme }) => theme.breakpoints.xl} {
+    /* display: block; */
+    /* margin: 1rem 0; */
+  }
 `;
 
 export const HeroText = styled.p`
