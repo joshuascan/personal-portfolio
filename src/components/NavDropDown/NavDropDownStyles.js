@@ -44,7 +44,7 @@ export const SocialContainer = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 2rem;
-  margin-bottom: 5rem;
+  margin-bottom: 12rem;
 `;
 
 export const SocialIcon = styled.a`
