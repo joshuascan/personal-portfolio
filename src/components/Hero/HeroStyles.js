@@ -79,6 +79,7 @@ export const ImageContainer = styled.div`
 
   @media ${({ theme }) => theme.breakpoints.sm} {
     width: 80vw;
+    height: 100%;
   }
 `;
 
@@ -100,8 +101,6 @@ export const Rectangle = styled.div`
   bottom: 15px;
 
   @media ${({ theme }) => theme.breakpoints.sm} {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+    width: 80vw;
   }
 `;
