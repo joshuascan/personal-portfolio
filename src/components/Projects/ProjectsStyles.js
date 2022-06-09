@@ -2,15 +2,22 @@ import styled from "styled-components";
 
 export const ProjectsWrapper = styled.div`
   margin: 5rem 0;
+
+  @media ${({ theme }) => theme.breakpoints.xl} {
+    margin: 2rem 0;
+  }
 `;
 
 export const ProjectContainer = styled.div`
   width: 97%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 10rem auto;
-  /* padding: 1rem; */
+
+  @media ${({ theme }) => theme.breakpoints.xl} {
+    justify-content: space-around;
+  }
 `;
 
 export const ImageContainer = styled.div`
@@ -21,6 +28,11 @@ export const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media ${({ theme }) => theme.breakpoints.xl} {
+    width: 480px;
+    height: 338px;
+  }
 `;
 
 export const Img = styled.img`
@@ -33,6 +45,10 @@ export const Img = styled.img`
 export const InfoContainer = styled.div`
   width: 590px;
   text-align: ${(props) => (props.right ? "right" : "")};
+
+  @media ${({ theme }) => theme.breakpoints.xl} {
+    width: 480px;
+  }
 `;
 
 export const Header = styled.h2`
@@ -44,6 +60,10 @@ export const Header = styled.h2`
   margin-top: 2rem;
   letter-spacing: 0.4rem;
   line-height: 1;
+
+  @media ${({ theme }) => theme.breakpoints.xl} {
+    font-size: 6rem;
+  }
 `;
 
 export const Description = styled.p`
