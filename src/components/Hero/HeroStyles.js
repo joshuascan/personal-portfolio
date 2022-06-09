@@ -25,8 +25,8 @@ export const RightSection = styled.div`
 
 export const HeroHeader = styled.h1`
   font-size: 3.1rem;
-  font-family: ${(props) => props.theme.fonts.bold};
-  color: ${(props) => props.theme.colors.secondary};
+  font-family: ${({ theme }) => theme.fonts.bold};
+  color: ${({ theme }) => theme.colors.secondary};
   line-height: 1;
 `;
 
@@ -35,12 +35,12 @@ export const FirstLine = styled.div`
 `;
 
 export const Bolder = styled.span`
-  font-family: ${(props) => props.theme.fonts.black};
+  font-family: ${({ theme }) => theme.fonts.black};
 `;
 
 export const Name = styled.span`
   font-size: 10rem;
-  color: ${(props) => props.theme.colors.primary};
+  color: ${({ theme }) => theme.colors.primary};
   text-transform: uppercase;
   line-height: 1;
   letter-spacing: 0.6rem;
@@ -48,10 +48,10 @@ export const Name = styled.span`
 
 export const HeroText = styled.p`
   font-size: 1.5rem;
-  font-family: ${(props) => props.theme.fonts.lightObl}, sans-serif;
+  font-family: ${({ theme }) => theme.fonts.lightObl}, sans-serif;
   font-style: oblique;
   font-weight: lighter;
-  color: ${(props) => props.theme.colors.secondary};
+  color: ${({ theme }) => theme.colors.secondary};
   line-height: 1.5;
   margin-top: 3rem;
 `;

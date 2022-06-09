@@ -36,20 +36,20 @@ export const InfoContainer = styled.div`
 `;
 
 export const Header = styled.h2`
-  color: ${(props) => props.theme.colors.primary};
+  color: ${({ theme }) => theme.colors.primary};
   padding: 0.5rem 0;
   font-size: 6.5rem;
   text-transform: uppercase;
-  font-family: ${(props) => props.theme.fonts.black};
+  font-family: ${({ theme }) => theme.fonts.black};
   margin-top: 2rem;
   letter-spacing: 0.4rem;
   line-height: 1;
 `;
 
 export const Description = styled.p`
-  color: ${(props) => props.theme.colors.secondary};
+  color: ${({ theme }) => theme.colors.secondary};
   font-size: 2rem;
-  font-family: ${(props) => props.theme.fonts.light};
+  font-family: ${({ theme }) => theme.fonts.light};
   line-height: 1.3;
   padding-bottom: 1rem;
   margin-top: 1rem;
@@ -64,7 +64,7 @@ export const LinkList = styled.ul`
 
 export const ExternalLink = styled.a`
   font-size: 1.6rem;
-  font-family: ${(props) => props.theme.fonts.black};
+  font-family: ${({ theme }) => theme.fonts.black};
   text-align: center;
   text-transform: uppercase;
   margin: ${(props) => (props.right ? "0 0 0 3rem" : "0 3rem 0 0")};
@@ -72,9 +72,9 @@ export const ExternalLink = styled.a`
   height: 55px;
   line-height: 55px;
   border-radius: 10px;
-  color: ${(props) => props.theme.colors.primary};
-  background: ${(props) => props.theme.colors.background};
-  border: 3px solid ${(props) => props.theme.colors.primary};
+  color: ${({ theme }) => theme.colors.primary};
+  background: ${({ theme }) => theme.colors.background};
+  border: 3px solid ${({ theme }) => theme.colors.primary};
   transition: 0.3s ease;
   &:hover {
     opacity: 0.65;

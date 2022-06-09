@@ -17,11 +17,11 @@ export const FooterContainer = styled.div`
 `;
 
 export const FooterText = styled.p`
-  font-family: ${(props) => props.theme.fonts.lightObl}, sans-serif;
+  font-family: ${({ theme }) => theme.fonts.lightObl}, sans-serif;
   font-style: oblique;
   font-weight: lighter;
   font-size: 1.8rem;
-  color: ${(props) => props.theme.colors.secondary};
+  color: ${({ theme }) => theme.colors.secondary};
   opacity: 0.5;
   margin: 1.6rem;
 `;
@@ -42,19 +42,19 @@ export const LinkColumn = styled.div`
 `;
 
 export const LinkTitle = styled.h4`
-  font-family: ${(props) => props.theme.fonts.bold};
+  font-family: ${({ theme }) => theme.fonts.bold};
   font-size: 1.2rem;
   line-height: 2.4rem;
   text-transform: uppercase;
-  color: ${(props) => props.theme.colors.secondary};
+  color: ${({ theme }) => theme.colors.secondary};
   opacity: 0.75;
   margin-bottom: 16px;
 `;
 
 export const LinkItem = styled.a`
-  font-family: ${(props) => props.theme.fonts.light};
+  font-family: ${({ theme }) => theme.fonts.light};
   font-size: 1.8rem;
-  color: ${(props) => props.theme.colors.secondary};
+  color: ${({ theme }) => theme.colors.secondary};
   opacity: 0.5;
   margin-bottom: 1.6rem;
   transition: 0.3s ease;

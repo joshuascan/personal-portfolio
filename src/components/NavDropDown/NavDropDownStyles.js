@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const DropDownContainer = styled.div`
   display: none;
   width: 100%;
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media ${({ theme }) => theme.breakpoints.md} {
     display: block;
   }
 `;
@@ -11,7 +11,7 @@ export const DropDownContainer = styled.div`
 export const MenuContainer = styled.div`
   text-align: right;
   height: 6vh;
-  background-color: ${(props) => props.theme.colors.background};
+  background-color: ${({ theme }) => theme.colors.background};
   width: 100%;
 `;
 
@@ -33,10 +33,10 @@ export const LinkContainer = styled.ul`
 
 export const NavLink = styled.a`
   font-size: 2.8rem;
-  font-family: ${(props) => props.theme.fonts.bold};
+  font-family: ${({ theme }) => theme.fonts.bold};
   margin: 2rem;
   letter-spacing: 0.4rem;
-  color: ${(props) => props.theme.colors.secondary};
+  color: ${({ theme }) => theme.colors.secondary};
   text-transform: uppercase;
 `;
 
@@ -49,7 +49,7 @@ export const SocialContainer = styled.div`
 
 export const SocialIcon = styled.a`
   margin: 1.5rem 2.5rem;
-  color: ${(props) => props.theme.colors.secondary};
+  color: ${({ theme }) => theme.colors.secondary};
   cursor: pointer;
 `;
 

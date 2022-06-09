@@ -5,17 +5,17 @@ const GlobalStyles = createGlobalStyle`
 ${normalize};
 
   body {
-    background-color: ${(props) => props.theme.colors.background};
-    color: ${(props) => props.theme.colors.primary};
+    background-color: ${({ theme }) => theme.colors.background};
+    color: ${({ theme }) => theme.colors.primary};
   }
 
   p {
-    color: ${(props) => props.theme.colors.secondary}
+    color: ${({ theme }) => theme.colors.secondary}
   }
 
   input, textarea {
-    caret-color: ${(props) => props.theme.colors.secondary};
-    color: ${(props) => props.theme.colors.secondary};
+    caret-color: ${({ theme }) => theme.colors.secondary};
+    color: ${({ theme }) => theme.colors.secondary};
   }
 `;
 

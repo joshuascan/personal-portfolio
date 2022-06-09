@@ -16,12 +16,12 @@ export const ListItem = styled.li`
 `;
 
 export const ListTitle = styled.h3`
-  font-family: ${(props) => props.theme.fonts.black};
+  font-family: ${({ theme }) => theme.fonts.black};
   font-size: 2.5rem;
   text-transform: uppercase;
   line-height: 3.2rem;
   letter-spacing: 0.02rem;
-  color: ${(props) => props.theme.colors.secondary};
+  color: ${({ theme }) => theme.colors.secondary};
   margin: 1.5rem 0 0.8rem 0;
 `;
 
@@ -29,8 +29,8 @@ export const ListParagraph = styled.p`
   font-size: 1.8rem;
   line-height: 3rem;
   text-align: center;
-  font-family: ${(props) => props.theme.fonts.lightObl}, sans-serif;
+  font-family: ${({ theme }) => theme.fonts.lightObl}, sans-serif;
   font-style: oblique;
   font-weight: lighter;
-  color: ${(props) => props.theme.colors.secondary};
+  color: ${({ theme }) => theme.colors.secondary};
 `;
