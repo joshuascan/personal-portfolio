@@ -8,7 +8,6 @@ export const HeaderWrapper = styled.div`
   left: 0;
   right: 0;
   margin: 0 auto;
-  width: 1400px;
   z-index: 100;
   background: ${(props) => props.theme.colors.background};
 `;
@@ -30,9 +29,15 @@ export const HomeArrow = styled.p`
   }
 `;
 
-export const NavContainer = styled.div`
+export const NavWrapper = styled.div`
+  @media ${(props) => props.theme.breakpoints.md} {
+    display: none;
+  }
+`;
+
+export const LinkContainer = styled.div`
   display: flex;
-  margin-top: 3rem;
+  margin-top: 2rem;
   margin-right: 45rem;
   padding-bottom: 1rem;
 `;
@@ -62,7 +67,7 @@ export const SocialContainer = styled.div`
   top: 0;
 `;
 
-export const SocialIcons = styled.a`
+export const SocialIcon = styled.a`
   margin-bottom: 2rem;
   color: ${(props) => props.theme.colors.secondary};
   transition: 0.3s ease;
