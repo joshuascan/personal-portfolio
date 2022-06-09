@@ -26,6 +26,10 @@ export const LeftSection = styled.div`
     margin-top: 3rem;
     text-align: center;
   }
+
+  @media ${({ theme }) => theme.breakpoints.md} {
+    width: 90%;
+  }
 `;
 
 export const RightSection = styled.div`
