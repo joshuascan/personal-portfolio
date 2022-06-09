@@ -14,6 +14,10 @@ export const List = styled.ul`
     justify-content: space-around;
     margin: 1rem 0 0 0;
   }
+
+  @media ${({ theme }) => theme.breakpoints.md} {
+    margin: 0;
+  }
 `;
 
 export const ListItem = styled.li`
@@ -22,6 +26,10 @@ export const ListItem = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media ${({ theme }) => theme.breakpoints.md} {
+    padding: 0 1rem;
+  }
 `;
 
 export const ListTitle = styled.h3`

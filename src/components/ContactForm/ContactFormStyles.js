@@ -9,12 +9,20 @@ export const Header = styled.h3`
   text-transform: uppercase;
   font-family: ${({ theme }) => theme.fonts.black};
   margin: 2rem 0;
+
+  @media ${({ theme }) => theme.breakpoints.md} {
+    margin-top: 0;
+  }
 `;
 
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+
+  @media ${({ theme }) => theme.breakpoints.md} {
+    width: 100%;
+  }
 `;
 
 export const Div1 = styled.div`
@@ -30,6 +38,10 @@ export const Div2 = styled.div`
 export const SenderContainer = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media ${({ theme }) => theme.breakpoints.md} {
+    flex-direction: column;
+  }
 `;
 
 export const Label = styled.label`
@@ -41,7 +53,7 @@ export const Label = styled.label`
 export const Input = styled.input`
   caret-color: ${({ theme }) => theme.colors.secondary};
   color: ${({ theme }) => theme.colors.secondary};
-  width: ${(props) => (props.small ? "344px" : "700px")};
+  width: ${({ small }) => (small ? "344px" : "700px")};
   font-family: ${({ theme }) => theme.fonts.light};
   padding: 1.5rem;
   padding-top: 2rem;
@@ -53,6 +65,11 @@ export const Input = styled.input`
     color: ${({ theme }) => theme.colors.primary};
     opacity: 1;
     text-transform: uppercase;
+  }
+
+  @media ${({ theme }) => theme.breakpoints.md} {
+    width: 100%;
+    margin-bottom: 1rem;
   }
 `;
 
@@ -72,6 +89,10 @@ export const TextArea = styled.textarea`
     opacity: 1;
     text-transform: uppercase;
   }
+
+  @media ${({ theme }) => theme.breakpoints.md} {
+    width: 100%;
+  }
 `;
 
 export const FormNotification = styled.p`
@@ -83,6 +104,10 @@ export const FormNotification = styled.p`
     props.error ? "red" : `${({ theme }) => theme.colors.secondary}`};
   bottom: 1rem;
   left: 1rem;
+
+  @media ${({ theme }) => theme.breakpoints.md} {
+    bottom: 0.5rem;
+  }
 `;
 
 export const SubmitButton = styled.button`
