@@ -9,6 +9,10 @@ export const Header = styled.h3`
   text-transform: uppercase;
   font-family: ${({ theme }) => theme.fonts.black};
   margin: 2rem 0;
+
+  @media ${({ theme }) => theme.breakpoints.xl} {
+    margin-top: 0;
+  }
 `;
 
 export const Form = styled.form`
