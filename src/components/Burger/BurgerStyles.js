@@ -2,15 +2,13 @@ import styled from "styled-components";
 
 export const StyledBurger = styled.button`
   position: absolute;
-  /* top: 5%;
-  left: 2rem; */
   top: 1rem;
   right: 2.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 2rem;
-  height: 3rem;
+  height: 3.25rem;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -29,5 +27,19 @@ export const StyledBurger = styled.button`
     transition: all 0.4s linear;
     position: relative;
     transform-origin: 1px;
+
+    :first-child {
+      transform: ${(props) => (props.open ? "rotate(45deg)" : "rotate(0)")};
+    }
+
+    :nth-child(2) {
+      opacity: ${(props) => (props.open ? "0" : "1")};
+      transform: ${(props) =>
+        props.open ? "translateX(20px)" : "translateX(0)"};
+    }
+
+    :nth-child(3) {
+      transform: ${(props) => (props.open ? "rotate(-45deg)" : "rotate(0)")};
+    }
   }
 `;

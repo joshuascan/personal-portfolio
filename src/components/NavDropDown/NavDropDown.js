@@ -1,10 +1,9 @@
 import { useState } from "react";
 import Link from "next/link";
-import { FiGithub, FiLinkedin, FiMenu } from "react-icons/fi";
+import { FiGithub, FiLinkedin } from "react-icons/fi";
 import {
   DropDownContainer,
   MenuContainer,
-  Menu,
   NavWrapper,
   LinkContainer,
   NavLink,
@@ -29,9 +28,6 @@ const NavDropDown = () => {
     <DropDownContainer>
       <MenuContainer>
         <Burger open={open} toggleNav={toggleNav} />
-        {/* <Menu onClick={toggleNav}>
-          <FiMenu size={"40px"} />
-        </Menu> */}
       </MenuContainer>
       <NavWrapper open={open}>
         <LinkContainer>

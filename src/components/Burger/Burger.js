@@ -1,8 +1,8 @@
 import { StyledBurger } from "./BurgerStyles";
 
-const Burger = ({ toggleNav }) => {
+const Burger = ({ toggleNav, open }) => {
   return (
-    <StyledBurger onClick={toggleNav}>
+    <StyledBurger onClick={toggleNav} open={open}>
       <div />
       <div />
       <div />

@@ -15,14 +15,6 @@ export const MenuContainer = styled.div`
   width: 100%;
 `;
 
-export const Menu = styled.button`
-  background-color: ${(props) => props.theme.colors.background};
-  color: ${(props) => props.theme.colors.secondary};
-  cursor: pointer;
-  margin-top: 1.5rem;
-  margin-right: 1.5rem;
-`;
-
 export const NavWrapper = styled.div`
   height: ${(props) => (props.open ? "94vh" : "0px")};
   overflow: hidden;
