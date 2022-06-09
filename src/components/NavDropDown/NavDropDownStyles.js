@@ -10,6 +10,7 @@ export const DropDownContainer = styled.div`
 
 export const MenuContainer = styled.div`
   text-align: right;
+  height: 6vh;
   background-color: ${(props) => props.theme.colors.background};
   width: 100%;
 `;
@@ -18,18 +19,21 @@ export const Menu = styled.button`
   background-color: ${(props) => props.theme.colors.background};
   color: ${(props) => props.theme.colors.secondary};
   cursor: pointer;
-  margin-top: 1rem;
-  margin-right: 1rem;
+  margin-top: 1.5rem;
+  margin-right: 1.5rem;
 `;
 
 export const NavWrapper = styled.div`
-  height: ${(props) => (props.visible ? "100vh" : "0px")};
-  transition: height 0.4s ease-in-out;
+  height: ${(props) => (props.open ? "94vh" : "0px")};
   overflow: hidden;
-  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: ${(props) => (props.open ? "1" : "0")};
+  transition: all 0.4s ease-in-out;
 `;
 
-export const LinkContainer = styled.div`
+export const LinkContainer = styled.ul`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,10 +43,8 @@ export const NavLink = styled.a`
   font-size: 2.8rem;
   font-family: ${(props) => props.theme.fonts.bold};
   margin: 2rem;
-  color: ${(props) =>
-    props.href === props.pathname
-      ? props.theme.colors.primary
-      : props.theme.colors.secondary};
+  letter-spacing: 0.4rem;
+  color: ${(props) => props.theme.colors.secondary};
   text-transform: uppercase;
 `;
 
@@ -50,6 +52,7 @@ export const SocialContainer = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 2rem;
+  margin-bottom: 5rem;
 `;
 
 export const SocialIcon = styled.a`

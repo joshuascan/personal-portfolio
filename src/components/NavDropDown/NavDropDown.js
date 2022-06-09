@@ -12,34 +12,44 @@ import {
   SocialIcon,
   Img,
 } from "./NavDropDownStyles";
+import Burger from "../Burger/Burger";
 
 const NavDropDown = () => {
-  const [isNavExpanded, setIsNavExpanded] = useState(false);
+  const [open, setOpen] = useState(false);
 
   const toggleNav = () => {
-    setIsNavExpanded(!isNavExpanded);
+    setOpen(!open);
+  };
+
+  const closeMenu = () => {
+    setOpen(false);
   };
 
   return (
     <DropDownContainer>
       <MenuContainer>
-        <Menu onClick={toggleNav}>
+        <Burger open={open} toggleNav={toggleNav} />
+        {/* <Menu onClick={toggleNav}>
           <FiMenu size={"40px"} />
-        </Menu>
+        </Menu> */}
       </MenuContainer>
-      <NavWrapper visible={isNavExpanded}>
+      <NavWrapper open={open}>
         <LinkContainer>
           <Link href="#about" passHref>
-            <NavLink>About</NavLink>
+            <NavLink onClick={closeMenu}>About</NavLink>
           </Link>
           <Link href="#projects" passHref>
-            <NavLink>Projects</NavLink>
+            <NavLink onClick={closeMenu}>Projects</NavLink>
           </Link>
           <Link href="#contact" passHref>
-            <NavLink>Contact</NavLink>
+            <NavLink onClick={closeMenu}>Contact</NavLink>
           </Link>
           <Link href="/images/resume.pdf" passHref>
-            <NavLink target="_blank" rel="noreferrer noopener">
+            <NavLink
+              onClick={closeMenu}
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               Resume
             </NavLink>
           </Link>
@@ -48,6 +58,7 @@ const NavDropDown = () => {
           <Link href="https://github.com/joshuascan" passHref>
             <SocialIcon
               title="GitHub"
+              onClick={closeMenu}
               target="_blank"
               rel="noreferrer noopener"
             >
@@ -57,6 +68,7 @@ const NavDropDown = () => {
           <Link href="https://linkedin.com/in/jscanlan" passHref>
             <SocialIcon
               title="LinkedIn"
+              onClick={closeMenu}
               target="_blank"
               rel="noreferrer noopener"
             >
@@ -66,6 +78,7 @@ const NavDropDown = () => {
           <Link href="https://opensea.io/josh-scanlan" passHref>
             <SocialIcon
               title="OpenSea"
+              onClick={closeMenu}
               target="_blank"
               rel="noreferrer noopener"
             >

@@ -27,6 +27,10 @@ export const HomeArrow = styled.p`
     opacity: 1;
     cursor: pointer;
   }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    display: none;
+  }
 `;
 
 export const NavWrapper = styled.div`
