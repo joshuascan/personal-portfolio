@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const List = styled.ul`
   list-style-type: none;
-  width: 800px;
+  max-width: 850px;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   margin: 2rem 0;

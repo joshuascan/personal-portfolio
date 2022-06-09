@@ -58,11 +58,6 @@ export const Name = styled.span`
   text-transform: uppercase;
   line-height: 1;
   letter-spacing: 0.6rem;
-
-  @media ${({ theme }) => theme.breakpoints.xl} {
-    /* display: block; */
-    /* margin: 1rem 0; */
-  }
 `;
 
 export const HeroText = styled.p`
