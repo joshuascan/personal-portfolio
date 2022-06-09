@@ -75,12 +75,20 @@ export const HeroText = styled.p`
 `;
 
 export const ImageContainer = styled.div`
-  width: 450px;
-  height: 675px;
+  border: 1px solid red;
+
+  @media ${({ theme }) => theme.breakpoints.sm} {
+    width: 80vw;
+  }
 `;
 
 export const Img = styled.img`
   position: absolute;
+  max-width: 450px;
+
+  @media ${({ theme }) => theme.breakpoints.sm} {
+    object-fit: contain;
+  }
 `;
 
 export const Rectangle = styled.div`
@@ -90,4 +98,7 @@ export const Rectangle = styled.div`
   position: relative;
   left: 15px;
   bottom: 15px;
+
+  @media ${({ theme }) => theme.breakpoints.sm} {
+  }
 `;
