@@ -66,13 +66,15 @@ export const SocialContainer = styled.div`
   display: flex;
   flex-direction: column;
   position: fixed;
-  margin: 3rem;
+  background-color: ${(props) => props.theme.colors.background};
+  padding: 1rem 3rem 1rem 1rem;
+  border-radius: 12px;
   right: 0;
   top: 0;
 `;
 
 export const SocialIcon = styled.a`
-  margin-bottom: 2rem;
+  margin-top: 2rem;
   color: ${(props) => props.theme.colors.secondary};
   transition: 0.3s ease;
   &:hover {

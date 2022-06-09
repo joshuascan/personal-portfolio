@@ -14,7 +14,9 @@ export const HeroContent = styled.div`
 
 export const LeftSection = styled.div`
   text-align: right;
-  width: 600px;
+  max-width: 600px;
+  margin-left: 3rem;
+  border: 1px solid red;
 `;
 
 export const RightSection = styled.div`
