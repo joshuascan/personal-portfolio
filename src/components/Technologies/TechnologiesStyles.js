@@ -7,10 +7,18 @@ export const List = styled.ul`
   display: flex;
   justify-content: space-between;
   margin: 2rem 0;
+
+  @media ${({ theme }) => theme.breakpoints.lg} {
+    max-width: 750px;
+    width: 100%;
+    justify-content: space-around;
+    margin: 1rem 0 0 0;
+  }
 `;
 
 export const ListItem = styled.li`
   max-width: 32rem;
+  width: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
