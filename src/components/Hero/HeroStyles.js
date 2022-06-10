@@ -80,7 +80,7 @@ export const Name = styled.span`
 
 export const HeroText = styled.p`
   font-size: 1.5rem;
-  font-family: ${({ theme }) => theme.fonts.lightObl}, sans-serif;
+  font-family: ${({ theme }) => theme.fonts.lightObl};
   font-style: oblique;
   font-weight: lighter;
   color: ${({ theme }) => theme.colors.secondary};

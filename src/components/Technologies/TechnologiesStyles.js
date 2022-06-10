@@ -60,7 +60,7 @@ export const ListParagraph = styled.p`
   font-size: 1.8rem;
   line-height: 3rem;
   text-align: center;
-  font-family: ${({ theme }) => theme.fonts.lightObl}, sans-serif;
+  font-family: ${({ theme }) => theme.fonts.lightObl};
   font-style: oblique;
   font-weight: lighter;
   color: ${({ theme }) => theme.colors.secondary};

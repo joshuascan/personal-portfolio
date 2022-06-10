@@ -21,7 +21,7 @@ export const FooterContainer = styled.div`
 `;
 
 export const FooterText = styled.p`
-  font-family: ${({ theme }) => theme.fonts.lightObl}, sans-serif;
+  font-family: ${({ theme }) => theme.fonts.lightObl};
   font-style: oblique;
   font-weight: lighter;
   font-size: 1.8rem;

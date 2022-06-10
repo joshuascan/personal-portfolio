@@ -138,6 +138,8 @@ export const LoginInfo = styled.p`
   color: ${({ theme }) => theme.colors.secondary};
   font-size: 1.6rem;
   font-family: ${({ theme }) => theme.fonts.lightObl};
+  font-style: oblique;
+  font-weight: lighter;
   text-align: center;
 
   @media ${({ theme }) => theme.breakpoints.lg} {
