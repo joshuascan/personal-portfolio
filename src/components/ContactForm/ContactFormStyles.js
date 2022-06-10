@@ -98,7 +98,7 @@ export const TextArea = styled.textarea`
 export const FormNotification = styled.p`
   position: relative;
   font-size: ${(props) => (props.send ? "2rem" : "1.6rem")};
-  font-family: ${({ theme }) => theme.fonts.lightObl};
+  font-family: ${({ theme }) => theme.fonts.lightObl}, sans-serif;
   text-align: ${(props) => (props.center ? "center" : "left")};
   color: ${(props) =>
     props.error ? "red" : `${({ theme }) => theme.colors.secondary}`};
