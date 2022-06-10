@@ -40,7 +40,7 @@ export const ProjectContainer = styled.div`
 
 export const ImageContainer = styled.div`
   width: 590px;
-  height: 415px;
+  height: 390px;
   padding: 2rem;
   border-radius: 25px;
   background-color: rgb(26, 26, 26);
@@ -68,6 +68,7 @@ export const ImageContainer = styled.div`
 export const Img = styled.img`
   object-fit: contain;
   overflow: hidden;
+  border-radius: 15px;
 `;
 
 export const InfoContainer = styled.div`

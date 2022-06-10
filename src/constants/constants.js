@@ -12,7 +12,7 @@ export const projects = [
     title: "Ethereum To-do List",
     description:
       "A to-do list on the Ethereum blockchain. Built with Next.js, Ethers, Solidity, and Tailwind CSS.",
-    image: "/images/metronome.png",
+    image: "/images/todolist_dapp.png",
     visit: "https://todolist-dapp-eight.vercel.app/",
     source: "https://github.com/joshuascan/eth-todolist-frontend",
     contract: "https://github.com/joshuascan/eth-todolist-contract",
@@ -22,7 +22,7 @@ export const projects = [
     title: "Portfolio Site",
     description:
       "Personal portfolio built with Next.js and styled components. Utilizes the SendGrid API for the contact form.",
-    image: "/images/metronome.png",
+    image: "/images/portfolio_site.png",
     source: "https://github.com/joshuascan/metronome",
     id: 2,
   },
@@ -30,7 +30,7 @@ export const projects = [
     title: "Polygon Domain Service",
     description:
       "Domain name service on the Polygon network. Built using React, Solidity, Ethers, and Tailwind CSS.",
-    image: "/images/metronome.png",
+    image: "/images/polygon_dns.png",
     visit: "https://dum-name-service.vercel.app/",
     source: "https://github.com/joshuascan/domain-name-service-frontend",
     contract: "https://github.com/joshuascan/domain-contract",
