@@ -164,13 +164,23 @@ export const ExternalLink = styled.a`
   background: ${({ theme }) => theme.colors.background};
   border: 3px solid ${({ theme }) => theme.colors.primary};
   transition: 0.3s ease;
-  &:hover {
-    opacity: 0.65;
-    cursor: pointer;
+
+  @media screen and (min-width: 769px) {
+    &:hover {
+      opacity: 0.65;
+      cursor: pointer;
+    }
   }
 
   @media ${({ theme }) => theme.breakpoints.lg} {
     margin: 0 1.5rem;
+  }
+
+  @media ${({ theme }) => theme.breakpoints.md} {
+    transition: 0s;
+    &:active {
+      opacity: 0.65;
+    }
   }
 
   @media ${({ theme }) => theme.breakpoints.sm} {

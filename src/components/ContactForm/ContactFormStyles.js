@@ -101,10 +101,8 @@ export const TextArea = styled.textarea`
 
   @media ${({ theme }) => theme.breakpoints.md} {
     width: 100%;
-  }
-
-  @media ${({ theme }) => theme.breakpoints.md} {
     min-height: 200px;
+    margin-bottom: 1rem;
   }
 `;
 
@@ -116,10 +114,10 @@ export const FormNotification = styled.p`
   color: ${(props) =>
     props.error ? "red" : `${({ theme }) => theme.colors.secondary}`};
   bottom: 1rem;
-  left: 1rem;
+  left: ${({ send }) => (send ? "0" : "1rem")};
 
   @media ${({ theme }) => theme.breakpoints.md} {
-    bottom: 0.5rem;
+    bottom: ${({ send }) => (send ? "0" : "0.5rem")};
   }
 `;
 
@@ -138,13 +136,23 @@ export const SubmitButton = styled.button`
   background: ${({ theme }) => theme.colors.background};
   border: 3px solid ${({ theme }) => theme.colors.primary};
   transition: 0.3s ease;
-  &:hover {
-    opacity: 0.65;
-    cursor: pointer;
+
+  @media screen and (min-width: 769px) {
+    &:hover {
+      opacity: 0.65;
+      cursor: pointer;
+    }
+  }
+
+  @media ${({ theme }) => theme.breakpoints.md} {
+    transition: 0s;
+    &:active {
+      opacity: 0.65;
+    }
   }
 
   @media ${({ theme }) => theme.breakpoints.sm} {
-    margin: 1rem auto;
+    margin: 1.5rem auto 1.5rem auto;
     font-size: 1.4rem;
     width: 120px;
     height: 45px;
