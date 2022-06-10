@@ -133,6 +133,27 @@ export const Description = styled.p`
   }
 `;
 
+export const LoginInfo = styled.p`
+  color: ${({ theme }) => theme.colors.secondary};
+  font-size: 1.6rem;
+  font-family: ${({ theme }) => theme.fonts.lightObl};
+  text-align: center;
+
+  @media ${({ theme }) => theme.breakpoints.lg} {
+    margin-top: 1rem;
+  }
+
+  @media ${({ theme }) => theme.breakpoints.md} {
+    margin-top: 0.5rem;
+  }
+
+  @media ${({ theme }) => theme.breakpoints.sm} {
+    font-size: 1.4rem;
+    margin: 0.5rem auto 0 auto;
+    max-width: 60%;
+  }
+`;
+
 export const LinkList = styled.ul`
   list-style-type: none;
   display: flex;

@@ -39,7 +39,8 @@ export const projects = [
   {
     title: "Watering Scheduler",
     description:
-      "An app that tracks plant watering schedules. Frontend was built using React and MaterialUI, and the backend was built using Node, Express, and Knex with a PostgreSQL database.",
+      "An app that tracks plant watering schedules. Frontend was built using React and MaterialUI, and the backend was built using Node, Express, and Knex with a PostgreSQL database. Create your own account, or log in with the dummy account:",
+    login: "email: fake@email.com, password: password",
     image: "/images/watering_app.png",
     visit: "https://plants-need-water-too.vercel.app/",
     source: "https://github.com/joshuascan/plants-need-water-too",

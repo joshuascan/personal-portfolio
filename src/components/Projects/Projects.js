@@ -8,6 +8,7 @@ import {
   InfoContainer,
   Header,
   Description,
+  LoginInfo,
   LinkList,
   ExternalLink,
 } from "./ProjectsStyles";
@@ -24,6 +25,7 @@ const Projects = () => {
           ({
             title,
             description,
+            login,
             image,
             visit,
             source,
@@ -39,6 +41,7 @@ const Projects = () => {
                 <InfoContainer id={id}>
                   <Header>{title}</Header>
                   <Description>{description}</Description>
+                  {login && <LoginInfo>{login}</LoginInfo>}
                   <LinkList id={id}>
                     {title === "Portfolio Site" ? (
                       <ExternalLink onClick={handleClick} id={id}>
