@@ -12,6 +12,10 @@ export const Section = styled.section`
   @media ${({ theme }) => theme.breakpoints.lg} {
     padding: ${(props) => (props.nopadding ? "0" : "2rem 3.5rem")};
   }
+
+  @media ${({ theme }) => theme.breakpoints.sm} {
+    padding: ${(props) => (props.nopadding ? "0" : "1rem 1rem")};
+  }
 `;
 
 export const SectionTitle = styled.h2`

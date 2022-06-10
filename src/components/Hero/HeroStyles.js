@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const HeroWrapper = styled.div`
   padding-top: 10rem;
   padding-bottom: 5rem;
+
+  @media ${({ theme }) => theme.breakpoints.sm} {
+    padding-bottom: 0;
+  }
 `;
 
 export const HeroContent = styled.div`

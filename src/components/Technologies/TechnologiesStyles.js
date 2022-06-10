@@ -18,6 +18,11 @@ export const List = styled.ul`
   @media ${({ theme }) => theme.breakpoints.md} {
     margin: 0;
   }
+
+  @media ${({ theme }) => theme.breakpoints.sm} {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const ListItem = styled.li`
@@ -30,6 +35,11 @@ export const ListItem = styled.li`
   @media ${({ theme }) => theme.breakpoints.md} {
     padding: 0 1rem;
   }
+
+  @media ${({ theme }) => theme.breakpoints.sm} {
+    padding: 0;
+    margin-top: 3rem;
+  }
 `;
 
 export const ListTitle = styled.h3`
@@ -40,6 +50,10 @@ export const ListTitle = styled.h3`
   letter-spacing: 0.02rem;
   color: ${({ theme }) => theme.colors.secondary};
   margin: 1.5rem 0 0.8rem 0;
+
+  @media ${({ theme }) => theme.breakpoints.small} {
+    font-size: 2.4rem;
+  }
 `;
 
 export const ListParagraph = styled.p`
