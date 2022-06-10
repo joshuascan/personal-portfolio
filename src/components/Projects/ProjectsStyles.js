@@ -25,7 +25,7 @@ export const ProjectContainer = styled.div`
   margin: 10rem auto;
 
   @media ${({ theme }) => theme.breakpoints.xl} {
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 
   @media ${({ theme }) => theme.breakpoints.lg} {
@@ -41,7 +41,7 @@ export const ProjectContainer = styled.div`
 export const ImageContainer = styled.div`
   width: 590px;
   height: 390px;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 25px;
   background-color: rgb(26, 26, 26);
   display: flex;
@@ -50,12 +50,12 @@ export const ImageContainer = styled.div`
 
   @media ${({ theme }) => theme.breakpoints.xl} {
     width: 480px;
-    height: 338px;
+    height: 317px;
   }
 
   @media ${({ theme }) => theme.breakpoints.lg} {
     width: 590px;
-    height: 415px;
+    height: 390px;
     margin-bottom: 2rem;
   }
 
