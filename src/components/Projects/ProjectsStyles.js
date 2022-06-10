@@ -13,11 +13,11 @@ export const ProjectsWrapper = styled.div`
 `;
 
 export const ProjectContainer = styled.div`
-  width: 97%;
+  width: 100%;
   display: flex;
   flex-direction: ${({ id }) => (id % 2 === 0 ? "" : "row-reverse")};
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 15rem auto;
 
   @media ${({ theme }) => theme.breakpoints.xl} {
@@ -27,6 +27,7 @@ export const ProjectContainer = styled.div`
   @media ${({ theme }) => theme.breakpoints.lg} {
     flex-direction: column;
     margin: 10rem auto;
+    width: 97%;
   }
 
   @media ${({ theme }) => theme.breakpoints.md} {
@@ -42,7 +43,7 @@ export const ImageContainer = styled.div`
   width: 590px;
   height: 390px;
   padding: 1rem;
-  border-radius: 25px;
+  border-radius: 15px;
   background-color: rgb(26, 26, 26);
   display: flex;
   justify-content: center;
@@ -68,7 +69,7 @@ export const ImageContainer = styled.div`
 export const Img = styled.img`
   object-fit: contain;
   overflow: hidden;
-  border-radius: 15px;
+  border-radius: 10px;
 `;
 
 export const InfoContainer = styled.div`
