@@ -5,6 +5,7 @@ export const HeroWrapper = styled.div`
   padding-bottom: 5rem;
 
   @media ${({ theme }) => theme.breakpoints.sm} {
+    padding-top: 4rem;
     padding-bottom: 0;
   }
 `;

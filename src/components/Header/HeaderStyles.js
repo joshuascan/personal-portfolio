@@ -9,6 +9,10 @@ export const HeaderWrapper = styled.div`
   margin: 0 auto;
   z-index: 100;
   background: ${({ theme }) => theme.colors.background};
+
+  @media ${({ theme }) => theme.breakpoints.md} {
+    padding-bottom: 0.5rem;
+  }
 `;
 
 export const HomeArrow = styled.p`
