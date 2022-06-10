@@ -131,8 +131,14 @@ export const LinkList = styled.ul`
   margin: 2.5rem 0;
 
   @media ${({ theme }) => theme.breakpoints.lg} {
-    justify-content: center;
+    justify-content: space-evenly;
     margin: 2rem 0 4rem 0;
+  }
+
+  @media ${({ theme }) => theme.breakpoints.sm} {
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 2rem auto 4rem auto;
   }
 `;
 
