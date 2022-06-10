@@ -73,7 +73,7 @@ export const Name = styled.span`
 
   @media ${({ theme }) => theme.breakpoints.sm} {
     font-size: 5.5rem;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.2rem;
   }
 `;
 
