@@ -58,6 +58,7 @@ export const FirstLine = styled.div`
 
   @media ${({ theme }) => theme.breakpoints.sm} {
     margin-bottom: 1rem;
+    padding-left: 1rem;
   }
 `;
 
