@@ -50,6 +50,10 @@ export const HeroHeader = styled.h1`
 
 export const FirstLine = styled.div`
   margin-bottom: 2rem;
+
+  @media ${({ theme }) => theme.breakpoints.sm} {
+    margin-bottom: 1rem;
+  }
 `;
 
 export const Bolder = styled.span`
@@ -60,8 +64,11 @@ export const Name = styled.span`
   font-size: 10rem;
   color: ${({ theme }) => theme.colors.primary};
   text-transform: uppercase;
-  line-height: 1;
   letter-spacing: 0.6rem;
+
+  @media ${({ theme }) => theme.breakpoints.sm} {
+    font-size: 6rem;
+  }
 `;
 
 export const HeroText = styled.p`
@@ -75,32 +82,29 @@ export const HeroText = styled.p`
 `;
 
 export const ImageContainer = styled.div`
-  border: 1px solid red;
+  position: relative;
+  line-height: 0;
+
+  ::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    border: 3px solid rgba(255, 255, 255, 0.75);
+    position: absolute;
+    z-index: 1;
+    top: -15px;
+    right: -15px;
+  }
 
   @media ${({ theme }) => theme.breakpoints.sm} {
-    width: 80vw;
-    height: 100%;
+    width: 75vw;
   }
 `;
 
 export const Img = styled.img`
-  position: absolute;
-  max-width: 450px;
-
-  @media ${({ theme }) => theme.breakpoints.sm} {
-    object-fit: contain;
-  }
-`;
-
-export const Rectangle = styled.div`
-  width: 450px;
-  height: 675px;
-  border: 3px solid rgba(255, 255, 255, 0.75);
   position: relative;
-  left: 15px;
-  bottom: 15px;
 
   @media ${({ theme }) => theme.breakpoints.sm} {
-    width: 80vw;
+    width: 100%;
   }
 `;

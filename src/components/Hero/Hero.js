@@ -10,7 +10,6 @@ import {
   Bolder,
   HeroText,
   Img,
-  Rectangle,
 } from "./HeroStyles";
 
 const Hero = () => {
@@ -39,7 +38,6 @@ const Hero = () => {
         <RightSection>
           <ImageContainer>
             <Img src="/images/profile_pic_large.jpeg" alt="headshot" />
-            <Rectangle />
           </ImageContainer>
         </RightSection>
       </HeroContent>
