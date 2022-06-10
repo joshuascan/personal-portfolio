@@ -33,6 +33,7 @@ export const ProjectContainer = styled.div`
 export const ImageContainer = styled.div`
   width: 590px;
   height: 415px;
+  padding: 2rem;
   border-radius: 25px;
   background-color: rgb(26, 26, 26);
   display: flex;
@@ -49,11 +50,14 @@ export const ImageContainer = styled.div`
     height: 415px;
     margin-bottom: 2rem;
   }
+
+  @media ${({ theme }) => theme.breakpoints.sm} {
+    width: 90vw;
+    height: fit-content;
+  }
 `;
 
 export const Img = styled.img`
-  width: 90%;
-  height: 90%;
   object-fit: contain;
   overflow: hidden;
 `;
@@ -69,6 +73,10 @@ export const InfoContainer = styled.div`
   @media ${({ theme }) => theme.breakpoints.lg} {
     text-align: center;
     width: 590px;
+  }
+
+  @media ${({ theme }) => theme.breakpoints.sm} {
+    width: 95%;
   }
 `;
 
@@ -89,6 +97,11 @@ export const Header = styled.h2`
   @media ${({ theme }) => theme.breakpoints.lg} {
     font-size: 6.5rem;
   }
+
+  @media ${({ theme }) => theme.breakpoints.sm} {
+    font-size: 4rem;
+    margin-top: 1rem;
+  }
 `;
 
 export const Description = styled.p`
@@ -102,6 +115,12 @@ export const Description = styled.p`
   @media ${({ theme }) => theme.breakpoints.lg} {
     margin-top: 0;
     padding-bottom: 0;
+  }
+
+  @media ${({ theme }) => theme.breakpoints.sm} {
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
+    width: 100%;
   }
 `;
 
@@ -138,5 +157,13 @@ export const ExternalLink = styled.a`
 
   @media ${({ theme }) => theme.breakpoints.lg} {
     margin: 0 1.5rem;
+  }
+
+  @media ${({ theme }) => theme.breakpoints.sm} {
+    margin: 0 0.5rem;
+    font-size: 1.4rem;
+    width: 120px;
+    height: 45px;
+    line-height: 45px;
   }
 `;
