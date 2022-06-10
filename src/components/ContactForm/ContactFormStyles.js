@@ -20,6 +20,7 @@ export const Header = styled.h3`
   }
 
   @media ${({ theme }) => theme.breakpoints.sm} {
+    padding-top: 4rem;
     margin-bottom: 1rem;
   }
 `;
