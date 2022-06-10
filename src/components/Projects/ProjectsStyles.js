@@ -1,18 +1,14 @@
 import styled from "styled-components";
 
 export const ProjectsWrapper = styled.div`
-  margin: 5rem 0;
-
-  @media ${({ theme }) => theme.breakpoints.xl} {
-    margin: 10rem 0;
-  }
+  margin-bottom: 5rem;
 
   @media ${({ theme }) => theme.breakpoints.lg} {
     margin: 6rem 0 4rem 0;
   }
 
   @media ${({ theme }) => theme.breakpoints.sm} {
-    margin: 4rem 0 0 0;
+    margin: 6rem 0 0 0;
   }
 `;
 
@@ -22,7 +18,7 @@ export const ProjectContainer = styled.div`
   flex-direction: ${({ id }) => (id % 2 === 0 ? "" : "row-reverse")};
   align-items: center;
   justify-content: space-around;
-  margin: 10rem auto;
+  margin: 15rem auto;
 
   @media ${({ theme }) => theme.breakpoints.xl} {
     justify-content: space-evenly;
@@ -30,11 +26,15 @@ export const ProjectContainer = styled.div`
 
   @media ${({ theme }) => theme.breakpoints.lg} {
     flex-direction: column;
-    margin: 7rem auto;
+    margin: 10rem auto;
   }
 
-  @media ${({ theme }) => theme.breakpoints.lg} {
-    margin: 4rem auto;
+  @media ${({ theme }) => theme.breakpoints.md} {
+    margin: 8rem auto;
+  }
+
+  @media ${({ theme }) => theme.breakpoints.sm} {
+    margin: 6rem auto;
   }
 `;
 
