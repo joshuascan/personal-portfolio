@@ -17,7 +17,7 @@ export const ProjectContainer = styled.div`
   display: flex;
   flex-direction: ${({ id }) => (id % 2 === 0 ? "" : "row-reverse")};
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 15rem auto;
 
   @media ${({ theme }) => theme.breakpoints.xl} {
