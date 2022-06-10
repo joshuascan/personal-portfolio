@@ -11,7 +11,16 @@ export const Header = styled.h3`
   margin: 2rem 0;
 
   @media ${({ theme }) => theme.breakpoints.md} {
+    font-size: 5.5rem;
     margin-top: 0;
+  }
+
+  @media ${({ theme }) => theme.breakpoints.md} {
+    margin-top: 0;
+  }
+
+  @media ${({ theme }) => theme.breakpoints.sm} {
+    margin-bottom: 1rem;
   }
 `;
 
@@ -93,6 +102,10 @@ export const TextArea = styled.textarea`
   @media ${({ theme }) => theme.breakpoints.md} {
     width: 100%;
   }
+
+  @media ${({ theme }) => theme.breakpoints.md} {
+    min-height: 200px;
+  }
 `;
 
 export const FormNotification = styled.p`
@@ -128,5 +141,15 @@ export const SubmitButton = styled.button`
   &:hover {
     opacity: 0.65;
     cursor: pointer;
+  }
+
+  @media ${({ theme }) => theme.breakpoints.sm} {
+    margin: 1rem auto;
+    font-size: 1.4rem;
+    width: 120px;
+    height: 45px;
+    line-height: 45px;
+    letter-spacing: 0.1rem;
+    padding: 0 0.5rem;
   }
 `;

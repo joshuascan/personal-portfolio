@@ -10,6 +10,10 @@ export const ProjectsWrapper = styled.div`
   @media ${({ theme }) => theme.breakpoints.lg} {
     margin: 6rem 0 4rem 0;
   }
+
+  @media ${({ theme }) => theme.breakpoints.sm} {
+    margin: 4rem 0 0 0;
+  }
 `;
 
 export const ProjectContainer = styled.div`
@@ -27,6 +31,10 @@ export const ProjectContainer = styled.div`
   @media ${({ theme }) => theme.breakpoints.lg} {
     flex-direction: column;
     margin: 7rem auto;
+  }
+
+  @media ${({ theme }) => theme.breakpoints.lg} {
+    margin: 4rem auto;
   }
 `;
 
@@ -171,5 +179,7 @@ export const ExternalLink = styled.a`
     width: 120px;
     height: 45px;
     line-height: 45px;
+    letter-spacing: 0.1rem;
+    padding: 0 0.5rem;
   }
 `;

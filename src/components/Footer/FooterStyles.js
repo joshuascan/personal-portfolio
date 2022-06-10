@@ -5,6 +5,10 @@ export const FooterWrapper = styled.section`
   max-width: 1040px;
   margin: 1rem auto;
   box-sizing: content-box;
+
+  @media ${({ theme }) => theme.breakpoints.sm} {
+    width: 95%;
+  }
 `;
 
 export const FooterContainer = styled.div`
@@ -25,6 +29,10 @@ export const FooterText = styled.p`
   color: ${({ theme }) => theme.colors.secondary};
   opacity: 0.5;
   margin: 1.6rem;
+
+  @media ${({ theme }) => theme.breakpoints.sm} {
+    font-size: 1.6rem;
+  }
 `;
 
 export const NewLine = styled.span`
