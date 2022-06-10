@@ -34,7 +34,7 @@ const Projects = () => {
             return (
               <ProjectContainer key={id} id={id}>
                 <ImageContainer>
-                  <Img src={"https://picsum.photos/570/370"} />
+                  <Img src={image} />
                 </ImageContainer>
                 <InfoContainer id={id}>
                   <Header>{title}</Header>

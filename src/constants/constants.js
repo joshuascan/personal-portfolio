@@ -3,7 +3,7 @@ export const projects = [
     title: "Metronome",
     description:
       "A metronome app built using React and Styled Components. Allows for both tempo and time signature to be adjusted. It also includes a visual indicator of the beat cycle.",
-    image: "/images/metronome.png",
+    image: "https://picsum.photos/570/370",
     visit: "https://scanlan-metronome-app.netlify.app/",
     source: "https://github.com/joshuascan/metronome",
     id: 0,
@@ -40,7 +40,7 @@ export const projects = [
     title: "Watering Scheduler",
     description:
       "An app that tracks plant watering schedules. Frontend was built using React and MaterialUI, and the backend was built using Node, Express, and Knex with a PostgreSQL database.",
-    image: "/images/metronome.png",
+    image: "/images/watering_app.png",
     visit: "https://plants-need-water-too.vercel.app/",
     source: "https://github.com/joshuascan/plants-need-water-too",
     backend: "https://github.com/ft-watermyplants-1/back-end",
