@@ -6,10 +6,6 @@ export const ProjectsWrapper = styled.div`
   @media ${({ theme }) => theme.breakpoints.lg} {
     margin: 6rem 0 4rem 0;
   }
-
-  @media ${({ theme }) => theme.breakpoints.sm} {
-    margin: 6rem 0 0 0;
-  }
 `;
 
 export const ProjectContainer = styled.div`

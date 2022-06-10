@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const FooterWrapper = styled.section`
   width: calc(100vw - 96px);
   max-width: 1040px;
-  margin: 1rem auto;
+  margin: 2rem auto 1rem auto;
   box-sizing: content-box;
 
   @media ${({ theme }) => theme.breakpoints.sm} {
