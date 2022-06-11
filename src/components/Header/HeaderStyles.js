@@ -94,6 +94,7 @@ export const SocialContainer = styled.div`
 
 export const SocialIcon = styled.a`
   margin-top: 2rem;
+  margin-bottom: 0.5rem;
   width: 2rem;
   height: 2rem;
   color: ${({ theme }) => theme.colors.secondary};
