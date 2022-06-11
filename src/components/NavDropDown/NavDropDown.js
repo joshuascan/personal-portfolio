@@ -78,7 +78,12 @@ const NavDropDown = () => {
               target="_blank"
               rel="noreferrer noopener"
             >
-              <Img src="/images/opensea-logo.png" alt="OpenSea logo" />
+              <Img
+                src="/images/opensea-logo.png"
+                width={360}
+                height={360}
+                alt="OpenSea logo"
+              />
             </SocialIcon>
           </Link>
         </SocialContainer>

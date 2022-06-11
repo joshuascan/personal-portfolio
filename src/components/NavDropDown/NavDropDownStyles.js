@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Image from "next/image";
 
 export const DropDownContainer = styled.div`
   display: none;
@@ -49,10 +50,13 @@ export const SocialContainer = styled.div`
 
 export const SocialIcon = styled.a`
   margin: 1.5rem 2.5rem;
+  width: 3rem;
+  height: 3rem;
   color: ${({ theme }) => theme.colors.secondary};
   cursor: pointer;
 `;
 
-export const Img = styled.img`
-  width: 3rem;
+export const Img = styled(Image)`
+  width: 360px;
+  height: 360px;
 `;
