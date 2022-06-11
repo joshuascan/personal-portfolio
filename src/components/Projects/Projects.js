@@ -36,7 +36,7 @@ const Projects = () => {
             return (
               <ProjectContainer key={id} id={id}>
                 <ImageContainer>
-                  <Img src={image} />
+                  <Img src={image} alt={title} />
                 </ImageContainer>
                 <InfoContainer id={id}>
                   <Header>{title}</Header>
