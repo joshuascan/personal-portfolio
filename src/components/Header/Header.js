@@ -49,7 +49,6 @@ const Header = () => {
           <Link href="https://github.com/joshuascan" passHref>
             <SocialIcon
               title="GitHub"
-              alt="GitHub logo"
               target="_blank"
               rel="noreferrer noopener"
             >
@@ -59,7 +58,6 @@ const Header = () => {
           <Link href="https://linkedin.com/in/jscanlan" passHref>
             <SocialIcon
               title="LinkedIn"
-              alt="LinkedIn logo"
               target="_blank"
               rel="noreferrer noopener"
             >
@@ -69,11 +67,10 @@ const Header = () => {
           <Link href="https://opensea.io/josh-scanlan" passHref>
             <SocialIcon
               title="OpenSea"
-              alt="OpenSea logo"
               target="_blank"
               rel="noreferrer noopener"
             >
-              <Img src="/images/opensea-logo.png" />
+              <Img src="/images/opensea-logo.png" alt="OpenSea logo" />
             </SocialIcon>
           </Link>
         </SocialContainer>
