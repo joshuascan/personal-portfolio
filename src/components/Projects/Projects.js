@@ -11,6 +11,7 @@ import {
   LoginInfo,
   LinkList,
   ExternalLink,
+  ExternalButton,
 } from "./ProjectsStyles";
 
 const Projects = () => {
@@ -45,9 +46,12 @@ const Projects = () => {
                   {login && <LoginInfo>{login}</LoginInfo>}
                   <LinkList alignment={alignment}>
                     {title === "Portfolio Site" ? (
-                      <ExternalLink onClick={handleClick} alignment={alignment}>
+                      <ExternalButton
+                        onClick={handleClick}
+                        alignment={alignment}
+                      >
                         Deployed
-                      </ExternalLink>
+                      </ExternalButton>
                     ) : (
                       <ExternalLink
                         href={visit}
