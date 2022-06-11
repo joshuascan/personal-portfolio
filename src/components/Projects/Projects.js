@@ -38,7 +38,7 @@ const Projects = () => {
             return (
               <ProjectContainer key={id} alignment={alignment}>
                 <ImageContainer>
-                  <Img src={image} alt={title} />
+                  <Img src={image} width={570} height={370} alt={title} />
                 </ImageContainer>
                 <InfoContainer alignment={alignment}>
                   <Header>{title}</Header>

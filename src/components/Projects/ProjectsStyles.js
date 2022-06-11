@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Image from "next/image";
 
 export const ProjectsWrapper = styled.div`
   margin-bottom: 5rem;
@@ -67,7 +68,7 @@ export const ImageContainer = styled.div`
   }
 `;
 
-export const Img = styled.img`
+export const Img = styled(Image)`
   object-fit: contain;
   overflow: hidden;
   border-radius: 10px;
