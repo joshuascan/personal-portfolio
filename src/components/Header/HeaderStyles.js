@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Image from "next/image";
 
 export const HeaderWrapper = styled.div`
   display: flex;
@@ -94,9 +93,6 @@ export const SocialContainer = styled.div`
 
 export const SocialIcon = styled.a`
   margin-top: 2rem;
-  margin-bottom: 0.5rem;
-  width: 2rem;
-  height: 2rem;
   color: ${({ theme }) => theme.colors.secondary};
   transition: 0.3s ease;
   &:hover {
@@ -104,7 +100,7 @@ export const SocialIcon = styled.a`
   }
 `;
 
-export const Img = styled(Image)`
-  width: 360px;
-  height: 360px;
+export const Img = styled.img`
+  width: 2rem;
+  height: 2rem;
 `;
