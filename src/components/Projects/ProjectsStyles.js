@@ -71,6 +71,8 @@ export const ImageContainer = styled.div`
 export const Img = styled(Image)`
   object-fit: contain;
   overflow: hidden;
+  width: 590px;
+  height: 390px;
   border-radius: 10px;
 `;
 
