@@ -38,7 +38,7 @@ const Hero = () => {
         <RightSection>
           <ImageContainer>
             <Img
-              src="/images/profile_pic_large.jpeg"
+              src="/images/profile_pic.jpeg"
               layout={"fill"}
               objectFit={"contain"}
               alt="headshot"

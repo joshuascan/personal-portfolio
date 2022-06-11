@@ -3,7 +3,7 @@ export const projects = [
     title: "Metronome",
     description:
       "A metronome app built using React and Styled Components. Allows for both tempo and time signature to be adjusted. It also includes a visual indicator of the beat cycle.",
-    image: "/images/watering_app.png",
+    image: "/images/metronome.png",
     visit: "https://scanlan-metronome-app.netlify.app/",
     source: "https://github.com/joshuascan/metronome",
     id: 0,
