@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Image from "next/image";
 
 export const HeroWrapper = styled.div`
   padding-top: 10rem;
@@ -91,6 +92,8 @@ export const HeroText = styled.p`
 export const ImageContainer = styled.div`
   position: relative;
   line-height: 0;
+  height: 675px;
+  width: 450px;
 
   ::before {
     content: "";
@@ -105,10 +108,11 @@ export const ImageContainer = styled.div`
 
   @media ${({ theme }) => theme.breakpoints.sm} {
     width: 75vw;
+    height: calc(75vw * 1.5);
   }
 `;
 
-export const Img = styled.img`
+export const Img = styled(Image)`
   position: relative;
 
   @media ${({ theme }) => theme.breakpoints.sm} {
