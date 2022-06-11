@@ -15,7 +15,8 @@ export const ProjectsWrapper = styled.div`
 export const ProjectContainer = styled.div`
   width: 100%;
   display: flex;
-  flex-direction: ${({ id }) => (id % 2 === 0 ? "" : "row-reverse")};
+  flex-direction: ${({ alignment }) =>
+    alignment === "left" ? "" : "row-reverse"};
   align-items: center;
   justify-content: space-around;
   margin: 15rem auto;
@@ -74,7 +75,7 @@ export const Img = styled.img`
 
 export const InfoContainer = styled.div`
   width: 590px;
-  text-align: ${({ id }) => (id % 2 === 0 ? "" : "right")};
+  text-align: ${({ alignment }) => (alignment === "left" ? "" : "right")};
 
   @media ${({ theme }) => theme.breakpoints.xl} {
     width: 480px;
@@ -157,10 +158,11 @@ export const LoginInfo = styled.p`
   }
 `;
 
-export const LinkList = styled.ul`
+export const LinkList = styled.div`
   list-style-type: none;
   display: flex;
-  justify-content: ${({ id }) => (id % 2 === 0 ? "flex-start" : "flex-end")};
+  justify-content: ${({ alignment }) =>
+    alignment === "left" ? "flex-start" : "flex-end"};
   margin: 2.5rem 0;
 
   @media ${({ theme }) => theme.breakpoints.lg} {
@@ -180,7 +182,8 @@ export const ExternalLink = styled.a`
   font-family: ${({ theme }) => theme.fonts.black};
   text-align: center;
   text-transform: uppercase;
-  margin: ${({ id }) => (id % 2 === 0 ? "0 3rem 0 0" : "0 0 0 3rem")};
+  margin: ${({ alignment }) =>
+    alignment === "left" ? "0 3rem 0 0" : "0 0 0 3rem"};
   width: 140px;
   height: 55px;
   line-height: 55px;

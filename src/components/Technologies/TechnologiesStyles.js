@@ -42,7 +42,7 @@ export const ListItem = styled.li`
   }
 `;
 
-export const ListTitle = styled.h3`
+export const ListTitle = styled.h2`
   font-family: ${({ theme }) => theme.fonts.black};
   font-size: 2.5rem;
   text-transform: uppercase;

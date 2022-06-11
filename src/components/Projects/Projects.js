@@ -33,35 +33,52 @@ const Projects = () => {
             backend,
             id,
           }) => {
+            const alignment = id % 2 === 0 ? "left" : "right";
             return (
-              <ProjectContainer key={id} id={id}>
+              <ProjectContainer key={id} alignment={alignment}>
                 <ImageContainer>
                   <Img src={image} alt={title} />
                 </ImageContainer>
-                <InfoContainer id={id}>
+                <InfoContainer alignment={alignment}>
                   <Header>{title}</Header>
                   <Description>{description}</Description>
                   {login && <LoginInfo>{login}</LoginInfo>}
-                  <LinkList id={id}>
+                  <LinkList alignment={alignment}>
                     {title === "Portfolio Site" ? (
-                      <ExternalLink onClick={handleClick} id={id}>
+                      <ExternalLink onClick={handleClick} alignment={alignment}>
                         Deployed
                       </ExternalLink>
                     ) : (
-                      <ExternalLink href={visit} target="_blank" id={id}>
+                      <ExternalLink
+                        href={visit}
+                        target="_blank"
+                        alignment={alignment}
+                      >
                         Deployed
                       </ExternalLink>
                     )}
-                    <ExternalLink href={source} target="_blank" id={id}>
+                    <ExternalLink
+                      href={source}
+                      target="_blank"
+                      alignment={alignment}
+                    >
                       Source
                     </ExternalLink>
                     {contract !== undefined ? (
-                      <ExternalLink href={contract} target="_blank" id={id}>
+                      <ExternalLink
+                        href={contract}
+                        target="_blank"
+                        alignment={alignment}
+                      >
                         Contract
                       </ExternalLink>
                     ) : null}
                     {backend !== undefined ? (
-                      <ExternalLink href={backend} target="_blank" id={id}>
+                      <ExternalLink
+                        href={backend}
+                        target="_blank"
+                        alignment={alignment}
+                      >
                         Backend
                       </ExternalLink>
                     ) : null}
