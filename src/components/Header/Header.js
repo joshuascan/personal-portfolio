@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { FiGithub, FiLinkedin, FiMenu } from "react-icons/fi";
+import { FiGithub, FiLinkedin } from "react-icons/fi";
 import {
   HeaderWrapper,
   HomeArrow,
@@ -70,7 +70,7 @@ const Header = () => {
               target="_blank"
               rel="noreferrer noopener"
             >
-              <Img src="/images/opensea-logo.png" alt="OpenSea logo" />
+              <Img src="/images/opensea_logo.png" alt="OpenSea logo" />
             </SocialIcon>
           </Link>
         </SocialContainer>
