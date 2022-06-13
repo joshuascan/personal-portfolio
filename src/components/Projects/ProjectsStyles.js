@@ -221,6 +221,7 @@ export const ExternalLink = styled.a`
     height: 45px;
     line-height: 45px;
     letter-spacing: 0.1rem;
+    border-width: 2px;
     padding: 0 0.5rem;
   }
 `;
@@ -263,10 +264,12 @@ export const ExternalButton = styled.button`
   @media ${({ theme }) => theme.breakpoints.sm} {
     margin: 0 0.5rem;
     font-size: 1.4rem;
+    font-family: ${({ theme }) => theme.fonts.black};
     width: 120px;
     height: 45px;
     line-height: 45px;
     letter-spacing: 0.1rem;
+    border-width: 2px;
     padding: 0 0.5rem;
   }
 `;

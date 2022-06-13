@@ -160,5 +160,6 @@ export const SubmitButton = styled.button`
     line-height: 45px;
     letter-spacing: 0.1rem;
     padding: 0 0.5rem;
+    border-width: 2px;
   }
 `;
