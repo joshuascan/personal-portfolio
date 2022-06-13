@@ -29,10 +29,11 @@ const Hero = () => {
             Web Developer
           </HeroHeader>
           <HeroText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-            rutrum justo nisi, luctus posuere dui dictum et. Quisque vulputate
-            nec odio sit amet dignissim. Aenean fermentum feugiat lectus, in
-            pulvinar neque sollicitudin nec.
+            I&apos;m a developer based in the San Francisco Bay Area, with a
+            particular excitement and drive towards front-end and web3
+            development. When I&apos;m not working on a project or learning a
+            new technology, I&apos;m most likely working towards filling up my
+            iCloud storage with excessive photos of my cat.
           </HeroText>
         </LeftSection>
         <RightSection>

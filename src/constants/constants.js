@@ -27,7 +27,7 @@ export const projects = [
     id: 2,
   },
   {
-    title: "Polygon Domain Service",
+    title: "Polygon Name Service",
     description:
       "Domain name service on the Polygon network. Built using React, Solidity, Ethers, and Tailwind CSS.",
     image: "/images/polygon_dns.png",
@@ -39,7 +39,7 @@ export const projects = [
   {
     title: "Watering Scheduler",
     description:
-      "An app that tracks plant watering schedules. Frontend was built using React and MaterialUI, and the backend was built using Node, Express, and Knex with a PostgreSQL database. Create your own account, or log in with the dummy account:",
+      "An app that tracks plant watering schedules. Frontend was built using React and MaterialUI, and the backend was built using Node, Express, and Knex with a PostgreSQL database. Currently a work in progress. Create your own account, or log in with the dummy account:",
     login: "email: fake@email.com, password: password",
     image: "/images/watering_app.png",
     visit: "https://plants-need-water-too.vercel.app/",
