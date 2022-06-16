@@ -39,7 +39,7 @@ const Header = () => {
           <Link href="#contact" passHref>
             <NavLink pathname={router.asPath}>Contact</NavLink>
           </Link>
-          <Link href="/images/resume.pdf" passHref>
+          <Link href="/images/josh_scanlan_resume.pdf" passHref>
             <NavLink target="_blank" rel="noreferrer noopener">
               Resume
             </NavLink>

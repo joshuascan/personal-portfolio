@@ -40,7 +40,7 @@ const NavDropDown = () => {
           <Link href="#contact" passHref>
             <NavLink onClick={closeMenu}>Contact</NavLink>
           </Link>
-          <Link href="/images/resume.pdf" passHref>
+          <Link href="/images/josh_scanlan_resume.pdf" passHref>
             <NavLink
               onClick={closeMenu}
               target="_blank"
