@@ -43,6 +43,7 @@ const Hero = () => {
               layout={"fill"}
               objectFit={"contain"}
               alt="headshot"
+              priority
             />
           </ImageContainer>
         </RightSection>
