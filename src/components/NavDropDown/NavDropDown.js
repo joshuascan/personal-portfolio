@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 import {
@@ -23,6 +23,14 @@ const NavDropDown = () => {
   const closeMenu = () => {
     setOpen(false);
   };
+
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "scroll";
+    }
+  });
 
   return (
     <DropDownContainer>
