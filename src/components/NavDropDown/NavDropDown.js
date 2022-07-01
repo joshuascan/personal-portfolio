@@ -30,7 +30,7 @@ const NavDropDown = () => {
     } else {
       document.body.style.overflow = "scroll";
     }
-  });
+  }, [open]);
 
   return (
     <DropDownContainer>
