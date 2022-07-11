@@ -9,6 +9,14 @@ export const projects = [
     id: 0,
   },
   {
+    title: "Andrea Ayala Portfolio",
+    description: "A portfolio site built using Next.js and styled components.",
+    image: "/images/ayala_portfolio.png",
+    visit: "https://andrea-ayala-portfolio.vercel.app/",
+    source: "https://github.com/joshuascan/andrea-ayala-portfolio",
+    id: 1,
+  },
+  {
     title: "Ethereum To-do List",
     description:
       "A to-do list on the Ethereum blockchain. Built with Next.js, Ethers, Solidity, and Tailwind CSS.",
@@ -16,7 +24,7 @@ export const projects = [
     visit: "https://todolist-dapp-eight.vercel.app/",
     source: "https://github.com/joshuascan/eth-todolist-frontend",
     contract: "https://github.com/joshuascan/eth-todolist-contract",
-    id: 1,
+    id: 2,
   },
   {
     title: "Portfolio Site",
@@ -24,7 +32,7 @@ export const projects = [
       "Personal portfolio built with Next.js and styled components. Utilizes the SendGrid API for the contact form.",
     image: "/images/portfolio_site.png",
     source: "https://github.com/joshuascan/metronome",
-    id: 2,
+    id: 3,
   },
   {
     title: "Polygon Name Service",
@@ -34,7 +42,7 @@ export const projects = [
     visit: "https://dum-name-service.vercel.app/",
     source: "https://github.com/joshuascan/domain-name-service-frontend",
     contract: "https://github.com/joshuascan/domain-contract",
-    id: 3,
+    id: 4,
   },
   {
     title: "Watering Scheduler",
@@ -45,6 +53,6 @@ export const projects = [
     visit: "https://plants-need-water-too.vercel.app/",
     source: "https://github.com/joshuascan/plants-need-water-too",
     backend: "https://github.com/ft-watermyplants-1/back-end",
-    id: 4,
+    id: 5,
   },
 ];
