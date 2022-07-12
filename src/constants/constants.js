@@ -12,7 +12,7 @@ export const projects = [
     title: "Andrea Ayala Portfolio",
     description: "A portfolio site built using Next.js and styled components.",
     image: "/images/ayala_portfolio.png",
-    visit: "https://andrea-ayala-portfolio.vercel.app/",
+    visit: "https://andreaayala.me/",
     source: "https://github.com/joshuascan/andrea-ayala-portfolio",
     id: 1,
   },
