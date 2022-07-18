@@ -30,10 +30,10 @@ const Hero = () => {
           </HeroHeader>
           <HeroText>
             I&apos;m a developer based in the San Francisco Bay Area, with a
-            particular excitement and drive towards front-end and
-            blockchain-based development. When I&apos;m not working on a project
-            or learning a new technology, I&apos;m most likely working towards
-            filling up my iCloud storage with excessive photos of my cat.
+            particular excitement and drive towards front-end development. When
+            I&apos;m not working on a project or learning a new technology,
+            I&apos;m most likely working towards filling up my iCloud storage
+            with excessive photos of my cat.
           </HeroText>
         </LeftSection>
         <RightSection>
