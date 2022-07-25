@@ -10,8 +10,8 @@ const Technologies = () => {
           <DiReact size="4rem" />
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
-            React, Redux, Next.js, Ethers, MaterialUI, Styled Components,
-            Tailwind CSS, and Figma
+            React, Next.js, Redux, Typescript, Ethers, MaterialUI, Styled
+            Components, Tailwind CSS, and Figma
           </ListParagraph>
         </ListItem>
         <ListItem>

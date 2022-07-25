@@ -17,6 +17,15 @@ export const projects = [
     id: 1,
   },
   {
+    title: "Memory Game",
+    description:
+      "A memory game built using Typescript, Next.js, and Tailwind CSS.",
+    image: "/images/memory_game.png",
+    visit: "https://memory-game-eight-eta.vercel.app/",
+    source: "https://github.com/joshuascan/memory-game",
+    id: 2,
+  },
+  {
     title: "Ethereum To-do List",
     description:
       "A to-do list on the Ethereum blockchain. Built with Next.js, Ethers, Solidity, and Tailwind CSS.",
@@ -24,7 +33,7 @@ export const projects = [
     visit: "https://todolist-dapp-eight.vercel.app/",
     source: "https://github.com/joshuascan/eth-todolist-frontend",
     contract: "https://github.com/joshuascan/eth-todolist-contract",
-    id: 2,
+    id: 3,
   },
   {
     title: "Portfolio Site",
@@ -32,7 +41,7 @@ export const projects = [
       "Personal portfolio built with Next.js and styled components. Utilizes the SendGrid API for the contact form.",
     image: "/images/portfolio_site.png",
     source: "https://github.com/joshuascan/metronome",
-    id: 3,
+    id: 4,
   },
   {
     title: "Polygon Name Service",
@@ -42,7 +51,7 @@ export const projects = [
     visit: "https://dum-name-service.vercel.app/",
     source: "https://github.com/joshuascan/domain-name-service-frontend",
     contract: "https://github.com/joshuascan/domain-contract",
-    id: 4,
+    id: 5,
   },
   {
     title: "Watering Scheduler",
@@ -53,6 +62,6 @@ export const projects = [
     visit: "https://plants-need-water-too.vercel.app/",
     source: "https://github.com/joshuascan/plants-need-water-too",
     backend: "https://github.com/ft-watermyplants-1/back-end",
-    id: 5,
+    id: 6,
   },
 ];
