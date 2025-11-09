@@ -54,14 +54,12 @@ export const projects = [
     id: 5,
   },
   {
-    title: "Watering Scheduler",
+    title: "TMDB App",
     description:
-      "An app that tracks plant watering schedules. Frontend was built using React, Redux, and MaterialUI, and the backend was built using Node, Express, and Knex with a PostgreSQL database. Currently a work in progress. Create your own account, or log in with the dummy account:",
-    login: "email: fake@email.com, password: password",
-    image: "/images/watering_app.png",
-    visit: "https://plants-need-water-too.vercel.app/",
-    source: "https://github.com/joshuascan/plants-need-water-too",
-    backend: "https://github.com/ft-watermyplants-1/back-end",
+      "A movie/TV show database app built using Next.js, Tanstack Query, and Panda CSS.",
+    image: "/images/tmdb_app.png",
+    visit: "https://tmdb-tanstack-query-app.vercel.app/",
+    source: "https://github.com/joshuascan/tmdb-tanstack-query-app",
     id: 6,
   },
 ];

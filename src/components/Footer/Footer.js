@@ -10,7 +10,7 @@ const Footer = () => {
     <FooterWrapper>
       <FooterContainer>
         <FooterText>
-          Designed by Andrea Wilson / <NewLine>Built by Josh Scanlan</NewLine>
+          Designed by Andrea Ayala / <NewLine>Built by Josh Scanlan</NewLine>
         </FooterText>
       </FooterContainer>
     </FooterWrapper>

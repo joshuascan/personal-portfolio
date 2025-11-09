@@ -10,15 +10,16 @@ const Technologies = () => {
           <DiReact size="4rem" />
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
-            React, Next.js, Redux, Typescript, Ethers, MaterialUI, Styled
-            Components, Tailwind CSS, and Figma
+            React, Next.js, Typescript, Redux, Zustand, TanStack (React) Query,
+            GraphQL, Viem, Ethers, Tailwind CSS, Panda CSS, MaterialUI, and
+            Styled Components.
           </ListParagraph>
         </ListItem>
         <ListItem>
           <DiDatabase size="4rem" />
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
-            Node, Express, Knex, Solidity, Hardhat, and PostgreSQL
+            Node, Express, Solidity, Hardhat, and PostgreSQL
           </ListParagraph>
         </ListItem>
       </List>
