@@ -6,7 +6,7 @@ export const CaseStudiesWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.4rem;
-  margin: 2rem 0 5rem 0;
+  margin: 5rem 0;
 
   @media ${({ theme }) => theme.breakpoints.lg} {
     grid-template-columns: repeat(2, 1fr);
@@ -23,15 +23,10 @@ export const Card = styled.a`
   flex-direction: column;
   background: ${({ theme }) => theme.colors.background};
   border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 8px;
+  border-radius: 15px;
   overflow: hidden;
   text-decoration: none;
-  transition: transform 200ms ease, box-shadow 200ms ease;
-
-  &:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
-  }
+  color: inherit;
 `;
 
 export const ImgContainer = styled.div`
@@ -43,6 +38,7 @@ export const ImgContainer = styled.div`
 
 export const Img = styled(Image)`
   object-fit: cover;
+  object-position: top center;
 `;
 
 export const CardContent = styled.div`
@@ -57,6 +53,7 @@ export const Title = styled.h3`
   font-weight: 700;
   line-height: 1.2;
   font-family: ${({ theme }) => theme.fonts.bold};
+  color: ${({ theme }) => theme.colors.primary};
 `;
 
 export const Excerpt = styled.p`
