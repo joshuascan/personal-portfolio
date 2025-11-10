@@ -63,3 +63,81 @@ export const projects = [
     id: 6,
   },
 ];
+
+export const caseStudies = [
+  {
+    slug: "newton-staking",
+    title: "Staking & Rewards Flow",
+    excerpt:
+      "Designing an intuitive, resilient multi-step staking and rewards flow.",
+    image: "/images/newton_staking.png",
+    id: 0,
+  },
+];
+
+export const caseStudyContent = {
+  "newton-staking": {
+    title: "Staking & Rewards Flow",
+    heroImage: "/images/newton_staking.png",
+    sections: [
+      {
+        heading: "Context",
+        body: "As part of Magic’s wallet product ecosystem, users can stake their tokens to earn rewards over time. The core challenge was to design an intuitive, multi-step workflow that guided users through transferring funds, staking, monitoring progress, and claiming rewards — all without breaking the sense of continuity across asynchronous blockchain operations.",
+      },
+      {
+        heading: "Problem",
+        body: "Staking is inherently non-linear. Users must:",
+        bullets: [
+          "Approve contract interactions",
+          "Initiate on-chain transactions",
+          "Wait for confirmations",
+          "Handle network conditions and wallet state",
+          "Return later to claim rewards or unstake",
+        ],
+      },
+      {
+        heading: "Design Goals",
+        body: "Interruptions (refresh, navigation, loss of session) risked losing context, leading to confusion and repeated or failed actions. We needed a flow that:",
+        bullets: [
+          "Maintained persistent state across sessions",
+          "Reflected real-time chain state changes",
+          "Clearly communicated progress and completion",
+          "Avoided overwhelming the user with blockchain details",
+        ],
+      },
+      {
+        heading: "Constraints & Challenges",
+        bullets: [
+          "Complex async workflows involving blockchain confirmations",
+          "Wallet state and token balances could change outside the app",
+          "Refreshing the page could reset UI state mid-flow",
+          "Needed to avoid unnecessary re-renders in high-frequency state updates",
+          "Required a UI that was trust-building, not “magic happens here”",
+        ],
+      },
+      {
+        heading: "My Role",
+        body: "I was the primary engineer responsible for implementing the staking user experience, including the state management, interaction patterns, and progress UI.",
+      },
+      {
+        heading: "Specifically, I",
+        bullets: [
+          "Designed the multi-step staking workflow UI",
+          "Implemented persistent local + shared state using Zustand and React Query to ensure continuity across refresh / navigation",
+          "Set up GraphQL-driven polling and event-based updates to reflect live reward accrual",
+          "Ensured sensitive UI transitions remained smooth, even during async operations",
+          "Refined messaging and progress indicators so users always knew what was happening and what would come next",
+        ],
+      },
+      {
+        heading: "Outcome",
+        bullets: [
+          "Users can start staking, close the app, return later, and resume exactly where they left off",
+          "UI behavior remains consistent even under asynchronous network conditions",
+          "Reduced user confusion and support requests related to staking flow interruptions",
+          "The workflow patterns developed here were later reused in other multi-step funding & onboarding flows across the product",
+        ],
+      },
+    ],
+  },
+};

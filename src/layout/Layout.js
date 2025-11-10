@@ -4,8 +4,11 @@ import { Container } from "./LayoutStyles";
 import Head from "next/head";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
+import { useRouter } from "next/router";
 
 export const Layout = ({ children }) => {
+  const router = useRouter();
+  const isHome = router.pathname === "/";
   return (
     <>
       <Head>
@@ -29,7 +32,7 @@ export const Layout = ({ children }) => {
       <Container>
         <Header />
         <main>{children}</main>
-        <Footer />
+        {isHome && <Footer />}
       </Container>
     </>
   );
