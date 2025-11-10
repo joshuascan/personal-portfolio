@@ -42,6 +42,9 @@ const NavDropDown = () => {
           <Link href="#about" passHref>
             <NavLink onClick={closeMenu}>About</NavLink>
           </Link>
+          <Link href="#case-studies" passHref>
+            <NavLink onClick={closeMenu}>Case Studies</NavLink>
+          </Link>
           <Link href="#projects" passHref>
             <NavLink onClick={closeMenu}>Projects</NavLink>
           </Link>
