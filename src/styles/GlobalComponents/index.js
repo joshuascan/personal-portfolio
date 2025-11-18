@@ -35,6 +35,6 @@ export const SectionText = styled.p`
 export const Divider = styled.hr`
   border: 0;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
-  margin: 6rem auto;
+  margin: 1rem auto 6rem;
   width: 90%;
 `;

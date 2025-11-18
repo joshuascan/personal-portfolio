@@ -1,51 +1,50 @@
 import Link from "next/link";
-import { Section, SectionTitle } from "../../styles/GlobalComponents";
-import styled from "styled-components";
+import { Section } from "../../styles/GlobalComponents";
 import { caseStudies } from "../../constants/constants";
 import {
-  CaseStudiesWrapper,
-  Card,
-  ImgContainer,
+  ProjectsWrapper,
+  ProjectContainer,
+  ImageContainer,
   Img,
-  CardContent,
-  Title,
-  Excerpt,
-} from "./CaseStudiesStyles";
+  InfoContainer,
+  Header,
+  Description,
+  LinkList,
+  ExternalLink,
+} from "../Projects/ProjectsStyles";
 
 const CaseStudies = () => {
-  const SectionHeading = styled(SectionTitle)`
-    font-family: ${({ theme }) => theme.fonts.black};
-    text-align: center;
-    margin-top: 6rem;
-    @media ${({ theme }) => theme.breakpoints.sm} {
-      margin-top: 4rem;
-    }
-  `;
-  const SectionWithOffset = styled(Section)`
-    scroll-margin-top: 10rem;
-    @media ${({ theme }) => theme.breakpoints.sm} {
-      scroll-margin-top: 4rem;
-    }
-  `;
   return (
-    <SectionWithOffset id="case-studies">
-      <SectionHeading>Case Studies</SectionHeading>
-      <CaseStudiesWrapper>
-        {caseStudies.map(({ slug, title, excerpt, image, id }) => (
-          <Link key={id} href={`/case-studies/${slug}`} passHref>
-            <Card>
-              <ImgContainer>
-                <Img src={image} alt={title} layout="fill" objectFit="cover" />
-              </ImgContainer>
-              <CardContent>
-                <Title>{title}</Title>
-                <Excerpt>{excerpt}</Excerpt>
-              </CardContent>
-            </Card>
-          </Link>
-        ))}
-      </CaseStudiesWrapper>
-    </SectionWithOffset>
+    <Section nopadding id="case-studies">
+      <ProjectsWrapper>
+        {caseStudies.map(({ slug, title, excerpt, image, id }) => {
+          const alignment = id % 2 === 0 ? "left" : "right";
+          return (
+            <ProjectContainer key={id} alignment={alignment}>
+              <ImageContainer>
+                <Img
+                  src={image}
+                  width={590}
+                  height={390}
+                  alt={title}
+                  objectFit="cover"
+                  objectPosition="top center"
+                />
+              </ImageContainer>
+              <InfoContainer alignment={alignment}>
+                <Header>{title}</Header>
+                <Description>{excerpt}</Description>
+                <LinkList alignment={alignment}>
+                  <Link href={`/case-studies/${slug}`} passHref>
+                    <ExternalLink alignment={alignment}>VIEW</ExternalLink>
+                  </Link>
+                </LinkList>
+              </InfoContainer>
+            </ProjectContainer>
+          );
+        })}
+      </ProjectsWrapper>
+    </Section>
   );
 };
 

@@ -69,7 +69,7 @@ export const caseStudies = [
     slug: "newton-staking",
     title: "Staking & Rewards Flow",
     excerpt:
-      "Designing an intuitive, resilient multi-step staking and rewards flow.",
+      "CASE STUDY: Designing an intuitive, resilient multi-step staking and rewards flow.",
     image: "/images/newton_staking.png",
     id: 0,
   },
@@ -77,7 +77,7 @@ export const caseStudies = [
     slug: "ui-library-evolution",
     title: "Internal UI Library",
     excerpt:
-      "Standardizing accessible, predictable UI primitives used across the product.",
+      "CASE STUDY: Standardizing accessible, predictable UI primitives used across the product.",
     image: "/images/ui_components_collage.png",
     id: 1,
   },
@@ -154,7 +154,7 @@ export const caseStudyContent = {
     sections: [
       {
         heading: "My Role",
-        body: "I became the primary engineer responsible for evolving and maintaining the internal UI library. My work focused on creating predictable, consistent, and accessible building blocks that other engineers could rely on.",
+        body: "I became the primary engineer responsible for evolving and maintaining the internal Magic Labs UI library. My work focused on creating predictable, consistent, and accessible building blocks that other engineers could rely on.",
       },
       {
         heading: "Key Contributions",
