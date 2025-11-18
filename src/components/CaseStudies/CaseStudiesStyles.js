@@ -4,7 +4,7 @@ import Image from "next/image";
 export const CaseStudiesWrapper = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2.4rem;
   margin: 5rem 0;
 
@@ -27,6 +27,11 @@ export const Card = styled.a`
   overflow: hidden;
   text-decoration: none;
   color: inherit;
+
+  @media ${({ theme }) => theme.breakpoints.sm} {
+    width: 90%;
+    margin: 0 auto;
+  }
 `;
 
 export const ImgContainer = styled.div`

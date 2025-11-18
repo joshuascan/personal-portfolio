@@ -107,7 +107,7 @@ export const caseStudyContent = {
         heading: "Design Goals",
         body: "Interruptions (refresh, navigation, loss of session) risked losing context, leading to confusion and repeated or failed actions. We needed a flow that:",
         bullets: [
-          "Maintained persistent state across sessions",
+          "Maintained stable in‑app state during long‑running operations",
           "Reflected real-time chain state changes",
           "Clearly communicated progress and completion",
           "Avoided overwhelming the user with blockchain details",
@@ -130,17 +130,17 @@ export const caseStudyContent = {
       {
         heading: "Specifically, I",
         bullets: [
-          "Designed the multi-step staking workflow UI",
-          "Implemented persistent local + shared state using Zustand and React Query to ensure continuity across refresh / navigation",
+          "Partnered with design on the multi‑step staking workflow and built the end‑to‑end frontend implementation",
+          "Implemented shared state with React Context and React Query to coordinate flow state and network data",
           "Set up GraphQL-driven polling and event-based updates to reflect live reward accrual",
-          "Ensured sensitive UI transitions remained smooth, even during async operations",
+          "Kept sensitive UI transitions smooth, even during async operations",
           "Refined messaging and progress indicators so users always knew what was happening and what would come next",
         ],
       },
       {
         heading: "Outcome",
         bullets: [
-          "Users can start staking, close the app, return later, and resume exactly where they left off",
+          "Users progressed through staking steps reliably without losing place during async operations or in‑app navigation",
           "UI behavior remains consistent even under asynchronous network conditions",
           "Reduced user confusion and support requests related to staking flow interruptions",
           "The workflow patterns developed here were later reused in other multi-step funding & onboarding flows across the product",

@@ -30,6 +30,9 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
+  @media ${({ theme }) => theme.breakpoints.sm} {
+    margin: 0 1.6rem;
+  }
 `;
 
 export const SectionBlock = styled.section`
