@@ -17,13 +17,23 @@ export const projects = [
     id: 1,
   },
   {
+    title: "Polygon Name Service",
+    description:
+      "Domain name service on the Polygon network. Built using React, Solidity, Ethers, and Tailwind CSS.",
+    image: "/images/polygon_dns.png",
+    visit: "https://dum-name-service.vercel.app/",
+    source: "https://github.com/joshuascan/domain-name-service-frontend",
+    contract: "https://github.com/joshuascan/domain-contract",
+    id: 2,
+  },
+  {
     title: "Memory Game",
     description:
       "A memory game built using Typescript, Next.js, and Tailwind CSS.",
     image: "/images/memory_game.png",
     visit: "https://memory-game-eight-eta.vercel.app/",
     source: "https://github.com/joshuascan/memory-game",
-    id: 2,
+    id: 3,
   },
   {
     title: "Ethereum To-do List",
@@ -33,7 +43,7 @@ export const projects = [
     visit: "https://todolist-dapp-eight.vercel.app/",
     source: "https://github.com/joshuascan/eth-todolist-frontend",
     contract: "https://github.com/joshuascan/eth-todolist-contract",
-    id: 3,
+    id: 4,
   },
   {
     title: "Portfolio Site",
@@ -41,16 +51,6 @@ export const projects = [
       "Personal portfolio built with Next.js and styled components. Utilizes the SendGrid API for the contact form.",
     image: "/images/portfolio_site.png",
     source: "https://github.com/joshuascan/metronome",
-    id: 4,
-  },
-  {
-    title: "Polygon Name Service",
-    description:
-      "Domain name service on the Polygon network. Built using React, Solidity, Ethers, and Tailwind CSS.",
-    image: "/images/polygon_dns.png",
-    visit: "https://dum-name-service.vercel.app/",
-    source: "https://github.com/joshuascan/domain-name-service-frontend",
-    contract: "https://github.com/joshuascan/domain-contract",
     id: 5,
   },
   {
@@ -72,6 +72,14 @@ export const caseStudies = [
       "Designing an intuitive, resilient multi-step staking and rewards flow.",
     image: "/images/newton_staking.png",
     id: 0,
+  },
+  {
+    slug: "ui-library-evolution",
+    title: "Internal UI Library",
+    excerpt:
+      "Standardizing accessible, predictable UI primitives used across the product.",
+    image: "/images/ui_components_collage.png",
+    id: 1,
   },
 ];
 
@@ -136,6 +144,71 @@ export const caseStudyContent = {
           "UI behavior remains consistent even under asynchronous network conditions",
           "Reduced user confusion and support requests related to staking flow interruptions",
           "The workflow patterns developed here were later reused in other multi-step funding & onboarding flows across the product",
+        ],
+      },
+    ],
+  },
+  "ui-library-evolution": {
+    title: "Internal UI Library",
+    heroImage: "/images/ui_components_collage.png",
+    sections: [
+      {
+        heading: "My Role",
+        body: "I became the primary engineer responsible for evolving and maintaining the internal UI library. My work focused on creating predictable, consistent, and accessible building blocks that other engineers could rely on.",
+      },
+      {
+        heading: "Key Contributions",
+        bullets: [
+          "Standardized APIs across all core components (Button, Select, Dropdown Menu, Tabs, Modals, Inputs)",
+          "Consolidated styling into a consistent token system using Panda CSS",
+          "Implemented focus states, keyboard navigation, and ARIA roles across interactive components",
+          "Refactored components to reduce unnecessary re-renders and improve async interaction stability",
+          "Replaced duplicated components with unified primitives shared across product surfaces",
+          "Documented recommended usage patterns so teams used components consistently",
+          "Improved DX by making components intuitive, predictable, and safer to use",
+          "Drove alignment between product/design and engineering around reusable patterns",
+        ],
+      },
+      {
+        heading: "Examples of Improvements Made",
+        body: "Selected highlights that made the library more consistent, accessible, and maintainable.",
+      },
+      {
+        heading: "Button API Unification",
+        body: "Consolidated multiple button variants into one predictable API using a single `variant` prop and standardized `loading` behavior, reducing surface area and cognitive load.",
+        bullets: [
+          "One component to learn and maintain",
+          "Consistent loading/disabled semantics across surfaces",
+          "Fewer breaking changes when evolving styles",
+        ],
+      },
+      {
+        heading: "Dropdown & Menu Overhaul",
+        body: "Rebuilt menus with accessible navigation and predictable open/close behavior. Removed duplicates by shipping a shared primitive adopted across product areas.",
+        bullets: [
+          "Keyboard navigation and focus management",
+          "Deterministic open/close and outside-click handling",
+          "Single primitive reused across agent site, staking, funding, onboarding",
+        ],
+      },
+      {
+        heading: "Tabs & Step Navigation",
+        body: "Refactored tabs to handle async state and route changes without layout shift. Codified a pattern for multi‑step flows.",
+        bullets: [
+          "Consistent animation and focus behavior",
+          "Explicit disabled and loading states",
+          "Drop-in pattern used across staking and agent onboarding",
+        ],
+      },
+      {
+        heading: "Outcome",
+        bullets: [
+          "Strongly reduced UI drift and duplicated component logic",
+          "Improved accessibility across the entire suite",
+          "Engineers could move faster with fewer bugs caused by inconsistent UI primitives",
+          "Product surfaces felt more cohesive, even though different teams maintained them",
+          "The UI layer became significantly easier to extend and maintain",
+          "New features were built using consistent patterns rather than reinvented components",
         ],
       },
     ],
