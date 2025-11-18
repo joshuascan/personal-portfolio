@@ -50,7 +50,7 @@ export const projects = [
     description:
       "Personal portfolio built with Next.js and styled components. Utilizes the SendGrid API for the contact form.",
     image: "/images/portfolio_site.png",
-    source: "https://github.com/joshuascan/metronome",
+    source: "https://github.com/joshuascan/personal-portfolio",
     id: 5,
   },
   {
