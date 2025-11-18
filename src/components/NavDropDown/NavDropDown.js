@@ -39,13 +39,16 @@ const NavDropDown = () => {
       </MenuContainer>
       <NavWrapper open={open}>
         <LinkContainer>
-          <Link href="#about" passHref>
+          <Link href="/#about" passHref>
             <NavLink onClick={closeMenu}>About</NavLink>
           </Link>
-          <Link href="#projects" passHref>
+          <Link href="/#case-studies" passHref>
+            <NavLink onClick={closeMenu}>Case Studies</NavLink>
+          </Link>
+          <Link href="/#projects" passHref>
             <NavLink onClick={closeMenu}>Projects</NavLink>
           </Link>
-          <Link href="#contact" passHref>
+          <Link href="/#contact" passHref>
             <NavLink onClick={closeMenu}>Contact</NavLink>
           </Link>
           <Link href="/images/josh_scanlan_resume.pdf" passHref>

@@ -11,8 +11,8 @@ const Technologies = () => {
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
             React, Next.js, Typescript, Redux, Zustand, TanStack (React) Query,
-            GraphQL, Viem, Ethers, Tailwind CSS, Panda CSS, MaterialUI, and
-            Styled Components.
+            GraphQL, Viem, Ethers, Tailwind CSS, Panda CSS, and Styled
+            Components.
           </ListParagraph>
         </ListItem>
         <ListItem>

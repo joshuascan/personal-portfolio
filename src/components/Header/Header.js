@@ -21,7 +21,9 @@ const Header = () => {
       top: 0,
       behavior: "smooth",
     });
-    router.push("/");
+    if (router.pathname === "/" && router.asPath !== "/") {
+      router.push("/");
+    }
   };
 
   return (
@@ -30,13 +32,16 @@ const Header = () => {
       <NavDropDown />
       <NavWrapper>
         <LinkContainer>
-          <Link href="#about" passHref>
+          <Link href="/#about" passHref>
             <NavLink pathname={router.asPath}>About</NavLink>
           </Link>
-          <Link href="#projects" passHref>
+          <Link href="/#case-studies" passHref>
+            <NavLink pathname={router.asPath}>Case Studies</NavLink>
+          </Link>
+          <Link href="/#projects" passHref>
             <NavLink pathname={router.asPath}>Projects</NavLink>
           </Link>
-          <Link href="#contact" passHref>
+          <Link href="/#contact" passHref>
             <NavLink pathname={router.asPath}>Contact</NavLink>
           </Link>
           <Link href="/images/josh_scanlan_resume.pdf" passHref>
