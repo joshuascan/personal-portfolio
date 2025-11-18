@@ -31,3 +31,10 @@ export const SectionText = styled.p`
   line-height: 1.4;
   padding-bottom: 2.4rem;
 `;
+
+export const Divider = styled.hr`
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  margin: 6rem auto;
+  width: 90%;
+`;
