@@ -19,7 +19,7 @@ const Technologies = () => {
           <DiDatabase size="4rem" />
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
-            Node, Express, Solidity, Hardhat, and PostgreSQL
+            Node, Express, Knex, Solidity, Hardhat, and PostgreSQL
           </ListParagraph>
         </ListItem>
       </List>
