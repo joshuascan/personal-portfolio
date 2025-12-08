@@ -8,7 +8,7 @@ const Technologies = () => {
       <List>
         <ListItem>
           <DiReact size="4rem" />
-          <ListTitle>Front-End</ListTitle>
+          <ListTitle>Frontend</ListTitle>
           <ListParagraph>
             React, Next.js, Typescript, Redux, Zustand, TanStack (React) Query,
             GraphQL, Viem, Ethers, Tailwind CSS, Panda CSS, and Styled
@@ -17,7 +17,7 @@ const Technologies = () => {
         </ListItem>
         <ListItem>
           <DiDatabase size="4rem" />
-          <ListTitle>Back-End</ListTitle>
+          <ListTitle>Backend</ListTitle>
           <ListParagraph>
             Node, Express, Knex, Solidity, Hardhat, and PostgreSQL
           </ListParagraph>
